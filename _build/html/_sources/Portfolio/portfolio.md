@@ -6,5 +6,5 @@ I am a recent Physics graduate from one of the UCs in California. If I were to c
 ## Research:
 I have one year of research experience in UV photonics in the Materials Department under the supervision of Dr. Shuji Nakamura. I have also previously conducted research at San Francisco State University for a mitigation lab to help develop a program for Dr. Zhaoshuo Jiang in 2019.
 
-# Coursework:
+## Coursework:
 Condensed Matter, Optics, Quantum Photonic Experiment, All of Classical Mechanics, All of QM, All of E&M, thermo, MATLAB, PYTHON, some bash and some FPGA. 
