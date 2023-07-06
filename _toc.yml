@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+  - captions: Portfolio
+    chapters:
+    - file: Portfolio/portfolio
+  - captions: Condensed Matter
+    chapters:
+    - file: CondensedMatter/introCondMat
