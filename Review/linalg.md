@@ -9,19 +9,20 @@ By definition, the completeness of a function is a linear combination of its bas
 
 The simplest n-dimensional vector takes the form of
 $$
-\[
-    \begin{bmatrix}x_1 \\ 0   \\ 0   \vdots \\ 0   \end{bmatrix} + 
-    \begin{bmatrix}  0 \\ x_2 \\ 0   \vdots \\ 0   \end{bmatrix} + 
-    \begin{bmatrix}  0 \\ 0   \\ x_3 \vdots \\ 0   \end{bmatrix} + 
-    \begin{bmatrix}  0 \\ 0   \\ 0   \vdots \\ x_n \end{bmatrix} + 
-\]
+    \begin{bmatrix}x_1 \\ 0   \\ 0   \\ \vdots \\ 0   \end{bmatrix} + 
+    \begin{bmatrix}  0 \\ x_2 \\ 0   \\ \vdots \\ 0   \end{bmatrix} + 
+    \begin{bmatrix}  0 \\ 0   \\ x_3 \\ \vdots \\ 0   \end{bmatrix} + 
+    \begin{bmatrix}  0 \\ 0   \\ 0   \\ \vdots \\ x_n \end{bmatrix} 
+    =
+    \vec{e_1} + \vec{e_2} + \vec{e_3} + \dots + \vec{e_n}
+
 $$ 
 
 which, if I write them as ket vector in the bra-ket (dirac) notation, it would look like
 
 $$
-\[
+
     | \psi_1 \rangle + |\psi_2\rangle 
-    + | \psi_3 \rangle + \dots + |\psi_4 \rangle
-\]
+    + | \psi_3 \rangle + \dots + |\psi_n \rangle
+
 $$
