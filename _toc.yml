@@ -4,13 +4,13 @@
 format: jb-book
 root: index
 parts:
-  - captions: Portfolio
+  - caption: Portfolio
     chapters:
     - file: Portfolio/portfolio
-  - captions: Handwavy background in mathematics
+  - caption: Handwavy background in mathematics
     chapters:
     - file: Review/foreword
     - file: Review/linalg
-  - captions: Condensed Matter
+  - caption: Condensed Matter
     chapters:
     - file: CondensedMatter/introCondMat
