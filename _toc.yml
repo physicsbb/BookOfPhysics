@@ -7,6 +7,10 @@ parts:
   - captions: Portfolio
     chapters:
     - file: Portfolio/portfolio
+  - captions: Handwavy background in mathematics
+    chapters:
+    - file: Review/foreword
+    - file: Review/linalg
   - captions: Condensed Matter
     chapters:
     - file: CondensedMatter/introCondMat

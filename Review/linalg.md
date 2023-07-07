@@ -1,0 +1,4 @@
+# Linear Algebra
+
+## Linear Combination in Physics
+As Griffiths pointed out in his Quantum Mechanics textbook, a state is described by the wavefunction, which can be written as a vector; the observable is represented by an $nxn$ operator, be it linear or not. Naturally, the operator happens to have a matrix representation, then an $nxn$ matrix would act on the state vector, hence a linear transformation. The most friendly approach to quantum mechanics is to realize that a part of quantum mechanics satisfy the Eigenequation. That is, the (eigen)energy is an eigenvalue; the state vector is an eigenvector (or an eigenstate); the operator is a linear operator.
