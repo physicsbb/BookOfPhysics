@@ -6,6 +6,7 @@ This is a documentation by a recent physics graduate who is unwilling to let go 
 ## Goal:
 While I do hope that you find someone's distress from an abundant amount of coffee chugging, pulling all-nighter and excessive skimming/revision to be entertaining, which you may have already noticed in the above section, in all seriousness, I believe that getting to thoroughly question what you have read, and deriving the necessary equations help declutter your own confusion to bridge the smaller puzzles to bigger concepts. It is what allows you to understand the subject on a much more prolific level. In addition to that, summarizing a book and dropping them down as notes, as you may have already done so, gives you a totally different level of understanding. Those who have written a senior thesis would know that their mental blocks are areas that they can use some more work to study and learn. Sometimes, mental block can expose your weaknesses, and with enough time, one can deepen their understanding; other times, you work with what you know given the limited time. The ultimate objective of this website, really, is to give myself an opportunity to revisit concepts that I wish I had more time to learn more about, in hopes that I can grasp the more complicated ideas that build on top of one another more easily. 
 
+
 ## See Below for table of content:
 ```{tableofcontents}
 ```

@@ -32,3 +32,5 @@ $$
     + | \psi_3 \rangle + \dots + |\psi_n \rangle
 \end{align}
 $$
+
+Moving on, when we talk about what a linear combination is, we typically mean if the solution is spanned by the set. Hence, a linear combination. 

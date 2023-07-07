@@ -9,6 +9,4 @@ I have one year of research experience in UV photonics in the Materials Departme
 
 
 ## Coursework:
-Condensed Matter, Optics, Quantum Photonics Experiment (ECE194/594U), All of Classical Mechanics, All of QM, All of E&M, thermo, MATLAB, PYTHON, some bash and some FPGA. 
-
-## demonstration of work from lab classes:
+Condensed Matter (Phys 123A/B), Optics (Phys 141), Quantum Photonics Experiment (ECE194/594U), All of Classical Mechanics, All of QM, All of E&M, thermo, MATLAB, PYTHON and some bash (Phys 129L), Analog/Digital Electronics for Physicists (Phys127A/BL)

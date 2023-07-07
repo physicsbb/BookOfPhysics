@@ -6,7 +6,8 @@ root: index
 parts:
   - caption: Portfolio
     chapters:
-    - file: Portfolio/portfolio
+    - file: Portfolio/portfolioShort
+    - file: Portfolio/portfolioLong
   - caption: Handwavy background in mathematics
     chapters:
     - file: Review/foreword
