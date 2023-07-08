@@ -365,7 +365,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-combination-in-physics">Linear Combination in Physics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elementary-descriptions-of-linear-algebra-and-notations">Elementary Descriptions Of Linear Algebra and notations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#completeness-of-a-function-fourier-s-trick">Completeness of a function &amp; Fourier’s Trick</a></li>
 </ul>
             </nav>
         </div>
@@ -379,11 +380,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="linear-algebra">
 <h1>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this heading">#</a></h1>
-<section id="linear-combination-in-physics">
-<h2>Linear Combination in Physics<a class="headerlink" href="#linear-combination-in-physics" title="Permalink to this heading">#</a></h2>
+<section id="elementary-descriptions-of-linear-algebra-and-notations">
+<h2>Elementary Descriptions Of Linear Algebra and notations<a class="headerlink" href="#elementary-descriptions-of-linear-algebra-and-notations" title="Permalink to this heading">#</a></h2>
 <p>A state is described by the wavefunction, which can be written as a vector; the observable is represented by an <span class="math notranslate nohighlight">\(n\times n\)</span> operator, be it linear or not. Naturally, the operator happens to have a matrix representation, then an <span class="math notranslate nohighlight">\(n\times n\)</span> matrix would act on the state vector, hence a linear transformation. The most friendly approach to quantum mechanics is to realize that a part of quantum mechanics satisfy the Eigenequation. That is, the (eigen)energy is an eigenvalue; the state vector is an eigenvector (or an eigenstate); the operator is a linear operator. Wavefunction lives in Hilbert Space. This “book” will only discuss the linear algebra up to the physicist’s standard –– no <span class="math notranslate nohighlight">\(\varepsilon - \delta\)</span> proofs, we simply accept that the math just works as perfectly fine tools.</p>
-<p>Let us begin with the description of the completeness of a function.</p>
-<p>By definition, the completeness of a function in sloppy language is a linear combination of its basis vectors (its basis functions), and next step is to check whether the set of vectors(functions) spans the solution vector/function. We are most accustomed to the linear algebra fashion of writing your vector as a column vector, because that is the easiest introduction to the treatement of a vector.</p>
+<p>We are most accustomed to the linear algebra fashion of writing your vector as a column vector, because that is the easiest introduction to the treatement of a vector.</p>
 <p>The simplest n-dimensional vector takes the form</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -408,9 +408,9 @@ document.write(`
 \end{align}
 \]</div>
 <p>Moving on, when we talk about what a linear combination is, we typically mean if the solution is spanned by the set. Hence, a linear combination. In lower division linear algebra, you were only used to working with vectors in, at max 5 or 6 dimensions.</p>
-<p>Keys to understanding the completeness of a function:</p>
+<p>Keys to remember:</p>
 <ol class="arabic simple">
-<li><p>we are working in n dimension.</p></li>
+<li><p>we are working in n dimensions.</p></li>
 <li><p>the general solution to a system of equations in n-dimensional space has the form</p></li>
 </ol>
 <div class="math notranslate nohighlight">
@@ -426,7 +426,143 @@ document.write(`
     y(x) = \sum _{n=1} ^{N} c_n y_n(x)
 \end{align}
 \]</div>
-<p>In Quantum Mechanics, wavefunctions live in Hilbert Space. For mastery of Hilbert Space, refer to a topic called functional analysis in mathematics which is not meant to be covered in here.</p>
+<p>In Quantum Mechanics, wavefunctions live in Hilbert Space. For mastery of Hilbert Space, refer to a topic called <a class="reference external" href="https://en.wikipedia.org/wiki/Square-integrable_function">functional analysis</a> in mathematics which is not meant to be covered in here.</p>
+<p>Since the mathematical model of quantum mechanics builds off of Hilbert Space, and that Hilbert space has a property that</p>
+<p>The set of all <span class="math notranslate nohighlight">\(\textbf{square-integrable}\)</span> functions, on specified interval</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align}
+    f(x) \text{ such that } \int _a ^b f^{*}(x) f(x) dx &lt; \infty \text{ where a and b are almost always } \pm \infty
+\end{align}
+\]</div>
+<p>contributes to a vector subspace (much smaller than infinity).</p>
+<p>Now that we have already established a basic understanding of how to work with n-dimensional vectors, we can move onto Hilbert space: infinite dimensional space.</p>
+<p>Since the vectors are infinite dimensional, you would have to add them infinitely. That is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+    \sum _{i=1} ^{\infty} \vec{e_i} &amp;= 
+    \vec{e_1} + \vec{e_2} + \vec{e_3} + \dots + \vec{e_n} + \dots 
+    \\ \\
+    \begin{bmatrix}x_1 \\ x_2 \\ x_3 \\ \vdots \\ x_n \\ \vdots  \end{bmatrix} &amp;= 
+    \begin{bmatrix}x_1 \\ 0   \\ 0   \\ \vdots \\ 0   \\ \vdots  \end{bmatrix} + 
+    \begin{bmatrix}  0 \\ x_2 \\ 0   \\ \vdots \\ 0   \\ \vdots  \end{bmatrix} + 
+    \begin{bmatrix}  0 \\ 0   \\ x_3 \\ \vdots \\ 0   \\ \vdots  \end{bmatrix} +
+    \dots +  
+    \begin{bmatrix}  0 \\ 0   \\ 0   \\ \vdots \\ x_n \\ \vdots  \end{bmatrix} + 
+    \dots 
+    \\ \\
+    | \psi   \rangle &amp;= 
+    | \psi_1 \rangle + |\psi_2 \rangle + | \psi_3 \rangle + \dots + |\psi_n \rangle + \dots
+\end{align}
+\end{split}\]</div>
+<p>What I have denoted above are the same expressions but in general coordinate, column vectors, and dirac notation.</p>
+<p>Now, we are finally ready to talk about completeness of a function.</p>
+</section>
+<section id="completeness-of-a-function-fourier-s-trick">
+<h2>Completeness of a function &amp; Fourier’s Trick<a class="headerlink" href="#completeness-of-a-function-fourier-s-trick" title="Permalink to this heading">#</a></h2>
+<p>To reiterate, a function can be a vector.</p>
+<p>As I quote Griffiths here, “a set of functions is complete if any other function (in Hilbert Space) can be expressed as a linear combination of them:</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align}
+    f(x) 
+    = 
+    \sum_{n=1} ^{\infty} c_n f_n(x) 
+    = 
+    c_1f_1(x) + c_2f_2(x) + c_3f_3(x) + \dots + c_nf_n(x) + \dots
+\end{align}
+\]</div>
+<p>Or in Dirac notation, it would be</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{align}
+    |\psi\rangle =
+    c_1|\psi _1\rangle + c_2|\psi _2\rangle + \dots + c_n|\psi _n\rangle + \dots = 
+    \sum _{i=1} ^{\infty} c_i |\psi _i\rangle
+\end{align}
+\]</div>
+<p>Note that <span class="math notranslate nohighlight">\(f_n(x)\)</span> is just any generic function. If this is still confusing to you (because it was confusing to me at first), then to reverse our progress (back to ancient understanding), the above expression, if written as vectors, is just</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+    \begin{bmatrix} c_1x_1\\c_2x_2\\c_3x_3\\ \vdots \\ c_nx_n \\ \vdots \end{bmatrix}
+    =
+    c_1\begin{bmatrix} x_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
+    c_2\begin{bmatrix} 0  \\ x_2  \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
+    c_3\begin{bmatrix} 0  \\  0   \\ x_3  \\ \vdots \\  0   \\\vdots \end{bmatrix} +
+    \dots +  
+    c_n\begin{bmatrix} 0  \\  0   \\  0   \\ \vdots \\ x_n  \\\vdots \end{bmatrix} + 
+    \dots
+\end{align}
+\end{split}\]</div>
+<p>In other words, a set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span> (of functions) is complete if any other vectors (or functions) <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x)\)</span> can be spanned by the set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span>, or <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x) \in \textbf{Span}\{\mathcal{F}\}\)</span>.</p>
+<p>To demonstrate Fourier’s trick, with the assumption that a basis should be orthonormal (of unit length 1, and perpendicular to each other) in mind,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+    c_n &amp;= 
+    \langle f_n|f \rangle \\&amp;=
+    \begin{bmatrix} 0      &amp;      0   &amp;  \dots  &amp;      f_n &amp;  \dots \end{bmatrix}
+    \begin{bmatrix} c_1 f_1\\ c_2 f_2 \\ \vdots \\ c_n f_n \\ \vdots\end{bmatrix} 
+    \\&amp;=
+    \begin{bmatrix} 0      &amp;      0   &amp;  \dots  &amp;      f_n &amp;  \dots \end{bmatrix}
+    \left(
+    c_1\begin{bmatrix} f_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
+    c_2\begin{bmatrix} 0  \\ f_2  \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
+    c_3\begin{bmatrix} 0  \\  0   \\ f_3  \\ \vdots \\  0   \\\vdots \end{bmatrix} +
+    \dots +  
+    c_n\begin{bmatrix} 0  \\  0   \\  0   \\ \vdots \\ f_n  \\\vdots \end{bmatrix} + 
+    \dots  
+    \right)
+\end{align}
+\end{split}\]</div>
+<p>which, since the set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span> is orthonormal, all other terms vanish. For example,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+    \begin{bmatrix} 0      &amp;      0   &amp;  \dots  &amp;      f_n &amp;  \dots \end{bmatrix}
+    c_1\begin{bmatrix} f_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix}
+    = 0 \because 1 \neq n
+\end{align}
+\end{split}\]</div>
+<p>and only one term survives.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+    c_n &amp;= 
+    \begin{bmatrix} 0      &amp;  0   &amp;  \dots  &amp;  f_n &amp;  \dots \end{bmatrix}
+    \cdot
+    c_n\begin{bmatrix} 0  \\  0   \\ \vdots \\ f_n \\\vdots \end{bmatrix}     
+    \\&amp;=
+    c_n \cancelto{1 \textbf{ due to orthonormality}}{
+    \begin{bmatrix} 0   &amp;  0   &amp;  \dots  &amp;  f_n &amp;  \dots \end{bmatrix}
+    \cdot
+    \begin{bmatrix} 0  \\  0   \\ \vdots \\ f_n \\\vdots \end{bmatrix}
+    }
+\end{align}
+\end{split}\]</div>
+<p>Now, we are finally ready for Dirac notation, (at this point you should have no reason to not understand what Fourier’s trick is)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{align}
+    c_n &amp;=
+    \langle f_n | f\rangle 
+    \\ &amp;=
+    \langle f_n |\big( c_1|f_1\rangle+ c_2|f_2\rangle + \dots + c_n|f_n \rangle + \dots \big)
+    \\ &amp;=
+    c_1\cancelto{0}{\langle f_n |f_1\rangle} +
+    c_2\cancelto{0}{\langle f_n |f_2\rangle} + 
+    \dots  
+   \langle f_n | c_n |f_n \rangle
+    \dots
+    \\&amp;=
+    c_n 
+    \cancelto{1}{\langle f_n | f_n \rangle}
+    \\
+    c_n&amp;=c_n
+\end{align}
+\end{split}\]</div>
 </section>
 </section>
 
@@ -497,7 +633,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-combination-in-physics">Linear Combination in Physics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elementary-descriptions-of-linear-algebra-and-notations">Elementary Descriptions Of Linear Algebra and notations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#completeness-of-a-function-fourier-s-trick">Completeness of a function &amp; Fourier’s Trick</a></li>
 </ul>
   </nav></div>
 
