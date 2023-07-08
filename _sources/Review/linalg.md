@@ -33,4 +33,24 @@ $$
 \end{align}
 $$
 
-Moving on, when we talk about what a linear combination is, we typically mean if the solution is spanned by the set. Hence, a linear combination. 
+Moving on, when we talk about what a linear combination is, we typically mean if the solution is spanned by the set. Hence, a linear combination. In lower division linear algebra, you were only used to working with vectors in, at max 5 or 6 dimensions. 
+
+Keys to understanding the completeness of a function: 
+1. we are working in n dimension. 
+2. the general solution to a system of equations in n-dimensional space has the form 
+
+$$ 
+\begin{align}
+    y(x) = c_1 y_1(x) + c_2 y_2(x) +  c_3 y_3(x) + \dots + c_n y_n(x)
+\end{align}
+$$
+
+In which case, we can write the general solution as a power series.
+
+$$
+\begin{align}
+    y(x) = \sum _{n=1} ^{N} c_n y_n(x)
+\end{align}
+$$
+
+In Quantum Mechanics, wavefunctions live in Hilbert Space. 
