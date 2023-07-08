@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -64,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Review/foreword';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Linear Algebra" href="linalg.html" />
+    <link rel="next" title="Linear Algebra in Physics" href="linalg.html" />
     <link rel="prev" title="Long Portfolio" href="../Portfolio/portfolioLong.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -160,12 +161,11 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Portfolio/portfolioShort.html">Short Portfolio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Portfolio/portfolioLong.html">Long Portfolio</a></li>
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Handwavy background in mathematics</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Foreword</a></li>
-<li class="toctree-l1"><a class="reference internal" href="linalg.html">Linear Algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linalg.html">Linear Algebra in Physics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Condensed Matter</span></p>
 <ul class="nav bd-sidenav">
@@ -363,6 +363,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tldr">TLDR:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-math">Why math?</a></li>
 </ul>
             </nav>
@@ -377,11 +378,15 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="foreword">
 <h1>Foreword<a class="headerlink" href="#foreword" title="Permalink to this heading">#</a></h1>
+<section id="tldr">
+<h2>TLDR:<a class="headerlink" href="#tldr" title="Permalink to this heading">#</a></h2>
+<p>As a physicist, you need to learn as much mathematics as possible without becoming a full mathematician. Same is true for all other subjects for physicists. This is why physicist is 40-50% a Computer Scientist, 70% an Engineer, and 50% a Mathematician, or you customize your own curriculum/capability in your own way. The real question is why would you want to work with a physicist, a character that is not specified in any one thing but a little bit of everything, versus someone specified in one narrow domain. In my own opinion, both have their ups and downs, and I chose to be a physics major.</p>
+</section>
 <section id="why-math">
 <h2>Why math?<a class="headerlink" href="#why-math" title="Permalink to this heading">#</a></h2>
 <p>Initially I planned to jump straight into describing condensed matter. But then I thought, “maybe it would help if I can jog down the physics that give rise to condensed matter!” and realized that maybe I should start with stat mech and quantum. But then I also realized both subjects utilize an abusive amount of linear algebra, which builds on top of the differential equation. Undeniably, the current most effective way, but not limited to the only way, known to mankind when it comes to describing physics is through mathematics. (•••) Just give an introduction to the math you’re going to describe, don’t start your intro until you’re done with the details of each section.</p>
 <p>I plan on addressing the mathematics that are commonly used in E&amp;M, QM, stat mech and classical mechanics (both phase and configuration spaces).</p>
-<p>Keep in mind also, what you are reading is materials you may already have seen, and you may even find the majority of this work to be trivial. My writing for this is geared towards introducing physics in the most “parameterized” way possible, such that learners can more easily grasp at the ideas through the mathematical formalism. One can say that this is not really learning physics and is an elementary method; I say that having the capability to understand things by neatly parameterizing variables is the first step to an organized method of mastery.</p>
+<p>Keep in mind also, what you are reading is materials you may already have seen, and you may even find the majority of this work to be trivial. <strong>My writing for this is geared towards introducing physics in the most “parameterized” way possible, such that learners (be it high schoolers, freshman college students, illuminati or avid learners) can more easily grasp at the ideas through the mathematical formalism.</strong> One can say that this is not really learning physics and is an elementary method; I say that having the capability to understand things by neatly parameterizing variables is the first step to an organized method of mastery.</p>
 <p>As an applied experimentalist at heart, one can say the project Book Of Physics is not of practical use because this is only addressing the mathematics, not the physics! I believe that once a learner has a solid grasp at the mathematical structure behind the physical model, understanding and mastery of the model would come more naturally. Despite the fact that this is merely review, and has no novelty or new fundamental discovery, I can certainly say that having a deeper understanding and being able to deliver the message in a more accessible format is still a good practice. It certainly can be great foundation for discovery that lies ahead!</p>
 </section>
 </section>
@@ -431,7 +436,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Linear Algebra</p>
+        <p class="prev-next-title">Linear Algebra in Physics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -453,6 +458,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tldr">TLDR:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-math">Why math?</a></li>
 </ul>
   </nav></div>

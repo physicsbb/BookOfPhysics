@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Linear Algebra &#8212; Book Of Physics</title>
+    <title>Linear Algebra in Physics &#8212; Book Of Physics</title>
   
   
   
@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -162,12 +163,11 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../Portfolio/portfolioShort.html">Short Portfolio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Portfolio/portfolioLong.html">Long Portfolio</a></li>
-
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Handwavy background in mathematics</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="foreword.html">Foreword</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Linear Algebra</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Linear Algebra in Physics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Condensed Matter</span></p>
 <ul class="nav bd-sidenav">
@@ -355,7 +355,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Linear Algebra</h1>
+    <h1>Linear Algebra in Physics</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,8 +378,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="linear-algebra">
-<h1>Linear Algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="linear-algebra-in-physics">
+<h1>Linear Algebra in Physics<a class="headerlink" href="#linear-algebra-in-physics" title="Permalink to this heading">#</a></h1>
 <section id="elementary-descriptions-of-linear-algebra-and-notations">
 <h2>Elementary Descriptions Of Linear Algebra and notations<a class="headerlink" href="#elementary-descriptions-of-linear-algebra-and-notations" title="Permalink to this heading">#</a></h2>
 <p>A state is described by the wavefunction, which can be written as a vector; the observable is represented by an <span class="math notranslate nohighlight">\(n\times n\)</span> operator, be it linear or not. Naturally, the operator happens to have a matrix representation, then an <span class="math notranslate nohighlight">\(n\times n\)</span> matrix would act on the state vector, hence a linear transformation. The most friendly approach to quantum mechanics is to realize that a part of quantum mechanics satisfy the Eigenequation. That is, the (eigen)energy is an eigenvalue; the state vector is an eigenvector (or an eigenstate); the operator is a linear operator. Wavefunction lives in Hilbert Space. This “book” will only discuss the linear algebra up to the physicist’s standard –– no <span class="math notranslate nohighlight">\(\varepsilon - \delta\)</span> proofs, we simply accept that the math just works as perfectly fine tools.</p>
@@ -416,19 +416,22 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[ 
 \begin{align}
-    y(x) = c_1 y_1(x) + c_2 y_2(x) +  c_3 y_3(x) + \dots + c_n y_n(x)
+    \vec{v}(x) = c_1 \vec{v}_1(x) + c_2 \vec{v}_2(x) +  c_3 \vec{v}_3(x) + \dots + c_n \vec{v}_n(x)
 \end{align}
 \]</div>
-<p>In which case, we can write the general solution as a power series.</p>
+<p>In which case, we can write the general solution as a summation series.</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{align}
-    y(x) = \sum _{n=1} ^{N} c_n y_n(x)
+    \vec{v}(x) = \sum _{n=1} ^{N} c_n \vec{v}_n(x)
 \end{align}
 \]</div>
-<p>Now that we have already established a basic understanding of how to work with n-dimensional vectors, we can move onto Hilbert space: infinite dimensional space.</p>
+<p>Now that we have already established a basic understanding of how to work with n-dimensional vectors, we can move onto Hilbert Space: infinite dimensional space.</p>
 <p>In Quantum Mechanics, wavefunctions live in Hilbert Space. For mastery of Hilbert Space, refer to a topic called <a class="reference external" href="https://en.wikipedia.org/wiki/Square-integrable_function">functional analysis</a> in mathematics which is not meant to be covered in here.</p>
-<p>Since the mathematical model of quantum mechanics builds off of Hilbert Space, and that Hilbert space has a property that</p>
+<p>Since the mathematical model of quantum mechanics builds off of Hilbert Space, and that Hilbert Space has a property that</p>
+<div class="proof definition admonition" id="square-integrability">
+<p class="admonition-title"><span class="caption-number">Definition 1 </span></p>
+<section class="definition-content" id="proof-content">
 <p>The set of all <span class="math notranslate nohighlight">\(\textbf{square-integrable}\)</span> functions, on specified interval</p>
 <div class="math notranslate nohighlight">
 \[
@@ -436,8 +439,9 @@ document.write(`
     f(x) \text{ such that } \int _a ^b f^{*}(x) f(x) dx &lt; \infty \text{ where a and b are almost always } \pm \infty
 \end{align}
 \]</div>
-<p>contributes to a vector subspace (much smaller than infinity).</p>
-<p>Since the vectors are infinite dimensional, you would have to add them infinitely. That is</p>
+<p>contributes to a (much smaller) vector subspace (that lives in <span class="math notranslate nohighlight">\(\mathbb{R}^{\infty}\)</span>).</p>
+</section>
+</div><p>Since the vectors are infinite dimensional, you would have to add them infinitely. That is</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
@@ -475,13 +479,13 @@ document.write(`
 \end{split}\]</div>
 <p>Or in Dirac notation, it would be</p>
 <div class="math notranslate nohighlight">
-\[
+\[\begin{split}
 \begin{align}
-    |\psi\rangle =
-    c_1|\psi _1\rangle + c_2|\psi _2\rangle + \dots + c_n|\psi _n\rangle + \dots = 
+    |\psi\rangle &amp;=
+    c_1|\psi _1\rangle + c_2|\psi _2\rangle + \dots + c_n|\psi _n\rangle + \dots \\ &amp;= 
     \sum _{i=1} ^{\infty} c_i |\psi _i\rangle
 \end{align}
-\]</div>
+\end{split}\]</div>
 <p>Note that <span class="math notranslate nohighlight">\(f_n(x)\)</span> is just any generic function. If this is still confusing to you (because it was confusing to me at first), then to reverse our progress (back to ancient understanding), the above expression, if written as vectors, is just</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -496,8 +500,8 @@ document.write(`
     \dots
 \end{align}
 \end{split}\]</div>
-<p>In other words, a set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span> (of functions) is complete if any other vectors (or functions) <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x)\)</span> can be spanned by the set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span>, or <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x) \in \textbf{Span}\{\mathcal{F}\}\)</span>.</p>
-<p>To demonstrate Fourier’s trick, with the assumption that a basis should be orthonormal (of unit length 1, and perpendicular to each other) in mind,</p>
+<p>In other words, a set <span class="math notranslate nohighlight">\(\mathcal{F} \in \{f_1, f_2, \dots , f_n, \dots\}\)</span> (of functions) is complete if any other vectors (or functions) <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x)\)</span> can be spanned by the set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span>, or <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x) \in \textbf{Span}\{\mathcal{F}\}\)</span>.</p>
+<p>To demonstrate Fourier’s trick, with the assumption in mind that a basis should be orthonormal (of unit length 1, and perpendicular to each other).</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align}
@@ -542,7 +546,21 @@ document.write(`
     }
 \end{align}
 \end{split}\]</div>
-<p>Now, we are finally ready for Dirac notation, (at this point you should have no reason to not understand what Fourier’s trick is)</p>
+<p>The above two vectors’ inner (higher-dimensional dot) product denotes the essence of kronecker delta <span class="math notranslate nohighlight">\(\delta_{ij}\)</span>.</p>
+<div class="proof definition admonition" id="kroneckerDelta">
+<p class="admonition-title"><span class="caption-number">Definition 2 </span></p>
+<section class="definition-content" id="proof-content">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \langle \psi | \psi \rangle = \sum_i \sum_j \psi_i \psi_j \delta_{ij}
+    \rightarrow \delta_{ij} =
+    \begin{cases}
+    1 \text{ if } i=j\\
+    0 \text{ if } i\neq j
+    \end{cases}
+\end{split}\]</div>
+</section>
+</div><p>Now, we are finally ready for Dirac notation. (at this point you should have no reason to not understand what Fourier’s trick is given the gruesome detail by writing everything out by brute force.)</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} 
 \begin{align}
@@ -551,14 +569,13 @@ document.write(`
     \\ &amp;=
     \langle f_n |\big( c_1|f_1\rangle+ c_2|f_2\rangle + \dots + c_n|f_n \rangle + \dots \big)
     \\ &amp;=
-    c_1\cancelto{0}{\langle f_n |f_1\rangle} +
-    c_2\cancelto{0}{\langle f_n |f_2\rangle} + 
+    c_1\cancelto{0 = \delta_{n1}}{\langle f_n |f_1\rangle} +
+    c_2\cancelto{0 = \delta_{n2}}{\langle f_n |f_2\rangle} + 
     \dots  
-   \langle f_n | c_n |f_n \rangle
+    \langle f_n | c_n |f_n \rangle + 
     \dots
     \\&amp;=
-    c_n 
-    \cancelto{1}{\langle f_n | f_n \rangle}
+    c_n\cancelto{1 = \delta_{nn}}{\langle f_n | f_n \rangle}
     \\
     c_n&amp;=c_n
 \end{align}
