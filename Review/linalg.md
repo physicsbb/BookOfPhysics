@@ -57,7 +57,7 @@ In Quantum Mechanics, wavefunctions live in Hilbert Space. For mastery of Hilber
 
 Since the mathematical model of quantum mechanics builds off of Hilbert Space, and that Hilbert Space has a property that 
 
-````{prf:definition}
+````{prf:property}
 :label: square-integrability
 The set of all $\textbf{square-integrable}$ functions, on specified interval
 
@@ -67,7 +67,7 @@ $$
 \end{align}
 $$
 
-contributes to a (much smaller) vector subspace (that lives in $\mathbb{R}^{\infty}$).
+contributes to a (much smaller) finite dimension vector subspace (that lives in $\mathbb{R}^{\infty}$).
 ````
 
 Since the vectors are infinite dimensional, you would have to add them infinitely. That is 

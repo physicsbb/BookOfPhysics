@@ -5,7 +5,7 @@ I am a recent [Physics](https://www.physics.ucsb.edu/education) graduate from [U
 
 ## Research:
 I have one year of research experience in UV photonics in the [Materials Department](https://ssleec.ucsb.edu/) under the supervision of [Dr. Shuji Nakamura](https://materials.ucsb.edu/people/faculty/shuji-nakamura). 
-![testing](../SSLEECNovConference2022.jpeg)
+![testing](../Images/SSLEECNovConference2022.jpeg)
 
 I have also previously conducted research at [San Francisco State University](https://engineering.sfsu.edu/) for a mitigation lab to help develop a program for [Dr. Zhaoshuo Jiang](https://engineering.sfsu.edu/faculty-profile-zhaoshuo-jiang) in 2019.
 

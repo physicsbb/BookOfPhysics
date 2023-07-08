@@ -3,7 +3,7 @@
 
 title: Book Of Physics
 author: Physics BB
-logo: logo.jpg
+logo: Images/logo.jpg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

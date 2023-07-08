@@ -429,9 +429,9 @@ document.write(`
 <p>Now that we have already established a basic understanding of how to work with n-dimensional vectors, we can move onto Hilbert Space: infinite dimensional space.</p>
 <p>In Quantum Mechanics, wavefunctions live in Hilbert Space. For mastery of Hilbert Space, refer to a topic called <a class="reference external" href="https://en.wikipedia.org/wiki/Square-integrable_function">functional analysis</a> in mathematics which is not meant to be covered in here.</p>
 <p>Since the mathematical model of quantum mechanics builds off of Hilbert Space, and that Hilbert Space has a property that</p>
-<div class="proof definition admonition" id="square-integrability">
-<p class="admonition-title"><span class="caption-number">Definition 1 </span></p>
-<section class="definition-content" id="proof-content">
+<div class="proof property admonition" id="square-integrability">
+<p class="admonition-title"><span class="caption-number">Property 1 </span></p>
+<section class="property-content" id="proof-content">
 <p>The set of all <span class="math notranslate nohighlight">\(\textbf{square-integrable}\)</span> functions, on specified interval</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -439,7 +439,7 @@ document.write(`
     f(x) &amp;\text{ such that } \int _a ^b f^{*}(x) f(x) dx &lt; \infty \\ &amp; \text{ where a and b are almost always } \pm \infty
 \end{align}
 \end{split}\]</div>
-<p>contributes to a (much smaller) vector subspace (that lives in <span class="math notranslate nohighlight">\(\mathbb{R}^{\infty}\)</span>).</p>
+<p>contributes to a (much smaller) finite dimension vector subspace (that lives in <span class="math notranslate nohighlight">\(\mathbb{R}^{\infty}\)</span>).</p>
 </section>
 </div><p>Since the vectors are infinite dimensional, you would have to add them infinitely. That is</p>
 <div class="math notranslate nohighlight">
@@ -502,7 +502,7 @@ document.write(`
 \end{split}\]</div>
 <p>In other words,</p>
 <div class="proof definition admonition" id="completeness">
-<p class="admonition-title"><span class="caption-number">Definition 2 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 1 </span></p>
 <section class="definition-content" id="proof-content">
 <p>A set <span class="math notranslate nohighlight">\(\mathcal{F}\in\{f_1,f_2,\dots,f_n,\dots\}\)</span> is complete if any function <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x) \in \textbf{Span}\{\mathcal{F}\}\)</span>.</p>
 <p>A set <span class="math notranslate nohighlight">\(\mathcal{F} \in \{f_1, f_2, \dots , f_n, \dots\}\)</span> (of functions) is complete if any other vectors (or functions) <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x)\)</span> can be spanned by (is a linear combination of) the set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span>.</p>
@@ -529,7 +529,7 @@ document.write(`
 \end{split}\]</div>
 <p>which, since the set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span> is orthonormal, all other terms vanish. For example,</p>
 <div class="proof definition admonition" id="kroneckerDelta">
-<p class="admonition-title"><span class="caption-number">Definition 3 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 2 </span></p>
 <section class="definition-content" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\begin{split}
