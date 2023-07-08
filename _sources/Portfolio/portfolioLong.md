@@ -1,3 +1,1 @@
 # Long Portfolio
-
-#
