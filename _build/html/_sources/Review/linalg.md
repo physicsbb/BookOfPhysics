@@ -1,11 +1,9 @@
 # Linear Algebra
 
-## Linear Combination in Physics
+## Elementary Descriptions Of Linear Algebra and notations
 A state is described by the wavefunction, which can be written as a vector; the observable is represented by an $n\times n$ operator, be it linear or not. Naturally, the operator happens to have a matrix representation, then an $n\times n$ matrix would act on the state vector, hence a linear transformation. The most friendly approach to quantum mechanics is to realize that a part of quantum mechanics satisfy the Eigenequation. That is, the (eigen)energy is an eigenvalue; the state vector is an eigenvector (or an eigenstate); the operator is a linear operator. Wavefunction lives in Hilbert Space. This "book" will only discuss the linear algebra up to the physicist's standard –– no $\varepsilon - \delta$ proofs, we simply accept that the math just works as perfectly fine tools.
 
-Let us begin with the description of the completeness of a function. 
-
-By definition, the completeness of a function in sloppy language is a linear combination of its basis vectors (its basis functions), and next step is to check whether the set of vectors(functions) spans the solution vector/function. We are most accustomed to the linear algebra fashion of writing your vector as a column vector, because that is the easiest introduction to the treatement of a vector. 
+We are most accustomed to the linear algebra fashion of writing your vector as a column vector, because that is the easiest introduction to the treatement of a vector. 
 
 The simplest n-dimensional vector takes the form 
 
@@ -35,8 +33,8 @@ $$
 
 Moving on, when we talk about what a linear combination is, we typically mean if the solution is spanned by the set. Hence, a linear combination. In lower division linear algebra, you were only used to working with vectors in, at max 5 or 6 dimensions. 
 
-Keys to understanding the completeness of a function: 
-1. we are working in n dimension. 
+Keys to remember: 
+1. we are working in n dimensions. 
 2. the general solution to a system of equations in n-dimensional space has the form 
 
 $$ 
@@ -53,4 +51,160 @@ $$
 \end{align}
 $$
 
-In Quantum Mechanics, wavefunctions live in Hilbert Space. For mastery of Hilbert Space, refer to a topic called functional analysis in mathematics which is not meant to be covered in here. 
+In Quantum Mechanics, wavefunctions live in Hilbert Space. For mastery of Hilbert Space, refer to a topic called [functional analysis](https://en.wikipedia.org/wiki/Square-integrable_function) in mathematics which is not meant to be covered in here. 
+
+Since the mathematical model of quantum mechanics builds off of Hilbert Space, and that Hilbert space has a property that 
+
+The set of all $\textbf{square-integrable}$ functions, on specified interval
+
+$$
+\begin{align}
+    f(x) \text{ such that } \int _a ^b f^{*}(x) f(x) dx < \infty \text{ where a and b are almost always } \pm \infty
+\end{align}
+$$
+
+contributes to a vector subspace (much smaller than infinity).
+
+Now that we have already established a basic understanding of how to work with n-dimensional vectors, we can move onto Hilbert space: infinite dimensional space. 
+
+Since the vectors are infinite dimensional, you would have to add them infinitely. That is 
+
+$$
+\begin{align}
+    \sum _{i=1} ^{\infty} \vec{e_i} &= 
+    \vec{e_1} + \vec{e_2} + \vec{e_3} + \dots + \vec{e_n} + \dots 
+    \\ \\
+    \begin{bmatrix}x_1 \\ x_2 \\ x_3 \\ \vdots \\ x_n \\ \vdots  \end{bmatrix} &= 
+    \begin{bmatrix}x_1 \\ 0   \\ 0   \\ \vdots \\ 0   \\ \vdots  \end{bmatrix} + 
+    \begin{bmatrix}  0 \\ x_2 \\ 0   \\ \vdots \\ 0   \\ \vdots  \end{bmatrix} + 
+    \begin{bmatrix}  0 \\ 0   \\ x_3 \\ \vdots \\ 0   \\ \vdots  \end{bmatrix} +
+    \dots +  
+    \begin{bmatrix}  0 \\ 0   \\ 0   \\ \vdots \\ x_n \\ \vdots  \end{bmatrix} + 
+    \dots 
+    \\ \\
+    | \psi   \rangle &= 
+    | \psi_1 \rangle + |\psi_2 \rangle + | \psi_3 \rangle + \dots + |\psi_n \rangle + \dots
+\end{align}
+$$
+
+
+What I have denoted above are the same expressions but in general coordinate, column vectors, and dirac notation.
+
+Now, we are finally ready to talk about completeness of a function. 
+
+## Completeness of a function & Fourier's Trick
+To reiterate, a function can be a vector. 
+
+As I quote Griffiths here, "a set of functions is complete if any other function (in Hilbert Space) can be expressed as a linear combination of them: 
+
+$$
+\begin{align}
+    f(x) 
+    = 
+    \sum_{n=1} ^{\infty} c_n f_n(x) 
+    = 
+    c_1f_1(x) + c_2f_2(x) + c_3f_3(x) + \dots + c_nf_n(x) + \dots
+\end{align}
+$$
+
+Or in Dirac notation, it would be 
+
+$$
+\begin{align}
+    |\psi\rangle =
+    c_1|\psi _1\rangle + c_2|\psi _2\rangle + \dots + c_n|\psi _n\rangle + \dots = 
+    \sum _{i=1} ^{\infty} c_i |\psi _i\rangle
+\end{align}
+$$
+
+Note that $f_n(x)$ is just any generic function. If this is still confusing to you (because it was confusing to me at first), then to reverse our progress (back to ancient understanding), the above expression, if written as vectors, is just 
+
+$$
+\begin{align}
+    \begin{bmatrix} c_1x_1\\c_2x_2\\c_3x_3\\ \vdots \\ c_nx_n \\ \vdots \end{bmatrix}
+    =
+    c_1\begin{bmatrix} x_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
+    c_2\begin{bmatrix} 0  \\ x_2  \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
+    c_3\begin{bmatrix} 0  \\  0   \\ x_3  \\ \vdots \\  0   \\\vdots \end{bmatrix} +
+    \dots +  
+    c_n\begin{bmatrix} 0  \\  0   \\  0   \\ \vdots \\ x_n  \\\vdots \end{bmatrix} + 
+    \dots
+\end{align}
+$$
+
+In other words, a set $\mathcal{F}$ (of functions) is complete if any other vectors (or functions) $f_{\textbf{any}}(x)$ can be spanned by the set $\mathcal{F}$, or $f_{\textbf{any}}(x) \in \textbf{Span}\{\mathcal{F}\}$. 
+
+To demonstrate Fourier's trick, with the assumption that a basis should be orthonormal (of unit length 1, and perpendicular to each other) in mind, 
+
+$$
+\begin{align}
+    c_n &= 
+    \langle f_n|f \rangle \\&=
+    \begin{bmatrix} 0      &      0   &  \dots  &      f_n &  \dots \end{bmatrix}
+    \begin{bmatrix} c_1 f_1\\ c_2 f_2 \\ \vdots \\ c_n f_n \\ \vdots\end{bmatrix} 
+    \\&=
+    \begin{bmatrix} 0      &      0   &  \dots  &      f_n &  \dots \end{bmatrix}
+    \left(
+    c_1\begin{bmatrix} f_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
+    c_2\begin{bmatrix} 0  \\ f_2  \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
+    c_3\begin{bmatrix} 0  \\  0   \\ f_3  \\ \vdots \\  0   \\\vdots \end{bmatrix} +
+    \dots +  
+    c_n\begin{bmatrix} 0  \\  0   \\  0   \\ \vdots \\ f_n  \\\vdots \end{bmatrix} + 
+    \dots  
+    \right)
+\end{align}
+$$
+
+which, since the set $\mathcal{F}$ is orthonormal, all other terms vanish. For example,
+
+$$
+\begin{align}
+    \begin{bmatrix} 0      &      0   &  \dots  &      f_n &  \dots \end{bmatrix}
+    c_1\begin{bmatrix} f_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix}
+    = 0 \because 1 \neq n
+\end{align}
+$$
+
+and only one term survives. 
+
+$$
+\begin{align}
+    c_n &= 
+    \begin{bmatrix} 0      &  0   &  \dots  &  f_n &  \dots \end{bmatrix}
+    \cdot
+    c_n\begin{bmatrix} 0  \\  0   \\ \vdots \\ f_n \\\vdots \end{bmatrix}     
+    \\&=
+    c_n \cancelto{1 \textbf{ due to orthonormality}}{
+    \begin{bmatrix} 0   &  0   &  \dots  &  f_n &  \dots \end{bmatrix}
+    \cdot
+    \begin{bmatrix} 0  \\  0   \\ \vdots \\ f_n \\\vdots \end{bmatrix}
+    }
+\end{align}
+$$
+
+Now, we are finally ready for Dirac notation, (at this point you should have no reason to not understand what Fourier's trick is)
+
+$$ 
+\begin{align}
+    c_n &=
+    \langle f_n | f\rangle 
+    \\ &=
+    \langle f_n |\big( c_1|f_1\rangle+ c_2|f_2\rangle + \dots + c_n|f_n \rangle + \dots \big)
+    \\ &=
+    c_1\cancelto{0}{\langle f_n |f_1\rangle} +
+    c_2\cancelto{0}{\langle f_n |f_2\rangle} + 
+    \dots  
+   \langle f_n | c_n |f_n \rangle
+    \dots
+    \\&=
+    c_n 
+    \cancelto{1}{\langle f_n | f_n \rangle}
+    \\
+    c_n&=c_n
+\end{align}
+$$
+
+
+
+
+
