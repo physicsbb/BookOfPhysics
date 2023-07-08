@@ -51,6 +51,8 @@ $$
 \end{align}
 $$
 
+Now that we have already established a basic understanding of how to work with n-dimensional vectors, we can move onto Hilbert space: infinite dimensional space. 
+
 In Quantum Mechanics, wavefunctions live in Hilbert Space. For mastery of Hilbert Space, refer to a topic called [functional analysis](https://en.wikipedia.org/wiki/Square-integrable_function) in mathematics which is not meant to be covered in here. 
 
 Since the mathematical model of quantum mechanics builds off of Hilbert Space, and that Hilbert space has a property that 
@@ -64,8 +66,6 @@ $$
 $$
 
 contributes to a vector subspace (much smaller than infinity).
-
-Now that we have already established a basic understanding of how to work with n-dimensional vectors, we can move onto Hilbert space: infinite dimensional space. 
 
 Since the vectors are infinite dimensional, you would have to add them infinitely. That is 
 
@@ -100,9 +100,9 @@ As I quote Griffiths here, "a set of functions is complete if any other function
 $$
 \begin{align}
     f(x) 
-    = 
+    &= 
     \sum_{n=1} ^{\infty} c_n f_n(x) 
-    = 
+    \\&= 
     c_1f_1(x) + c_2f_2(x) + c_3f_3(x) + \dots + c_nf_n(x) + \dots
 \end{align}
 $$
