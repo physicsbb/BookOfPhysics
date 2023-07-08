@@ -1,11 +1,11 @@
 # Linear Algebra
 
 ## Linear Combination in Physics
-A state is described by the wavefunction, which can be written as a vector; the observable is represented by an $n\times n$ operator, be it linear or not. Naturally, the operator happens to have a matrix representation, then an $n\times n$ matrix would act on the state vector, hence a linear transformation. The most friendly approach to quantum mechanics is to realize that a part of quantum mechanics satisfy the Eigenequation. That is, the (eigen)energy is an eigenvalue; the state vector is an eigenvector (or an eigenstate); the operator is a linear operator. Wavefunction lives in Hilbert Space. This "book" will only discuss the linear algebra up to the physicist's standard –– no $\epsilon \delta$ proofs, we simply accept that the math just works as perfectly fine tools.
+A state is described by the wavefunction, which can be written as a vector; the observable is represented by an $n\times n$ operator, be it linear or not. Naturally, the operator happens to have a matrix representation, then an $n\times n$ matrix would act on the state vector, hence a linear transformation. The most friendly approach to quantum mechanics is to realize that a part of quantum mechanics satisfy the Eigenequation. That is, the (eigen)energy is an eigenvalue; the state vector is an eigenvector (or an eigenstate); the operator is a linear operator. Wavefunction lives in Hilbert Space. This "book" will only discuss the linear algebra up to the physicist's standard –– no $\varepsilon - \delta$ proofs, we simply accept that the math just works as perfectly fine tools.
 
 Let us begin with the description of the completeness of a function. 
 
-By definition, the completeness of a function is a linear combination of its basis vectors (its basis functions). We are most accustomed to the linear algebra fashion of writing your vector as a column vector, because that is the easiest introduction to the treatement of a vector. 
+By definition, the completeness of a function in sloppy language is a linear combination of its basis vectors (its basis functions), and next step is to check whether the set of vectors(functions) spans the solution vector/function. We are most accustomed to the linear algebra fashion of writing your vector as a column vector, because that is the easiest introduction to the treatement of a vector. 
 
 The simplest n-dimensional vector takes the form 
 
