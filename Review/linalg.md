@@ -63,7 +63,7 @@ The set of all $\textbf{square-integrable}$ functions, on specified interval
 
 $$
 \begin{align}
-    f(x) \text{ such that } \int _a ^b f^{*}(x) f(x) dx < \infty \text{ where a and b are almost always } \pm \infty
+    f(x) &\text{ such that } \int _a ^b f^{*}(x) f(x) dx < \infty \\ & \text{ where a and b are almost always } \pm \infty
 \end{align}
 $$
 
@@ -98,7 +98,7 @@ Now, we are finally ready to talk about completeness of a function.
 ## Completeness of a function & Fourier's Trick
 To reiterate, a function can be a vector. 
 
-As I quote Griffiths here, "a set of functions is complete if any other function (in Hilbert Space) can be expressed as a linear combination of them: 
+As I quote Griffiths here, "a set of functions is complete if any other function (in Hilbert Space) can be expressed as a linear combination of them" 
 
 $$
 \begin{align}
@@ -135,8 +135,13 @@ $$
 \end{align}
 $$
 
-In other words, a set $\mathcal{F} \in \{f_1, f_2, \dots , f_n, \dots\}$ (of functions) is complete if any other vectors (or functions) $f_{\textbf{any}}(x)$ can be spanned by the set $\mathcal{F}$, or $f_{\textbf{any}}(x) \in \textbf{Span}\{\mathcal{F}\}$. 
+In other words, 
+````{prf:definition}
+:label: completeness
+A set $\mathcal{F}\in\{f_1,f_2,\dots,f_n,\dots\}$ is complete if any function $f_{\textbf{any}}(x) \in \textbf{Span}\{\mathcal{F}\}$. 
 
+A set $\mathcal{F} \in \{f_1, f_2, \dots , f_n, \dots\}$ (of functions) is complete if any other vectors (or functions) $f_{\textbf{any}}(x)$ can be spanned by (is a linear combination of) the set $\mathcal{F}$. 
+````
 To demonstrate Fourier's trick, with the assumption in mind that a basis should be orthonormal (of unit length 1, and perpendicular to each other). 
 
 $$
@@ -148,7 +153,7 @@ $$
     \\&=
     \begin{bmatrix} 0      &      0   &  \dots  &      f_n &  \dots \end{bmatrix}
     \left(
-    c_1\begin{bmatrix} f_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
+        c_1\begin{bmatrix} f_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
     c_2\begin{bmatrix} 0  \\ f_2  \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
     c_3\begin{bmatrix} 0  \\  0   \\ f_3  \\ \vdots \\  0   \\\vdots \end{bmatrix} +
     \dots +  
@@ -160,6 +165,8 @@ $$
 
 which, since the set $\mathcal{F}$ is orthonormal, all other terms vanish. For example,
 
+````{prf:definition}
+:label: kroneckerDelta
 $$
 \begin{align}
     \begin{bmatrix} 0      &      0   &  \dots  &      f_n &  \dots \end{bmatrix}
@@ -168,7 +175,7 @@ $$
 \end{align}
 $$
 
-and only one term survives. 
+$f_n\cdot f_1$ vanishes and only one term ($f_n\cdot f_n$) survives. 
 
 $$
 \begin{align}
@@ -185,10 +192,7 @@ $$
 \end{align}
 $$
 
-The above two vectors' inner (higher-dimensional dot) product denotes the essence of kronecker delta $\delta_{ij}$. 
 
-````{prf:definition}
-:label: kroneckerDelta
 $$
     \langle \psi | \psi \rangle = \sum_i \sum_j \psi_i \psi_j \delta_{ij}
     \rightarrow \delta_{ij} =
@@ -198,6 +202,9 @@ $$
     \end{cases}
 $$
 ````
+
+The above two vectors' inner (higher-dimensional dot) product denotes the essence of kronecker delta $\delta_{ij}$. 
+
 Now, we are finally ready for Dirac notation. (at this point you should have no reason to not understand what Fourier's trick is given the gruesome detail by writing everything out by brute force.)
 
 $$ 
