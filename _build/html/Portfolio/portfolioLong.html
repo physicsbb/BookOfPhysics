@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Portfolio/portfolioLong';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -364,7 +366,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uv-photonics-research">UV Photonics Research</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtitle">subtitle?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgement-for-uv-photonics-research">Acknowledgement for UV Photonics Research</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-partial-picture-of-uv-photonic-device-research-leds-fp-eelds">A partial picture of UV photonic device research (LEDs &amp; FP-EELDs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-uv-dream-or-a-uv-meme">a UV Dream (or a UV meme?):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
 </li>
 </ul>
@@ -382,12 +387,34 @@ document.write(`
 <h1>Long Portfolio<a class="headerlink" href="#long-portfolio" title="Permalink to this heading">#</a></h1>
 <section id="uv-photonics-research">
 <h2>UV Photonics Research<a class="headerlink" href="#uv-photonics-research" title="Permalink to this heading">#</a></h2>
-<p>UV photonic devices utilize AlGaN crystal (both a ZincBlende and Wurtzite) to achieve the generation of photons at the wavelength of 200nm to 350nm. Different regions of UV spectrum may have different growth technique, and each region in the spectrum has its challenges. See figure [AlGaNWavelength] for reference.
-<img alt="AlGaNWavelength" src="../_images/AlGaNWavelength.jpg" /></p>
-<p>Al content in AlxGa(1-x)N, which results in the change in bandgap, hence a change in its wavelength.</p>
-<section id="subtitle">
-<h3>subtitle?<a class="headerlink" href="#subtitle" title="Permalink to this heading">#</a></h3>
-<p>WHat is this thing?</p>
+<section id="acknowledgement-for-uv-photonics-research">
+<h3>Acknowledgement for UV Photonics Research<a class="headerlink" href="#acknowledgement-for-uv-photonics-research" title="Permalink to this heading">#</a></h3>
+<p>I would like to thank Dr. Shuji Nakamura as well as Dr. Steve DenBaars for offering me the opportunity to partake in this exciting field of photonics research at SSLEEC. This opportunity allowed me to apply my Condensed Matter and Optics knowledge to immediate applications. I also gained hands-on characterization skills through working with the X-Ray diffractometer, Atomic Force Microscope, as well as the Hall Measurement bench setup. All of this was thanks to their offering, and I am grateful for this opportunity.</p>
+<p>I would also like to specifically express my profound gratitude for the support from different graduate mentors that I have worked with:</p>
+<ol class="arabic simple">
+<li><p><strong>Michael Wang</strong> and <strong>Yifan Yao</strong> (both in the UV group) for their training, consistently answering my questions, and allowing for insightful conversations related to research as well as putting me on <strong>two publications</strong> as a co-author, as well as just being awesome! Both of your support through impactful actions are <strong>very much appreciated</strong>!</p></li>
+<li><p><strong>Nate Palmquist</strong> (on the blue FP-VCSEL project) for offering more opportunities to me to characterize more samples as well as his support for my mental and overall well-being. It was you who showed me through sharing with me your PhD experience that positive progress/impact can be made, both in research and in real life – I am eternally grateful for your advice!</p></li>
+</ol>
+</section>
+<section id="a-partial-picture-of-uv-photonic-device-research-leds-fp-eelds">
+<h3>A partial picture of UV photonic device research (LEDs &amp; FP-EELDs)<a class="headerlink" href="#a-partial-picture-of-uv-photonic-device-research-leds-fp-eelds" title="Permalink to this heading">#</a></h3>
+<p>UV photonic devices utilize AlGaN (Aluminum Gallium Nitride) crystal (both a ZincBlende and Wurtzite) to achieve the generation of photons at the wavelength of 200nm to 350nm. Different regions of UV spectrum may have different growth technique, and each region in the spectrum has its challenges. See <a class="reference internal" href="#alganwavelength"><span class="std std-numref">Fig. 1</span></a> for reference.</p>
+<figure class="align-default" id="alganwavelength">
+<img alt="../_images/AlGaNWavelength.jpg" src="../_images/AlGaNWavelength.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Change in Al content in <span class="math notranslate nohighlight">\(\text{Al}_{x}\text{Ga}_{\text{(1-x)}}\text{N}\)</span> results in widening the optical bandgap, which results in emitting a shorter wavelength.</span><a class="headerlink" href="#alganwavelength" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>One of the biggest challenges in UV-A LED research is in growing AlGaN on top of AlN/Sapphire due to large lattice mismatch between GaN and AlN, if the lattice mismatch is too great, cracks may be observed on the crystal as a result of great tensile strain. Another challenge in UV photonics research as a whole is the fact that UV wavelength of light is not transparent to GaN (n = 2.5), due to Total Internal Reflection (TIR) where light gets trapped in the cladding layer, hence a low External Quantum Efficiency as a result of Light Extraction Efficiency (LEE) suffering a huge loss. This is especially true the further into Deep UV wavelength – high p-GaN absorption of UV radiation is exhibited. This is the exact reason why a flip chip design for UV LEDs are used. Light rays exit from the n-AlGaN side.</p>
+</section>
+<section id="a-uv-dream-or-a-uv-meme">
+<h3>a UV Dream (or a UV meme?):<a class="headerlink" href="#a-uv-dream-or-a-uv-meme" title="Permalink to this heading">#</a></h3>
+<p>Since LEE of UV wavelength is low due to Total Internal Reflection, where light gets trapped in the guided modes, the build of a Fabry Perot Edge Emitting Laser (EEL) is a more feasible solution simply from the standpoint of ray tracing. A Distributed Feedback (DFB) Grated EEL would be an expensive build due to difficult fabrication of the Bragg’s grating at an atomic level (think in terms of Miller Indicies).</p>
+<p>The only way to generate a truly fundamental <span class="math notranslate nohighlight">\(\text{TEM}_{00}\)</span> mode is through a Vertical Cavity Surface Emitting Laser (VCSEL), but light has to come out through the top and bottom of the device, when the light extraction efficiency (referring an LED, think in terms of ray tracing) is extremely low. Do you see why it would be both exciting and fishy when someone says they can build a UV VCSEL now?</p>
+</section>
+<section id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
+<p>I’m working on the format and syntax on how to properly import them right now. They are on its way!</p>
 </section>
 </section>
 </section>
@@ -460,7 +487,10 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uv-photonics-research">UV Photonics Research</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subtitle">subtitle?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgement-for-uv-photonics-research">Acknowledgement for UV Photonics Research</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-partial-picture-of-uv-photonic-device-research-leds-fp-eelds">A partial picture of UV photonic device research (LEDs &amp; FP-EELDs)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-uv-dream-or-a-uv-meme">a UV Dream (or a UV meme?):</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
 </li>
 </ul>
