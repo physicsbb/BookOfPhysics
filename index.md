@@ -1,6 +1,6 @@
 # Welcome To Book Of Physics by PhysicsBB
 
-## See Below for table of content:
+## See below for Table Of Content:
 ```{tableofcontents}
 ```
 
