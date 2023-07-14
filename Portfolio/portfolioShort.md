@@ -27,9 +27,10 @@ Second picture is a huge hint on who I really am and how I really look like...
 
 ### Every physics guy needs it: 
 - All of Classical Mechanics
-- All of QM, All of E&M
+- All of QM
+- All of E&M
 - Thermo
 - Linear Algebra and Complex Variables for physicists
 
 ## Outside of school:
-I have previously been a lifeguard and swim instructor both at [SF Rec&Park](https://sfrecpark.org/482/Swimming-Pools) and [UCSF RecCen](https://campuslifeserviceshome.ucsf.edu/fitnessrecreation/aquatics), as well as a peer instructor for instructional aid at [Skyline College](https://www.skylinecollege.edu/stemcenter/index.php). At the moment I am a gymnastics coach at [Santa Barbara Gymnastics (Gym) Club](https://www.santabarbaragymnasticsclub.com/) teaching summer/winter camps and tumbling/gymnastics/parkour classes. Other times I am just enjoying the settings and sceneries of Santa Barbara and hanging out with friends. 
+I have previously been a lifeguard and swim instructor both at [SF Rec&Park](https://sfrecpark.org/482/Swimming-Pools) and [UCSF Aquatics](https://campuslifeserviceshome.ucsf.edu/fitnessrecreation/aquatics), as well as a peer instructor for instructional aid at [Skyline College](https://www.skylinecollege.edu/stemcenter/index.php). At the moment, I am a gymnastics coach at [Santa Barbara Gymnastics (Gym) Club](https://www.santabarbaragymnasticsclub.com/) teaching summer/winter camps and tumbling/gymnastics/parkour classes. Other times I am just enjoying the settings and sceneries of Santa Barbara and hanging out with friends, and writing this website, attempting to improve the open source of and implementing MyST Markdown features onto the JupyterBook framework. 
