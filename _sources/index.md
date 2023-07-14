@@ -3,6 +3,7 @@
 ## See below for Table Of Content:
 ```{tableofcontents}
 ```
+Note: Website is programmed with the JuypterBook Framework, many thanks to the CEO of the company Rowan Cockett for his other direct assistance and advice through the Slack chat.
 
 ## What is this for?
 This is a documentation by a recent physics graduate who is unwilling to let go of something that occupy all of him for the past 3 years. Despite the fact that learning can be meaningless without aiming at a particular degree validated by a formal institution, keep in mind that when you are in college, you suffer through it by reading on your own because lectures really are not too particularly useful... Unless if they're legendary. I found out that I learned so much more and remember things much better when I was reading on my own out of my own curiosity, so, sometimes it really helps to be motivated by genuine interest when it comes to learning. I'm also very interested in reintroducing materials for those who would like to revisit them. I do this only because I want to document things that I was stuck on, so that no one has to struggle with the same blocks/obstacles. 
