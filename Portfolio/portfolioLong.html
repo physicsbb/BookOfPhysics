@@ -367,12 +367,24 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uv-photonics-research">UV Photonics Research</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-partial-picture-of-uv-photonic-device-research-leds-fp-eelds">A partial picture of UV photonic device research (LEDs &amp; FP-EELDs)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-of-the-greatest-achievements-in-the-history-of-science-from-30-years-ago">One of the greatest achievements in the History of Science from 30 years ago:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characterization-methods">Characterization methods:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#x-ray-diffraction">X-Ray Diffraction:</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#xrd-analysis-for-algan">XRD Analysis for AlGaN:</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#rocking-curve-analysis-for-algan">Rocking Curve Analysis for AlGaN:</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-force-microscopy">Atomic Force Microscopy:</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#afm-analysis-for-algan">AFM Analysis for AlGaN:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#did-i-come-up-with-a-uv-dream-or-a-uv-meme">Did I come up with a UV Dream (or a UV meme?):</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgement-for-uv-photonics-research">Acknowledgement for UV Photonics Research</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-of-the-greatest-achievements-in-the-history-of-science-from-30-years-ago">One of the greatest achievements in the History of Science from 30 years ago:</a></li>
 </ul>
             </nav>
         </div>
@@ -397,13 +409,44 @@ document.write(`
 <p><span class="caption-number">Fig. 3 </span><span class="caption-text">Change in Al content in <span class="math notranslate nohighlight">\(\text{Al}_\text{x}\text{Ga}_{\text{(1-x)}}\text{N}\)</span> results in widening the optical bandgap, which results in emitting photons of shorter wavelength. Graph from [<a class="reference external" href="https://www.mdpi.com/1424-8220/13/8/10482">SLS13</a>].</span><a class="headerlink" href="#alganwavelength" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>One of the biggest challenges in UV-A LED research is in growing AlGaN on top of AlN/Sapphire due to large lattice mismatch between GaN and AlN. If the lattice mismatch is too great, cracks may be observed on the crystal as a result of great tensile strain. Note also that Al lattice constant and Ga lattice constant expand at different temperatures, which also adds to the challenge of finding ideal ratio of compensation between strained and relaxed lattice. [<a class="reference external" href="http://doi.org/10.1088/1361-6641/ac27e7">Zol+21</a>] Another challenge in UV photonics research as a whole is the fact that UV wavelength of light is not transparent to GaN (n = 2.5), due to Total Internal Reflection (TIR) where light gets trapped in the cladding layer[<a class="reference external" href="https://www.energy.gov/sites/default/files/2020/02/f71/ssl-rd2020-weisbuch-extraction.pdf">Wei+20</a>], hence a low External Quantum Efficiency as a result of Light Extraction Efficiency (LEE) suffering a huge loss. This is especially true further into Deep UV wavelength – high p-GaN absorption of UV radiation is exhibited. This is the exact reason why a flip chip design for UV LEDs are used – light rays exit from the n-AlGaN side.</p>
+<p>One of the biggest challenges in UV-A LED research is in growing AlGaN on top of AlN/Sapphire due to large lattice mismatch between GaN and AlN. If the lattice mismatch is too great, cracks may be observed on the crystal as a result of great tensile strain. Note also that Al lattice constant and Ga lattice constant expand at different temperatures, and along different orientations of the plane (think Miller Indicies) the thermal expansion of lattice constant differs as well, all of which adds to the challenge of finding ideal growth conditions in terms of how strained and relaxed the crystal lattice should be. [<a class="reference external" href="http://doi.org/10.1088/1361-6641/ac27e7">Zol+21</a>] Another challenge in UV photonics research as a whole is the fact that UV wavelength of light is not transparent to GaN (n = 2.5), due to Total Internal Reflection (TIR) where light gets trapped in the cladding layer[<a class="reference external" href="https://www.energy.gov/sites/default/files/2020/02/f71/ssl-rd2020-weisbuch-extraction.pdf">Wei+20</a>], hence a low External Quantum Efficiency as a result of Light Extraction Efficiency (LEE) suffering a huge loss. This is especially true further into Deep UV wavelength – high p-GaN absorption of UV radiation is exhibited. This is the exact reason why a flip chip design for UV LEDs are used – light rays exit from the n-AlGaN side.</p>
 </section>
-<section id="one-of-the-greatest-achievements-in-the-history-of-science-from-30-years-ago">
-<h3>One of the greatest achievements in the History of Science from 30 years ago:<a class="headerlink" href="#one-of-the-greatest-achievements-in-the-history-of-science-from-30-years-ago" title="Permalink to this heading">#</a></h3>
-<p>30+ years ago, everyone believed that ZnSe (II-VI materials) would have been the ideal materials which can give rise to the invention of blue and white LED based on theoretical calculations, and everyone believed that Gallium Nitride Research would have been equivalent to “walking in wasteland” given the difficulty of the research. The only ones in the field doing research in III-Nitride materials back in the late 80s were only <a class="reference external" href="https://www.nobelprize.org/prizes/physics/2014/amano/facts/">Dr. Hiroshi Amano</a>, <a class="reference external" href="https://www.nobelprize.org/prizes/physics/2014/akasaki/facts/">Dr. Isamu Akasaki</a> and <a class="reference external" href="https://www.nobelprize.org/prizes/physics/2014/nakamura/facts/">Dr. Shuji Nakamura</a>. Amano and Akasaki’s achievement were in developing a research grade MOVPE system to successfully grow GaN on Sapphire - ideal growth result should have mirror-like gloss on its surface. In addition to that, they also derived the idea to grow Mg-doped GaN samples from a paper published in 1972 by a H.P. Maruska from Stanford University, which documents the production of Metal-Insulator-Semiconductor (MIS) type Mg-doped GaN based violet LED. This motivated Amano and Akasaki to also grow p-GaN by doping the crystal with Mg. Later, they had a post-growth Low Energy Electron Beam Irradiation (LEEBI or E-Beam) treatment to first discover the increased conductivity of p-GaN, but the reasoning was yet to be justified, which were later justified by Nakamura, with an improved and much more efficient method.</p>
-<p>Dr. Shuji Nakamura’s achievement was not only in modifying an MOCVD reactor for GaAs into a two-flow MOCVD system suitable for GaN, which sprays <span class="math notranslate nohighlight">\(\text{N}_2 + \text{H}_2\)</span> gas through the secondary flow (antiperpendicular to surface) to press the main gas flow (which is parallel to surface) downward onto the substrate, he also provided a much more efficient solution to annihilate (or passivate) the Hydrogen that was bonded to the Mg, with which the Mg-H complex prevented the crystal from acting as an acceptor. Upon post-growth thermal annealing, p-GaN mobility is greatly increased by almost 6 orders of magnitude.[<a class="reference external" href="https://iopscience.iop.org/article/10.1143/JJAP.31.L139/meta">Nak+92</a>] Note that the Hydrogen came from <span class="math notranslate nohighlight">\(\text{NH}_3\)</span>, with <span class="math notranslate nohighlight">\(\text{NH}_3\)</span> acting as a precursor for one of the chemical reactions in the MOCVD system and 99.9% of all <span class="math notranslate nohighlight">\(\text{NH}_3\)</span> gas diffuse into <span class="math notranslate nohighlight">\(\frac{1}{2}N_2+\frac{3}{2}H_2\)</span> at 700˚C. Thermal Annealing a process was also easily “commercialized” that every manufacturing company adopted this method to achieve increase in conductivity. The experiment provided the first proposition for future theoretical calculation and the proposition of hydrogen passivation was later confirmed theoretically by <a class="reference external" href="https://www.materials.ucsb.edu/people/faculty/chris-g-van-de-walle">Chris G. Van de Walle, et al</a> in 1995.[<a class="reference external" href="https://doi.org/10.1103/PhysRevLett.75.4452">NV95</a>] This allowed for the creation of p-n junction, polarized enough to make a semiconductor out of it. The justification is as follows:</p>
-<p>Work In Progress.</p>
+<section id="characterization-methods">
+<h3>Characterization methods:<a class="headerlink" href="#characterization-methods" title="Permalink to this heading">#</a></h3>
+<p>Characterization is instrumental in modelling growth trend and monitoring growth result. Without characterization, there would be no data to study from. The tools used for characterization are High Resolution X-Ray Diffraction (HRXRD), Atomic Force Microscopy,Scanning Electron Microscopy, Photoluminescence test, quick test and Hall Measurements.</p>
+<section id="x-ray-diffraction">
+<h4>X-Ray Diffraction:<a class="headerlink" href="#x-ray-diffraction" title="Permalink to this heading">#</a></h4>
+<p>XRD is performed to generate what is called a Reciprocal Space Map, which works to parameterize the growth condition of the AlGaN crystal in momentum/reciprocal space. (Or you can say <span class="math notranslate nohighlight">\(\hbar=1\)</span>, haha.) The diffractometer is also capable of characterizing the samples in other ways, such as the rocking curve, and others.</p>
+<section id="xrd-analysis-for-algan">
+<h5>XRD Analysis for AlGaN:<a class="headerlink" href="#xrd-analysis-for-algan" title="Permalink to this heading">#</a></h5>
+<p>The following description of Rocking Curve specifically addresses AlGaN only:
+Along the vertical axis (<span class="math notranslate nohighlight">\(p_z\)</span>) gives you the Al-content. The further up top along <span class="math notranslate nohighlight">\(p_z\)</span>, the higher Al-content; the lower along <span class="math notranslate nohighlight">\(p_z\)</span>, the more Ga-content.
+Along the horizontal axis (<span class="math notranslate nohighlight">\(p_x\)</span>) tells you the lattice constant of the AlGaN crystal.
+The crystal may or may not have a narrow stream of intensity. In which case, if the crystal follows along a straight line pointing downward, the crystal is strained, meaning the interface between different layers of different AlGaN composition are neatly aligned, with minimal defects. Keep in mind that defects may or may not be a bad thing. (Sometimes annealing can help)</p>
+</section>
+<section id="rocking-curve-analysis-for-algan">
+<h5>Rocking Curve Analysis for AlGaN:<a class="headerlink" href="#rocking-curve-analysis-for-algan" title="Permalink to this heading">#</a></h5>
+<p>The following description of Rocking Curve specifically addresses AlGaN only:
+The Full-Width-Half-Max (FWHM) of the rocking curve in an <span class="math notranslate nohighlight">\(\omega\)</span> scan tells you the crystal quality. The same spread has some correspondance to the spread of the Reciprocal Space Map, which indicates relaxed lattice, and its mosaicity (how ordered the crystal lattice is macroscopically speaking) can be poor. In other words, if the FWHM of the bell peak is narrow, the crystal quality could be decent, which is an indication of decent mosaicity.</p>
+</section>
+</section>
+<section id="atomic-force-microscopy">
+<h4>Atomic Force Microscopy:<a class="headerlink" href="#atomic-force-microscopy" title="Permalink to this heading">#</a></h4>
+<p>Atomic Force Microscopy is used to characterize surface morphology of crystals. It provides another perspective on the roughness of the crystal. It is capable of analyzing the epitaxial layers’ surfaces. AFM pictures can be interesting and simply entertaining to look at, because the pictures are at a micron scale (<span class="math notranslate nohighlight">\(10^{-6}\)</span> or <span class="math notranslate nohighlight">\(\mu m\)</span>)</p>
+<section id="afm-analysis-for-algan">
+<h5>AFM Analysis for AlGaN:<a class="headerlink" href="#afm-analysis-for-algan" title="Permalink to this heading">#</a></h5>
+<p>Images are typically taken in sizes of 20x20 μm<span class="math notranslate nohighlight">\(^2\)</span>, 5x5 μm<span class="math notranslate nohighlight">\(^2\)</span>, and 2x2 μm<span class="math notranslate nohighlight">\(^2\)</span>. One of the parameters of the image would be RSM roughness, and it tells you if the epitaxial layer is just rocky enough, too rocky, or too smooth and lacking atomic steps.  It can affect the layers grown on top and provides a more physical and immediate detail on the alignment of the different epitaxial layers. By experience, one can deduce a few things:</p>
+<ul class="simple">
+<li><p>If the roughness is too strong, the layers grown on top can misalign in terms of the discussion of lattice plane, resulting in the collapse of the layers above. It may or may not be an indicator of relaxed lattice.</p>
+<ul>
+<li><p>In an LED, strong Root-Mean-Squared (RMS) surface roughness of the n-AlGaN layers can result in the collapse of quantum well alignment in the active regions, causing the crystal to fail.</p></li>
+<li><p>In an Edge Emitting Laser where the use of waveguide/cladding layer are used, poor RMS surface roughness can be a factor that affects the stability of guided modes, resulting in unstable transverse mode hopping (<span class="math notranslate nohighlight">\(\text{TEM}_{nm}\)</span>) unrelated to longitudinal mode hopping, or longitudinal gain (intensity vs. wavelength).</p></li>
+</ul>
+</li>
+<li><p>If the roughness is too smooth, it is typically a good indicator, which results in easier growth for layers on top.</p></li>
+</ul>
+</section>
+</section>
 </section>
 <section id="did-i-come-up-with-a-uv-dream-or-a-uv-meme">
 <h3>Did I come up with a UV Dream (or a UV meme?):<a class="headerlink" href="#did-i-come-up-with-a-uv-dream-or-a-uv-meme" title="Permalink to this heading">#</a></h3>
@@ -413,7 +456,9 @@ document.write(`
 <section id="references">
 <h3>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h3>
 <p>Working on the reference now, the outline of the whole page is in progress also as I attempt to implement the bibliography import automation.</p>
-<p>[<a class="reference external" href="https://iopscience.iop.org/article/10.1143/JJAP.31.L139/meta">Nak+92</a>]
+<p>[<a class="reference external" href="https://iopscience.iop.org/article/10.1143/JJAP.31.1258/meta">Nak+92a</a>]
+Shuji Nakamura et al. “Hole compensation mechanism of p-type GaN films”. In: Japanese Journal of Applied Physics 31.5R (1992), p. 1258.</p>
+<p>[<a class="reference external" href="https://iopscience.iop.org/article/10.1143/JJAP.31.L139/meta">Nak+92b</a>]
 Shuji Nakamura et al. “Thermal annealing effects on p-type Mg-doped GaN films”. In: Japanese Journal of Applied Physics 31.2B (1992), p. L139.</p>
 <p>[<a class="reference external" href="https://doi.org/10.1103/PhysRevLett.75.4452">NV95</a>]
 Jörg Neugebauer and Chris G Van de Walle. “Hydrogen in GaN: Novel aspects of a common impurity”. In: Physical review letters 75.24 (1995), p. 4452.</p>
@@ -433,6 +478,12 @@ Christian J Zollner et al. “Germicidal ultraviolet LEDs: A review of applicati
 <li><p><a class="reference external" href="https://www.linkedin.com/in/nathan-palmquist/"><strong>Nate Palmquist</strong></a> (on the blue FP-VCSEL project) for offering more opportunities to me to characterize more samples as well as his support for my mental and overall well-being. It was you who showed me through sharing with me your PhD experience that positive progress/impact can be made, both in research and in real life – I am eternally grateful for your advice!</p></li>
 </ol>
 </section>
+</section>
+<section id="one-of-the-greatest-achievements-in-the-history-of-science-from-30-years-ago">
+<h2>One of the greatest achievements in the History of Science from 30 years ago:<a class="headerlink" href="#one-of-the-greatest-achievements-in-the-history-of-science-from-30-years-ago" title="Permalink to this heading">#</a></h2>
+<p>30+ years ago, everyone believed that ZnSe (II-VI materials) would have been the ideal materials which can give rise to the invention of blue and white LED based on theoretical calculations, and everyone believed that Gallium Nitride Research would have been equivalent to “walking in wasteland” given the difficulty of the research. The only ones in the field doing research in III-Nitride materials back in the late 80s were only <a class="reference external" href="https://www.nobelprize.org/prizes/physics/2014/amano/facts/">Dr. Hiroshi Amano</a>, <a class="reference external" href="https://www.nobelprize.org/prizes/physics/2014/akasaki/facts/">Dr. Isamu Akasaki</a> and <a class="reference external" href="https://www.nobelprize.org/prizes/physics/2014/nakamura/facts/">Dr. Shuji Nakamura</a>. Amano and Akasaki’s achievement were in developing a research grade MOVPE system to successfully grow GaN on Sapphire - ideal growth result should have mirror-like gloss on its surface. In addition to that, they also derived the idea to grow Mg-doped GaN samples from a paper published in 1972 by a H.P. Maruska from Stanford University, which documents the invention of Metal-Insulator-Semiconductor (MIS) type Mg-doped GaN based violet LED using Hydride Vapor Phase Epitaxy (HVPE). This motivated Amano and Akasaki to also grow p-GaN by doping the crystal with Mg using Metal Organic Vapor Phase Epitaxy (MOVPE). Later, they had a post-growth Low Energy Electron Beam Irradiation (LEEBI or E-Beam) treatment to first discover the increased conductivity of p-GaN, but the reasoning was yet to be justified, which were later justified by Nakamura, with an improved and much more efficient method.</p>
+<p>Dr. Shuji Nakamura’s achievement was not only in modifying an MOCVD reactor for GaAs into a two-flow MOCVD system suitable for GaN, which sprays <span class="math notranslate nohighlight">\(\text{N}_2 + \text{H}_2\)</span> gas through the secondary flow (antiperpendicular to surface) to press the main gas flow (which is parallel to surface) downward onto the substrate, he also provided a much more efficient solution to annihilate (or passivate) the Hydrogen that was bonded to the Mg through <span class="math notranslate nohighlight">\(\text{N}_2\)</span>-ambient annealing, with which the Mg-H complex prevented the p-GaN from acting as an acceptor. Upon post-growth <span class="math notranslate nohighlight">\(\text{N}_2\)</span>-ambient thermal annealing at temperatures above 700˚C, p-GaN resistivity/conductivity is greatly decreased/increased by almost 6 orders of magnitude (from <span class="math notranslate nohighlight">\(10^6\text{ }\Omega\cdot\text{cm}\)</span> to <span class="math notranslate nohighlight">\(10^0\text{ }\Omega\cdot\text{cm}\)</span>).[<a class="reference external" href="https://iopscience.iop.org/article/10.1143/JJAP.31.L139/meta">Nak+92b</a>] Note that the Hydrogen came from <span class="math notranslate nohighlight">\(\text{NH}_3\)</span>, with <span class="math notranslate nohighlight">\(\text{NH}_3\)</span> acting as a precursor for one of the chemical reactions in the MOCVD system. Thermal Annealing is also an easily “commercialized” process that every manufacturing company adopted this method to achieve increase in conductivity. Nakamura soon published another paper documenting and identifying the atomic Hydrogen acting as a acceptor blocker (Mg-H complex) through annealing with <span class="math notranslate nohighlight">\(\text{NH}_{3(g)}\)</span>, and that the effects of annealing is reversible by annealing again with <span class="math notranslate nohighlight">\(\text{N}_{2(g)}\)</span>.[<a class="reference external" href="https://iopscience.iop.org/article/10.1143/JJAP.31.1258/meta">Nak+92a</a>] The hole compensation mechanism experiment provided the first proposition for future theoretical calculation and the proposition of hydrogen passivation was later confirmed theoretically by <a class="reference external" href="https://www.materials.ucsb.edu/people/faculty/chris-g-van-de-walle">Chris G. Van de Walle, et al</a> in 1995.[<a class="reference external" href="https://doi.org/10.1103/PhysRevLett.75.4452">NV95</a>] This allowed for the creation of a p-n junction, where the p-GaN is conductive enough and polarized enough with respect to n-AlGaN to make a semiconductor diode out of it.</p>
+<p>Work In Progress.</p>
 </section>
 </section>
 
@@ -505,12 +556,24 @@ Christian J Zollner et al. “Germicidal ultraviolet LEDs: A review of applicati
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#uv-photonics-research">UV Photonics Research</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-partial-picture-of-uv-photonic-device-research-leds-fp-eelds">A partial picture of UV photonic device research (LEDs &amp; FP-EELDs)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-of-the-greatest-achievements-in-the-history-of-science-from-30-years-ago">One of the greatest achievements in the History of Science from 30 years ago:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#characterization-methods">Characterization methods:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#x-ray-diffraction">X-Ray Diffraction:</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#xrd-analysis-for-algan">XRD Analysis for AlGaN:</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#rocking-curve-analysis-for-algan">Rocking Curve Analysis for AlGaN:</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-force-microscopy">Atomic Force Microscopy:</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#afm-analysis-for-algan">AFM Analysis for AlGaN:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#did-i-come-up-with-a-uv-dream-or-a-uv-meme">Did I come up with a UV Dream (or a UV meme?):</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgement-for-uv-photonics-research">Acknowledgement for UV Photonics Research</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-of-the-greatest-achievements-in-the-history-of-science-from-30-years-ago">One of the greatest achievements in the History of Science from 30 years ago:</a></li>
 </ul>
   </nav></div>
 
