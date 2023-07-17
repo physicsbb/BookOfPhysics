@@ -10,7 +10,7 @@ Try and find me!
 ```
 I have also previously conducted research at [San Francisco State University](https://engineering.sfsu.edu/) for a mitigation lab to help develop a MATLAB program for [Dr. Zhaoshuo Jiang](https://engineering.sfsu.edu/faculty-profile-zhaoshuo-jiang) in 2019.
 ```{figure} ../Images/SFSUJiang2019.JPG
-Second picture is a huge hint on who I really am and how I really look like... 
+Also try and find me!
 ```
 
 ## Featured Coursework:
