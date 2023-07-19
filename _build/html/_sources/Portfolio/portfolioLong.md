@@ -27,6 +27,12 @@ Along the horizontal axis ($p_x$) tells you the lattice constant of the AlGaN cr
 
 The crystal may or may not have a narrow stream of intensity. In which case, if the crystal follows along a straight line pointing downward, the crystal is strained, meaning the interface between different layers of different AlGaN composition are neatly aligned, with minimal defects. Keep in mind that defects may or may not be a bad thing. (Sometimes annealing can help)
 
+In {numref}`RSMJustification`, it mentions [Poisson's effect](https://en.wikipedia.org/wiki/Poisson%27s_ratio), and you should not feel intimidated by the word "Poissons". To give an example, **if you have been given a cubic lattice, at the level of Bravais lattice, you can simply think of the crystal as a cube. All that Poisson's effect is saying is that upon lattice mismatch, the crystal has been stretched from a cubic lattice into a rectangular lattice, while its total volume remains unchanged.** 
+```{figure} ../Images/RSM_Justification.jpg
+:name: RSMJustification
+RSM Justification.
+```
+
 ##### Rocking Curve Analysis for AlGaN:
 The following description of Rocking Curve specifically addresses AlGaN only:
 
@@ -41,7 +47,16 @@ Images are typically taken in sizes of 20x20 μm$^2$, 5x5 μm$^2$, and 2x2 μm$^
     * In an LED, strong Root-Mean-Squared (RMS) surface roughness of the n-AlGaN layers can result in the collapse of quantum well alignment in the active regions, causing the crystal to fail.
     * In an Edge Emitting Laser where waveguides/cladding layers are used, poor RMS surface roughness can be a factor that affects the stability of guided modes, resulting in unstable transverse mode hopping ($\text{TEM}_{nm}$) unrelated to longitudinal mode hopping, or longitudinal gain (intensity vs. wavelength). 
 
-* If the roughness is too smooth, it is typically a good indicator, which results in easier growth for layers on top.   
+* If the roughness is too smooth, it is typically a good indicator, which results in easier growth for layers on top. 
+
+See the images attached for AFM images
+```{figure} ../Images/AFM_UV_20x20.jpg
+AFM  Images for epi layers at size 20um x 20um
+```
+
+```{figure} ../Images/AFM_UV_05x05.jpg
+AFM  Images for epi layers at size 5um x 5um
+```
 
 
 ### Did I come up with a UV Dream (or a UV meme?):
