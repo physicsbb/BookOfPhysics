@@ -1,4 +1,4 @@
-# Welcome To Book Of Physics by PhysicsBB
+# Welcome To Book Of Physics
 
 ## Employment:
 If you would like to work with me or hire me, please send me an email associated to this github, 
