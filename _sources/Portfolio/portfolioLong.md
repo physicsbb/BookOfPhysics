@@ -50,7 +50,7 @@ Images are typically taken in sizes of 20x20 μm$^2$, 5x5 μm$^2$, and 2x2 μm$^
     ```{figure} ../Images/SurfaceMorphology_Pedrotti.png
     :name: SurfaceMorphologyLoss
     Discussion of microdefects in the discussion of attenuation and Fiber Optics from chatper 10 of [Introduction to Optics 3rd Ed. by Pedrotti](https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335).[[PPP17](https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335)] While the topic differs slightly, the concept still applies in terms of applying Snell's law and Total Internal Reflection in the discussion of a waveguide.  
-    ``` 
+    ```
 * If the roughness is too smooth, it is typically a good indicator, which results in easier growth for layers on top. But too smooth could also be an indicator of lacking atomic steps.  
 ```
 
