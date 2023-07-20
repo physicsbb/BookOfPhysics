@@ -42,12 +42,18 @@ The Full-Width-Half-Max (FWHM) of the rocking curve in an $\omega$ scan tells yo
 Atomic Force Microscopy is used to characterize surface morphology of crystals. It provides another perspective on the roughness of the crystal. It is capable of analyzing the epitaxial layers' surfaces. AFM pictures can be interesting and simply entertaining to look at, because the pictures are at a micron scale ($10^{-6}$ or $\mu m$)
 
 ##### AFM Analysis for AlGaN:
-Images are typically taken in sizes of 20x20 μm$^2$, 5x5 μm$^2$, and 2x2 μm$^2$. One of the parameters of the image would be RSM roughness, and it tells you if the epitaxial layer is just rocky enough, too rocky, or too smooth and lacking atomic steps.  It can affect the layers grown on top and provides a more physical and immediate detail on the alignment of the different epitaxial layers. This is why AFM is done on n-layers, MQW and p-layers, etc. From time to time, one would also need to do an AFM scan on the LED device to see if it can work well with the tunnel junction. By experience, one can deduce a few things:
-* If the roughness is too strong, the layers grown on top can misalign in terms of the discussion of lattice plane, resulting in the collapse of the layers above. It may or may not be an indicator of relaxed lattice. 
+Images are typically taken in sizes of 20x20 μm$^2$, 5x5 μm$^2$, and 2x2 μm$^2$. One of the parameters of the image would be RSM roughness, and it tells you if the epitaxial layer is just rocky enough, too rocky, or too smooth and lacking atomic steps.  It can affect the layers grown on top and provides a more physical and immediate detail on the alignment of the different epitaxial layers. This is why AFM is done on n-layers, MQW and p-layers, etc. From time to time, one would also need to do an AFM scan on the LED device to see if it can work well with the tunnel junction. By experience, one can deduce a few things from doing AFM scans:
+```{note}
+* If the roughness is too strong, the layers grown on top can misalign in terms of the discussion of lattice plane, resulting in the collapse of any layers grown on top. It may or may not be an indicator of relaxed lattice. 
     * In an LED, strong Root-Mean-Squared (RMS) surface roughness of the n-AlGaN layers can result in the collapse of quantum well alignment in the active regions, causing the crystal to fail.
-    * In an Edge Emitting Laser where waveguides/cladding layers are used, poor RMS surface roughness can be a factor that affects the stability of guided modes, resulting in unstable transverse mode hopping ($\text{TEM}_{nm}$) unrelated to longitudinal mode hopping, or longitudinal gain (intensity vs. wavelength). 
+    * In an Edge Emitting Laser where waveguides/cladding layers are used, poor RMS surface roughness can be a factor that affects the stability of guided modes, resulting in unstable transverse mode hopping ($\text{TEM}_{nm}$) unrelated to longitudinal mode hopping, or longitudinal gain (intensity vs. wavelength). It is also accountable for the light extraction efficiency loss. see {numref}`SurfaceMorphologyLoss` for an image example.
+    ```{figure} ../Images/SurfaceMorphology_Pedrotti.png
+    :name: SurfaceMorphologyLoss
+    Discussion of microdefects in the discussion of attenuation and Fiber Optics from chatper 10 of [Introduction to Optics 3rd Ed. by Pedrotti](https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335).[[PPP17](https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335)] While the topic differs slightly, the concept still applies in terms of applying Snell's law and Total Internal Reflection in the discussion of a waveguide.  
+    ``` 
+* If the roughness is too smooth, it is typically a good indicator, which results in easier growth for layers on top. But too smooth could also be an indicator of lacking atomic steps.  
+```
 
-* If the roughness is too smooth, it is typically a good indicator, which results in easier growth for layers on top. 
 
 See the images attached for AFM images
 ```{figure} ../Images/AFM_UV_20x20.jpg
@@ -91,6 +97,9 @@ Jörg Neugebauer and Chris G Van de Walle. “Hydrogen in GaN: Novel aspects of 
 
 [[SLS13](https://www.mdpi.com/1424-8220/13/8/10482)] 
 Liwen Sang, Meiyong Liao, and Masatomo Sumiya. “A comprehensive review of semiconductor ultraviolet photodetectors: from thin film to one-dimensional nanostructures”. In: Sensors 13.8 (2013), pp. 10482–10518.
+
+[[PPP17](https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335)]
+Frank L Pedrotti, Leno M Pedrotti, and Leno S Pedrotti. Introduction to optics. Cambridge University Press, 2017.
 
 [[Wei+20](https://www.energy.gov/sites/default/files/2020/02/f71/ssl-rd2020-weisbuch-extraction.pdf)]
 C. Weisbuch, H. Benisty*, M. Rattier*, D. Labilloy*, A. David, E. Matioli, C. Lalau-Keraly, M. Cochet, and L. Kuritzky. "Light Extraction in Nitride LEDs", https://www.energy.gov/sites/default/files/2020/02/f71/ssl-rd2020-weisbuch-extraction.pdf
