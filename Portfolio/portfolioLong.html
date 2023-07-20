@@ -442,27 +442,36 @@ document.write(`
 <p>Atomic Force Microscopy is used to characterize surface morphology of crystals. It provides another perspective on the roughness of the crystal. It is capable of analyzing the epitaxial layers’ surfaces. AFM pictures can be interesting and simply entertaining to look at, because the pictures are at a micron scale (<span class="math notranslate nohighlight">\(10^{-6}\)</span> or <span class="math notranslate nohighlight">\(\mu m\)</span>)</p>
 <section id="afm-analysis-for-algan">
 <h5>AFM Analysis for AlGaN:<a class="headerlink" href="#afm-analysis-for-algan" title="Permalink to this heading">#</a></h5>
-<p>Images are typically taken in sizes of 20x20 μm<span class="math notranslate nohighlight">\(^2\)</span>, 5x5 μm<span class="math notranslate nohighlight">\(^2\)</span>, and 2x2 μm<span class="math notranslate nohighlight">\(^2\)</span>. One of the parameters of the image would be RSM roughness, and it tells you if the epitaxial layer is just rocky enough, too rocky, or too smooth and lacking atomic steps.  It can affect the layers grown on top and provides a more physical and immediate detail on the alignment of the different epitaxial layers. This is why AFM is done on n-layers, MQW and p-layers, etc. From time to time, one would also need to do an AFM scan on the LED device to see if it can work well with the tunnel junction. By experience, one can deduce a few things:</p>
-<ul class="simple">
-<li><p>If the roughness is too strong, the layers grown on top can misalign in terms of the discussion of lattice plane, resulting in the collapse of the layers above. It may or may not be an indicator of relaxed lattice.</p>
+<p>Images are typically taken in sizes of 20x20 μm<span class="math notranslate nohighlight">\(^2\)</span>, 5x5 μm<span class="math notranslate nohighlight">\(^2\)</span>, and 2x2 μm<span class="math notranslate nohighlight">\(^2\)</span>. One of the parameters of the image would be RSM roughness, and it tells you if the epitaxial layer is just rocky enough, too rocky, or too smooth and lacking atomic steps.  It can affect the layers grown on top and provides a more physical and immediate detail on the alignment of the different epitaxial layers. This is why AFM is done on n-layers, MQW and p-layers, etc. From time to time, one would also need to do an AFM scan on the LED device to see if it can work well with the tunnel junction. By experience, one can deduce a few things from doing AFM scans:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <ul>
+<li><p>If the roughness is too strong, the layers grown on top can misalign in terms of the discussion of lattice plane, resulting in the collapse of any layers grown on top. It may or may not be an indicator of relaxed lattice.</p>
+<ul class="simple">
 <li><p>In an LED, strong Root-Mean-Squared (RMS) surface roughness of the n-AlGaN layers can result in the collapse of quantum well alignment in the active regions, causing the crystal to fail.</p></li>
-<li><p>In an Edge Emitting Laser where waveguides/cladding layers are used, poor RMS surface roughness can be a factor that affects the stability of guided modes, resulting in unstable transverse mode hopping (<span class="math notranslate nohighlight">\(\text{TEM}_{nm}\)</span>) unrelated to longitudinal mode hopping, or longitudinal gain (intensity vs. wavelength).</p></li>
+<li><p>In an Edge Emitting Laser where waveguides/cladding layers are used, poor RMS surface roughness can be a factor that affects the stability of guided modes, resulting in unstable transverse mode hopping (<span class="math notranslate nohighlight">\(\text{TEM}_{nm}\)</span>) unrelated to longitudinal mode hopping, or longitudinal gain (intensity vs. wavelength). It is also accountable for the light extraction efficiency loss. see <a class="reference internal" href="#surfacemorphologyloss"><span class="std std-numref">Fig. 5</span></a> for an image example.</p></li>
 </ul>
+<figure class="align-default" id="surfacemorphologyloss">
+<img alt="../_images/SurfaceMorphology_Pedrotti.png" src="../_images/SurfaceMorphology_Pedrotti.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Discussion of microdefects in the discussion of attenuation and Fiber Optics from chatper 10 of <a class="reference external" href="https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335">Introduction to Optics 3rd Ed. by Pedrotti</a>.[<a class="reference external" href="https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335">PPP17</a>] While the topic differs slightly, the concept still applies in terms of applying Snell’s law and Total Internal Reflection in the discussion of a waveguide.</span><a class="headerlink" href="#surfacemorphologyloss" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </li>
-<li><p>If the roughness is too smooth, it is typically a good indicator, which results in easier growth for layers on top.</p></li>
+<li><p>If the roughness is too smooth, it is typically a good indicator, which results in easier growth for layers on top. But too smooth could also be an indicator of lacking atomic steps.</p></li>
 </ul>
+</div>
 <p>See the images attached for AFM images</p>
 <figure class="align-default" id="id1">
 <img alt="../_images/AFM_UV_20x20.jpg" src="../_images/AFM_UV_20x20.jpg" />
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">AFM  Images for epi layers at size 20um x 20um</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">AFM  Images for epi layers at size 20um x 20um</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id2">
 <img alt="../_images/AFM_UV_05x05.jpg" src="../_images/AFM_UV_05x05.jpg" />
 <figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">AFM  Images for epi layers at size 5um x 5um</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">AFM  Images for epi layers at size 5um x 5um</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -493,6 +502,8 @@ Shuji Nakamura et al. “Thermal annealing effects on p-type Mg-doped GaN films�
 Jörg Neugebauer and Chris G Van de Walle. “Hydrogen in GaN: Novel aspects of a common impurity”. In: Physical review letters 75.24 (1995), p. 4452.</p>
 <p>[<a class="reference external" href="https://www.mdpi.com/1424-8220/13/8/10482">SLS13</a>]
 Liwen Sang, Meiyong Liao, and Masatomo Sumiya. “A comprehensive review of semiconductor ultraviolet photodetectors: from thin film to one-dimensional nanostructures”. In: Sensors 13.8 (2013), pp. 10482–10518.</p>
+<p>[<a class="reference external" href="https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335">PPP17</a>]
+Frank L Pedrotti, Leno M Pedrotti, and Leno S Pedrotti. Introduction to optics. Cambridge University Press, 2017.</p>
 <p>[<a class="reference external" href="https://www.energy.gov/sites/default/files/2020/02/f71/ssl-rd2020-weisbuch-extraction.pdf">Wei+20</a>]
 C. Weisbuch, H. Benisty*, M. Rattier*, D. Labilloy*, A. David, E. Matioli, C. Lalau-Keraly, M. Cochet, and L. Kuritzky. “Light Extraction in Nitride LEDs”, <a class="reference external" href="https://www.energy.gov/sites/default/files/2020/02/f71/ssl-rd2020-weisbuch-extraction.pdf">https://www.energy.gov/sites/default/files/2020/02/f71/ssl-rd2020-weisbuch-extraction.pdf</a></p>
 <p>[<a class="reference external" href="http://doi.org/10.1088/1361-6641/ac27e7">Zol+21</a>]
