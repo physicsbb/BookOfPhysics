@@ -13,6 +13,15 @@ I have also previously conducted research at [San Francisco State University](ht
 Also try and find me!
 ```
 
+## Publication:
+Please check out one of the available publications that I have as a co-author here.
+
+* High external quantum efficiency (6.8%) UV-A LEDs on AlN templates with quantum barrier optimization
+    * DOI: [10.1364/OE.491622](https://doi.org/10.1364/OE.491622)
+
+* High External Quantum Efficiency (10.6%) Germicidal UV LEDs Grown on Thin Highly Conductive n-AlGaN
+    * DOI: Will be available when pre-print is out. 
+
 ## Featured Coursework:
 
 ### Special Topics: 
@@ -37,4 +46,4 @@ I have previously been a lifeguard and swim instructor both at [SF Rec&Park](htt
 
 At the moment, I am a gymnastics coach at [Santa Barbara Gymnastics (Gym) Club](https://www.santabarbaragymnasticsclub.com/) teaching summer/winter camps and tumbling/gymnastics/parkour classes. 
 
-Other times I am just enjoying the settings and sceneries of Santa Barbara, hanging out with friends, writing this website, attempting here and there to improve the open source of JupyterBook Framework (in an amateur-ish fashion)and implementing MyST Markdown features onto the JupyterBook framework. 
+Other times I am just enjoying the settings and sceneries of Santa Barbara, hanging out with friends, writing this website, attempting here and there to improve the open source of JupyterBook Framework (in an amateur-ish fashion) and implementing MyST Markdown features onto the JupyterBook framework. 
