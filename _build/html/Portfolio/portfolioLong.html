@@ -377,6 +377,7 @@ document.write(`
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#afm-analysis-for-algan">AFM Analysis for AlGaN:</a></li>
 </ul>
 </li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-you-do-afm-scans">How do you do AFM scans?</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#did-i-come-up-with-a-uv-dream-or-a-uv-meme">Did I come up with a UV Dream (or a UV meme?):</a></li>
@@ -423,7 +424,7 @@ document.write(`
 <p>Along the vertical axis (<span class="math notranslate nohighlight">\(p_z\)</span>) gives you the Al-content. The further up top along <span class="math notranslate nohighlight">\(p_z\)</span>, the higher Al-content; the lower along <span class="math notranslate nohighlight">\(p_z\)</span>, the more Ga-content.</p>
 <p>Along the horizontal axis (<span class="math notranslate nohighlight">\(p_x\)</span>) tells you the lattice constant of the AlGaN crystal.</p>
 <p>The crystal may or may not have a narrow stream of intensity. In which case, if the crystal follows along a straight line pointing downward, the crystal is strained, meaning the interface between different layers of different AlGaN composition are neatly aligned, with minimal defects. Keep in mind that defects may or may not be a bad thing. (Sometimes annealing can help)</p>
-<p>In <a class="reference internal" href="#rsmjustification"><span class="std std-numref">Fig. 4</span></a>, it mentions <a class="reference external" href="https://en.wikipedia.org/wiki/Poisson%27s_ratio">Poisson’s effect</a>, and you should not feel intimidated by the word “Poissons”. To give an example, <strong>if you have been given a cubic lattice, at the level of Bravais lattice, you can simply think of the crystal as a cube. All that Poisson’s effect is saying is that upon lattice mismatch, the crystal has been stretched from a cubic lattice into a rectangular lattice, while its total volume remains unchanged.</strong></p>
+<p>In <a class="reference internal" href="#rsmjustification"><span class="std std-numref">Fig. 4</span></a>, it mentions <a class="reference external" href="https://en.wikipedia.org/wiki/Poisson%27s_ratio">Poisson’s effect</a>, and you should not feel intimidated by the word “Poissons”. To give an example, <strong>if you have been given a cubic lattice, at the level of Bravais lattice, you can simply think of the crystal as a cube. All that Poisson’s effect is saying is that upon lattice mismatch, the crystal has been stretched from a cubic lattice into a rectangular lattice, while its total volume remains unchanged. Such is the ideal case for a perfectly strained lattice.</strong> But is reality perfect?</p>
 <figure class="align-default" id="rsmjustification">
 <img alt="../_images/RSM_Justification.jpg" src="../_images/RSM_Justification.jpg" />
 <figcaption>
@@ -434,7 +435,7 @@ document.write(`
 <section id="rocking-curve-analysis-for-algan">
 <h5>Rocking Curve Analysis for AlGaN:<a class="headerlink" href="#rocking-curve-analysis-for-algan" title="Permalink to this heading">#</a></h5>
 <p>The following description of Rocking Curve specifically addresses AlGaN only:</p>
-<p>The Full-Width-Half-Max (FWHM) of the rocking curve in an <span class="math notranslate nohighlight">\(\omega\)</span> scan tells you the crystal quality. The same spread has some correspondance to the spread of the Reciprocal Space Map, which indicates relaxed lattice, and its mosaicity (how ordered the crystal lattice is macroscopically speaking) can be poor. In other words, if the FWHM of the bell peak is narrow, the crystal quality could be decent, which is an indication of decent mosaicity.</p>
+<p>The Full-Width-Half-Max (FWHM) of the rocking curve for (002) plane and (102) plane in an <span class="math notranslate nohighlight">\(\omega\)</span> scan tells you the crystal quality. The same spread has some correspondance to the spread of the Reciprocal Space Map, which indicates relaxed lattice, and its mosaicity (how ordered the crystal lattice is macroscopically speaking) can be poor. In other words, if the FWHM of the bell peak is narrow, the crystal quality could be decent, which is an indication of decent mosaicity.</p>
 </section>
 </section>
 <section id="atomic-force-microscopy">
@@ -475,6 +476,23 @@ document.write(`
 </figcaption>
 </figure>
 </section>
+</section>
+<section id="how-do-you-do-afm-scans">
+<h4>How do you do AFM scans?<a class="headerlink" href="#how-do-you-do-afm-scans" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>load the tip onto the mount.</p></li>
+<li><p>load the mount onto the MFP3D.</p></li>
+<li><p>An external camera is used to observe the behavior of the tip. The task to do now is to adjust the Rx and Ry position of the tip, which locates the tip directly on top of the epitaxial substrate.</p></li>
+<li><p>On top of that, align the laser within the MFP3D directly on the tip.  Doing this means you are maiximizing the sum.</p></li>
+<li><p>Minimize the deflection, which means that the photodetector senses the laser appropriately.</p></li>
+</ol>
+<p>Typically, when doing AFM for epitaxial substrates, non-contact mode is used. In physics language, it means that the AFM device utilizes the Lennard-Jones potential, a non-bonding atomic force felt between the two different “molecules”. Refer to <a class="reference internal" href="#explanationforafm"><span class="std std-numref">Fig. 8</span></a> for an image summary.</p>
+<figure class="align-default" id="explanationforafm">
+<img alt="../_images/ExplanationForAFM.jpg" src="../_images/ExplanationForAFM.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Lennard Jones Potential, AFM setup, MFP3D! Images are found on google!</span><a class="headerlink" href="#explanationforafm" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 <section id="did-i-come-up-with-a-uv-dream-or-a-uv-meme">
@@ -600,6 +618,7 @@ Christian J Zollner et al. “Germicidal ultraviolet LEDs: A review of applicati
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#afm-analysis-for-algan">AFM Analysis for AlGaN:</a></li>
 </ul>
 </li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-you-do-afm-scans">How do you do AFM scans?</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#did-i-come-up-with-a-uv-dream-or-a-uv-meme">Did I come up with a UV Dream (or a UV meme?):</a></li>

@@ -17,9 +17,11 @@ Also try and find me!
 Please check out one of the available publications that I have as a co-author here.
 
 * High external quantum efficiency (6.8%) UV-A LEDs on AlN templates with quantum barrier optimization
+    * authors: Yifan Yao, Hongjian Li, Michael Wang, Panpan Li, ***Michael Lam***, Michael Iza, James Speck, Steve DenBaars, and Shuji Nakamura
     * DOI: [10.1364/OE.491622](https://doi.org/10.1364/OE.491622)
 
 * High External Quantum Efficiency (10.6%) Germicidal UV LEDs Grown on Thin Highly Conductive n-AlGaN
+    * authors: Michael Wang, Feng Wu, Yifan Yao, Christian Zollner, Michael Iza, ***Michael Lam***, Steven DenBaars, Shuji Nakamura, and James Speck.
     * DOI: Will be available when pre-print is out. 
 
 ## Featured Coursework:
