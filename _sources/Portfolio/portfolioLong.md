@@ -27,7 +27,7 @@ Along the horizontal axis ($p_x$) tells you the lattice constant of the AlGaN cr
 
 The crystal may or may not have a narrow stream of intensity. In which case, if the crystal follows along a straight line pointing downward, the crystal is strained, meaning the interface between different layers of different AlGaN composition are neatly aligned, with minimal defects. Keep in mind that defects may or may not be a bad thing. (Sometimes annealing can help)
 
-In {numref}`RSMJustification`, it mentions [Poisson's effect](https://en.wikipedia.org/wiki/Poisson%27s_ratio), and you should not feel intimidated by the word "Poissons". To give an example, **if you have been given a cubic lattice, at the level of Bravais lattice, you can simply think of the crystal as a cube. All that Poisson's effect is saying is that upon lattice mismatch, the crystal has been stretched from a cubic lattice into a rectangular lattice, while its total volume remains unchanged.** 
+In {numref}`RSMJustification`, it mentions [Poisson's effect](https://en.wikipedia.org/wiki/Poisson%27s_ratio), and you should not feel intimidated by the word "Poissons". To give an example, **if you have been given a cubic lattice, at the level of Bravais lattice, you can simply think of the crystal as a cube. All that Poisson's effect is saying is that upon lattice mismatch, the crystal has been stretched from a cubic lattice into a rectangular lattice, while its total volume remains unchanged. Such is the ideal case for a perfectly strained lattice.** But is reality perfect? 
 ```{figure} ../Images/RSM_Justification.jpg
 :name: RSMJustification
 RSM Justification.
@@ -36,7 +36,7 @@ RSM Justification.
 ##### Rocking Curve Analysis for AlGaN:
 The following description of Rocking Curve specifically addresses AlGaN only:
 
-The Full-Width-Half-Max (FWHM) of the rocking curve in an $\omega$ scan tells you the crystal quality. The same spread has some correspondance to the spread of the Reciprocal Space Map, which indicates relaxed lattice, and its mosaicity (how ordered the crystal lattice is macroscopically speaking) can be poor. In other words, if the FWHM of the bell peak is narrow, the crystal quality could be decent, which is an indication of decent mosaicity. 
+The Full-Width-Half-Max (FWHM) of the rocking curve for (002) plane and (102) plane in an $\omega$ scan tells you the crystal quality. The same spread has some correspondance to the spread of the Reciprocal Space Map, which indicates relaxed lattice, and its mosaicity (how ordered the crystal lattice is macroscopically speaking) can be poor. In other words, if the FWHM of the bell peak is narrow, the crystal quality could be decent, which is an indication of decent mosaicity. 
 
 #### Atomic Force Microscopy:
 Atomic Force Microscopy is used to characterize surface morphology of crystals. It provides another perspective on the roughness of the crystal. It is capable of analyzing the epitaxial layers' surfaces. AFM pictures can be interesting and simply entertaining to look at, because the pictures are at a micron scale ($10^{-6}$ or $\mu m$)
@@ -64,6 +64,19 @@ AFM  Images for epi layers at size 20um x 20um
 AFM  Images for epi layers at size 5um x 5um
 ```
 
+#### How do you do AFM scans? 
+1. load the tip onto the mount. 
+2. load the mount onto the MFP3D. 
+3. An external camera is used to observe the behavior of the tip. The task to do now is to adjust the Rx and Ry position of the tip, which locates the tip directly on top of the epitaxial substrate. 
+4. On top of that, align the laser within the MFP3D directly on the tip.  Doing this means you are maiximizing the sum.
+5. Minimize the deflection, which means that the photodetector senses the laser appropriately.
+
+Typically, when doing AFM for epitaxial substrates, non-contact mode is used. In physics language, it means that the AFM device utilizes the Lennard-Jones potential, a non-bonding atomic force felt between the two different "molecules". Refer to {numref}`ExplanationForAFM` for an image summary.
+
+```{figure} ../Images/ExplanationForAFM.jpg
+:name: ExplanationForAFM
+Lennard Jones Potential, AFM setup, MFP3D! Images are found on google!
+```
 
 ### Did I come up with a UV Dream (or a UV meme?):
 Since LEE of UV wavelength is low due to Total Internal Reflection, where light gets trapped in the guided modes, the build of a Fabry Perot Edge Emitting Laser (EEL) is a more feasible solution simply from the standpoint of ray tracing. A Distributed Feedback (DFB) Grated EEL would be an expensive build due to difficult fabrication of the Bragg's grating at an atomic level (think in terms of Miller Indicies). 
