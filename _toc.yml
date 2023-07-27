@@ -15,3 +15,6 @@ parts:
   - caption: Condensed Matter
     chapters:
     - file: CondensedMatter/introCondMat
+  - caption: Special Topics
+    chapters:
+    - file: SpecialTopics/ece594u

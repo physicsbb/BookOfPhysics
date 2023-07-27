@@ -8,7 +8,6 @@ or at mhtlam1355 [at] gmail [dot] com.
 ## See below for Table Of Content:
 ```{tableofcontents}
 ```
-Note: Website is programmed with the JuypterBook Framework, many thanks to the CEO of the company [Rowan Cockett](https://www.linkedin.com/in/rowancockett/) for his other direct assistance and advice through the Slack chat.
 
 ## What is this for?
 This is a documentation by a recent physics graduate who is unwilling to let go of something that occupy all of him for the past 3 years. I found out that I learned so much more and remember things much better when I was reading on my own out of my own curiosity, so, sometimes it really helps to be motivated by genuine interest when it comes to learning. I'm also very interested in reintroducing materials for my own benefits as well as for those who would like to revisit them. I would like to use this opportunity to untangle some of the knots in processing the information. 
