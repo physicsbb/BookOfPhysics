@@ -71,7 +71,7 @@ AFM  Images for epi layers at size 5um x 5um
 4. On top of that, align the laser within the MFP3D directly on the tip.  Doing this means you are maiximizing the sum.
 5. Minimize the deflection, which means that the photodetector senses the laser appropriately.
 
-Typically, when doing AFM for epitaxial substrates, non-contact mode is used. In physics language, it means that the AFM device utilizes the Lennard-Jones potential, a non-bonding atomic force felt between the two different "molecules". Refer to {numref}`ExplanationForAFM` for an image summary.
+Typically, when doing AFM for epitaxial substrates, non-contact mode is used. In physics language, non-contact mode means that the AFM device utilizes the non-contact portion of Lennard-Jones potential. Lennard Jones Potential is a non-bonding atomic force felt between the two different "molecules" (between the tip and the substrate). Refer to {numref}`ExplanationForAFM` for an image summary.
 
 ```{figure} ../Images/ExplanationForAFM.jpg
 :name: ExplanationForAFM
