@@ -1,5 +1,8 @@
 # Short Portfolio
 
+## Link to my resume:
+[Here's the link to my resume!](https://drive.google.com/file/d/1xvhfYsAUWhOmoPkLuvnIdYsBQWT4YRQ-/view?usp=drive_link)
+
 ## My background:
 I am a recent [Physics](https://www.physics.ucsb.edu/education) graduate from [UCSB](https://www.ucsb.edu/). If I were to come up with a name for the focus of courses that I have taken, I would say Condensed Matter and Optics Applications. In my opinion, my two quarters of Condensed Matter, one quarter of Optics and one quarter of Quantum Photonics Experiment shaped my perspective as a physics student driven by physical applications.
 

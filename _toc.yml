@@ -7,7 +7,7 @@ parts:
   - caption: Portfolio
     chapters:
     - file: Portfolio/portfolioShort
-    - file: Portfolio/portfolioLong
+    - file: Portfolio/UVPhotonicsResearch
   - caption: Handwavy background in mathematics
     chapters:
     - file: Review/foreword
