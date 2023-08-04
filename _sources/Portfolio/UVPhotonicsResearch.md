@@ -67,6 +67,8 @@ AFM  Images for epi layers at size 5um x 5um
 3. An external camera is used to observe the behavior of the tip. The task to do now is to adjust the Rx and Ry position of the tip, which locates the tip directly on top of the epitaxial substrate. 
 4. On top of that, align the laser within the MFP3D directly on the tip.  Doing this means you are maiximizing the sum.
 5. Minimize the deflection, which means that the photodetector senses the laser appropriately.
+6. Engage and autotune the tip such that the computer generates a graph showing that the tip is working.
+7. Adjust the scan rate, amplitude, voltage, Integral Gain, and size of the images accordingly. 
 
 Typically, when doing AFM for epitaxial substrates, non-contact mode is used. In physics language, non-contact mode means that the AFM device utilizes the non-contact portion of Lennard-Jones potential. Lennard Jones Potential is a non-bonding atomic force felt between the two different "molecules" (between the tip and the substrate). Refer to {numref}`ExplanationForAFM` for an image summary.
 
@@ -75,10 +77,12 @@ Typically, when doing AFM for epitaxial substrates, non-contact mode is used. In
 Lennard Jones Potential, AFM setup, MFP3D! Images are found on google!
 ```
 
+For more detailed procedures, check out [the manual published by Oxford Instrument Asylum Research](https://www.afmhelp.com/docs/manuals/mfp3dmanual.pdf). 
+
 ### Did I come up with a UV Dream (or a UV meme?):
 Since LEE of UV wavelength is low due to Total Internal Reflection, where light gets trapped in the guided modes, the build of a Fabry Perot Edge Emitting Laser (EEL) is a more feasible solution simply from the standpoint of ray tracing. A Distributed Feedback (DFB) Grated EEL would be an expensive build due to difficult fabrication of the Bragg's grating at an atomic level (think in terms of Miller Indicies). 
 
-The only way to generate a truly fundamental $\text{TEM}_{00}$ mode is through a Vertical Cavity Surface Emitting Laser (VCSEL), but light has to come out through the top and bottom of the device, when LEE (referring to an LED, as well as , think in terms of ray tracing) is extremely low. Do you see why it would be both exciting and fishy when someone says they can build a UV FP-VCSEL now (within the immediate future)? 
+The only way to generate a truly fundamental $\text{TEM}_{00}$ mode is through a Vertical Cavity Surface Emitting Laser (VCSEL), but light has to come out through the top and bottom of the device, when LEE (referring to an LED, think in terms of ray tracing) is extremely low. Do you see why it would be both exciting and fishy when someone says they can build a UV FP-VCSEL now (within the immediate future)? 
 
 ## One of the greatest achievements in the History of Science from 30 years ago:
 30+ years ago, everyone believed that ZnSe (II-VI materials) would have been the ideal materials which can give rise to the invention of blue and white LED based on theoretical calculations, and everyone believed that Gallium Nitride Research would have been equivalent to "walking in wasteland" given the difficulty of the research. The only ones in the field doing research in III-Nitride materials back in the late 80s were only [Dr. Hiroshi Amano](https://www.nobelprize.org/prizes/physics/2014/amano/facts/), [Dr. Isamu Akasaki](https://www.nobelprize.org/prizes/physics/2014/akasaki/facts/) and [Dr. Shuji Nakamura](https://www.nobelprize.org/prizes/physics/2014/nakamura/facts/). 
