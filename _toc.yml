@@ -8,13 +8,8 @@ parts:
     chapters:
     - file: Portfolio/portfolioShort
     - file: Portfolio/UVPhotonicsResearch
+    - file: Portfolio/Phys128Lab
   - caption: Handwavy background in mathematics
     chapters:
     - file: Review/foreword
     - file: Review/linalg
-  - caption: Condensed Matter
-    chapters:
-    - file: CondensedMatter/introCondMat
-  - caption: Special Topics
-    chapters:
-    - file: SpecialTopics/ece594u
