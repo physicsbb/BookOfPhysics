@@ -1,7 +1,7 @@
 # Senior Lab Experiment: Laser Diode Spectroscopy
 
 ## Structure of this lab: 
-You are given a set of instruments, which include 90/10 and 50/50 beam splitters, total mirrors, photodetectors, and an IR external cacvity laser. 
+You are given a set of instruments, which include 90/10 and 50/50 beam splitters, total mirrors, photodetectors, and an IR external cavity laser. 
 
 ## Goal: 
 - To observe the Doppler-Free Spectra of Rb gas cell.
