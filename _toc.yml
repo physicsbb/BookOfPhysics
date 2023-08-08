@@ -8,7 +8,8 @@ parts:
     chapters:
     - file: Portfolio/portfolioShort
     - file: Portfolio/UVPhotonicsResearch
-    - file: Portfolio/Phys128Lab
+    - file: Portfolio/MandelbrotSet
+
   - caption: Handwavy background in mathematics
     chapters:
     - file: Review/foreword
