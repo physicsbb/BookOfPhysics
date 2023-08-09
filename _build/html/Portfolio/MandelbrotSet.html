@@ -451,8 +451,11 @@ document.write(`
 <div class="math notranslate nohighlight" id="equation-recursion-expression">
 <span class="eqno">(1)<a class="headerlink" href="#equation-recursion-expression" title="Permalink to this equation">#</a></span>\[z_{n+1}=z_n^2+c\]</div>
 <p>where <span class="math notranslate nohighlight">\(c\)</span> is any complex number within the interval of the real domain <span class="math notranslate nohighlight">\(x\in[-2,1]\)</span> and of the imaginary domain <span class="math notranslate nohighlight">\(y\in[-1,1]\)</span>, given that <span class="math notranslate nohighlight">\(c=x+iy\)</span> .</p>
-<p>If the complex number <span class="math notranslate nohighlight">\(c\)</span> iterates through the recursion relation and satisfies the condition <span class="math notranslate nohighlight">\(|z_n|\leq2\)</span>, then <span class="math notranslate nohighlight">\(c\)</span> is within the mandelbrot set.</p>
-<p>If the complex number <span class="math notranslate nohighlight">\(c\)</span> iterates through the recursion relation and does not satisfy the condition <span class="math notranslate nohighlight">\(|z_n|\leq2\)</span>, then <span class="math notranslate nohighlight">\(c\)</span> is in the mandelbrot set.</p>
+<p>A condition is imposed for the complex number to be in the Mandelbrot Set:</p>
+<div class="math notranslate nohighlight" id="equation-mandelbrot-condition">
+<span class="eqno">(2)<a class="headerlink" href="#equation-mandelbrot-condition" title="Permalink to this equation">#</a></span>\[|z|\leq2\]</div>
+<p>If the complex number <span class="math notranslate nohighlight">\(c\)</span> iterates through the recursion relation in equation <a class="reference internal" href="#equation-recursion-expression">(1)</a> and satisfies the condition in equation <a class="reference internal" href="#equation-mandelbrot-condition">(2)</a>, then <span class="math notranslate nohighlight">\(c\)</span> is within the mandelbrot set.</p>
+<p>If the complex number <span class="math notranslate nohighlight">\(c\)</span> iterates through the recursion relation in equation <a class="reference internal" href="#equation-recursion-expression">(1)</a> and does not satisfy the condition in equation <a class="reference internal" href="#equation-mandelbrot-condition">(2)</a>, then <span class="math notranslate nohighlight">\(c\)</span> is not in the mandelbrot set. Note that the numbers that are not in the Mandelbrot set can diverge to infinity.</p>
 <p>For other chaotic behavior and its connection to the bifurcation diagram, refer to <a class="reference external" href="https://en.wikipedia.org/wiki/Mandelbrot_set">wikipedia</a>.</p>
 </section>
 </div></section>
