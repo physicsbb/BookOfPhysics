@@ -382,7 +382,7 @@ document.write(`
 <h1>Mandelbrot set for computational competency<a class="headerlink" href="#mandelbrot-set-for-computational-competency" title="Permalink to this heading">#</a></h1>
 <section id="mandelbrot-set">
 <h2>Mandelbrot set<a class="headerlink" href="#mandelbrot-set" title="Permalink to this heading">#</a></h2>
-<p>The following codes were scripts written entirely by myself. References and information in regards to a Mandelbrot set were from its <a class="reference external" href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia documentation</a>. For scratch work to see my thought process you can click <a class="reference external" href="https://drive.google.com/file/d/1HGGAVtIHGmOfS4NRto5JX3fJV1lZP-Bn/view?usp=drive_link">here</a> to see my brainstorming off of the wiki page. No TA’s were consulted in the making of this plot. No copying from online sources either. The script is not the most computationally efficient but this is a demonstration of my capability to translate mathematical languages into scripts and to interpret of boundary conditions.</p>
+<p>The following codes were scripts written entirely by myself. References and information in regards to a Mandelbrot set were from its <a class="reference external" href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia documentation</a>. For scratch work to see my thought process you can click <a class="reference external" href="https://drive.google.com/file/d/1HGGAVtIHGmOfS4NRto5JX3fJV1lZP-Bn/view?usp=drive_link">here</a> to see my brainstorming off of the wiki page. The script is not the most computationally efficient but this is a demonstration of my capability to translate mathematical languages into scripts and to interpret of boundary conditions.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -447,7 +447,10 @@ document.write(`
 <div class="proof definition admonition" id="recursion-relation">
 <p class="admonition-title"><span class="caption-number">Definition 1 </span></p>
 <section class="definition-content" id="proof-content">
-<p>A Mandelbrot set is characterized by the recursion relation of <span class="math notranslate nohighlight">\(z_{n+1}=z_n^2+c\)</span> where c is a complex number in the interval of <span class="math notranslate nohighlight">\(x\in[-2,1]\)</span> and <span class="math notranslate nohighlight">\(y\in[-1,1]\)</span>.</p>
+<p>A Mandelbrot set is characterized by the recursion relation of</p>
+<div class="math notranslate nohighlight" id="equation-recursion-expression">
+<span class="eqno">(1)<a class="headerlink" href="#equation-recursion-expression" title="Permalink to this equation">#</a></span>\[z_{n+1}=z_n^2+c\]</div>
+<p>where <span class="math notranslate nohighlight">\(c\)</span> is any complex number within the interval of the real domain <span class="math notranslate nohighlight">\(x\in[-2,1]\)</span> and of the imaginary domain <span class="math notranslate nohighlight">\(y\in[-1,1]\)</span>, given that <span class="math notranslate nohighlight">\(c=x+iy\)</span> .</p>
 <p>If the complex number <span class="math notranslate nohighlight">\(c\)</span> iterates through the recursion relation and satisfies the condition <span class="math notranslate nohighlight">\(|z_n|\leq2\)</span>, then <span class="math notranslate nohighlight">\(c\)</span> is within the mandelbrot set.</p>
 <p>If the complex number <span class="math notranslate nohighlight">\(c\)</span> iterates through the recursion relation and does not satisfy the condition <span class="math notranslate nohighlight">\(|z_n|\leq2\)</span>, then <span class="math notranslate nohighlight">\(c\)</span> is in the mandelbrot set.</p>
 <p>For other chaotic behavior and its connection to the bifurcation diagram, refer to <a class="reference external" href="https://en.wikipedia.org/wiki/Mandelbrot_set">wikipedia</a>.</p>
