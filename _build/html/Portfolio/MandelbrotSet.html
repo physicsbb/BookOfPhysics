@@ -62,6 +62,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Portfolio/MandelbrotSet';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -361,6 +363,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mandelbrot-set">Mandelbrot set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#justifications">Justifications:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-is-a-mandelbrot-set">Question: What is a mandelbrot set?</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -376,7 +382,7 @@ document.write(`
 <h1>Mandelbrot set for computational competency<a class="headerlink" href="#mandelbrot-set-for-computational-competency" title="Permalink to this heading">#</a></h1>
 <section id="mandelbrot-set">
 <h2>Mandelbrot set<a class="headerlink" href="#mandelbrot-set" title="Permalink to this heading">#</a></h2>
-<p>The following codes were scripts written by myself. References and information in regards to a Mandelbrot set were from its <a class="reference external" href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia documentation</a>.</p>
+<p>The following codes were scripts written entirely by myself. References and information in regards to a Mandelbrot set were from its <a class="reference external" href="https://en.wikipedia.org/wiki/Mandelbrot_set">Wikipedia documentation</a>. For scratch work to see my thought process you can click <a class="reference external" href="https://drive.google.com/file/d/1HGGAVtIHGmOfS4NRto5JX3fJV1lZP-Bn/view?usp=drive_link">here</a> to see my brainstorming off of the wiki page. No TA’s were consulted in the making of this plot. No copying from online sources either. The script is not the most computationally efficient but this is a demonstration of my capability to translate mathematical languages into scripts and to interpret of boundary conditions.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -432,6 +438,21 @@ document.write(`
 <img alt="../_images/1e7a5759117b7d7340f2868c569bc6399f77a475a6a5b30be859ceef3711c236.png" src="../_images/1e7a5759117b7d7340f2868c569bc6399f77a475a6a5b30be859ceef3711c236.png" />
 </div>
 </div>
+</section>
+<section id="justifications">
+<h2>Justifications:<a class="headerlink" href="#justifications" title="Permalink to this heading">#</a></h2>
+<section id="question-what-is-a-mandelbrot-set">
+<h3>Question: What is a mandelbrot set?<a class="headerlink" href="#question-what-is-a-mandelbrot-set" title="Permalink to this heading">#</a></h3>
+<p>By wikipedia definition, the mandelbrot set is a set of numbers that iterates through the recursion relation, such that you yield different characteristics of the set of numbers.</p>
+<div class="proof definition admonition" id="recursion-relation">
+<p class="admonition-title"><span class="caption-number">Definition 1 </span></p>
+<section class="definition-content" id="proof-content">
+<p>A Mandelbrot set is characterized by the recursion relation of <span class="math notranslate nohighlight">\(z_{n+1}=z_n^2+c\)</span> where c is a complex number in the interval of <span class="math notranslate nohighlight">\(x\in[-2,1]\)</span> and <span class="math notranslate nohighlight">\(y\in[-1,1]\)</span>.</p>
+<p>If the complex number <span class="math notranslate nohighlight">\(c\)</span> iterates through the recursion relation and satisfies the condition <span class="math notranslate nohighlight">\(|z_n|\leq2\)</span>, then <span class="math notranslate nohighlight">\(c\)</span> is within the mandelbrot set.</p>
+<p>If the complex number <span class="math notranslate nohighlight">\(c\)</span> iterates through the recursion relation and does not satisfy the condition <span class="math notranslate nohighlight">\(|z_n|\leq2\)</span>, then <span class="math notranslate nohighlight">\(c\)</span> is in the mandelbrot set.</p>
+<p>For other chaotic behavior and its connection to the bifurcation diagram, refer to <a class="reference external" href="https://en.wikipedia.org/wiki/Mandelbrot_set">wikipedia</a>.</p>
+</section>
+</div></section>
 </section>
 </section>
 
@@ -503,6 +524,10 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mandelbrot-set">Mandelbrot set</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#justifications">Justifications:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-is-a-mandelbrot-set">Question: What is a mandelbrot set?</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
