@@ -1,4 +1,4 @@
-# A Richer Resume
+# A More Detailed Resume
 
 ## Link to my resume:
 [Here's the link to my resume!](https://drive.google.com/file/d/1ohCaZ4zYy7jsV-XTIUjNUCC0HNrKbPzj/view?usp=drive_link)
@@ -22,10 +22,19 @@ Please check out one of the available publications that I have as a co-author he
 * High external quantum efficiency (6.8%) UV-A LEDs on AlN templates with quantum barrier optimization
     * authors: Yifan Yao, Hongjian Li, Michael Wang, Panpan Li, ***Michael Lam***, Michael Iza, James Speck, Steve DenBaars, and Shuji Nakamura
     * DOI: [10.1364/OE.491622](https://doi.org/10.1364/OE.491622)
+    * The experimental HRXRD data in <105> plane generated on this paper was done by me. 
+
+```{figure} ../Images/PublicationXRD.jpeg
+:height: 300px
+```
+
+```{figure} ../Images/B221014BL_RSM.jpg
+:height: 400px
+```
 
 * High External Quantum Efficiency (10.6%) Germicidal UV LEDs Grown on Thin Highly Conductive n-AlGaN
     * authors: Michael Wang, Feng Wu, Yifan Yao, Christian Zollner, Michael Iza, ***Michael Lam***, Steven DenBaars, Shuji Nakamura, and James Speck.
-    * DOI: Will be available when pre-print is out. 
+    * DOI: Publication is currently accepted, waiting for review to be completed. Link will be available when pre-print is out. 
 
 ## Featured Coursework:
 
