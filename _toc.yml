@@ -9,6 +9,7 @@ parts:
     - file: Portfolio/portfolioShort
     - file: Portfolio/UVPhotonicsResearch
     - file: Portfolio/MandelbrotSet
+    - file: Portfolio/Phys128Lab
 
   - caption: Handwavy background in mathematics
     chapters:
