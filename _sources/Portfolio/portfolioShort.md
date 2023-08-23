@@ -1,4 +1,4 @@
-# Short Portfolio
+# A Richer Resume
 
 ## Link to my resume:
 [Here's the link to my resume!](https://drive.google.com/file/d/1ohCaZ4zYy7jsV-XTIUjNUCC0HNrKbPzj/view?usp=drive_link)
