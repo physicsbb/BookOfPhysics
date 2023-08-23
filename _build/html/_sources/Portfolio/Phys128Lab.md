@@ -26,7 +26,7 @@ As provided by the lab manual, the laser model TOLD9200 is a gain guided laser d
 :name: TOLD9200EEL
 A picture denoting the properties of a gain-guided Edge Emitting Laser. 
 ```
-The laser stage of the experiment/schematic is not to be adjusted too much except to adjust the injection current and voltage setting, as the external cavity is optimally positioned at a particular angle for ideal mode. Refer to {numref}`TOLD9200ExternalCavity` for an image of the whole laser stage. 
+The laser stage of the experiment/schematic is not to be adjusted too much except to adjust the injection current and voltage setting. The external cavity is also optimally positioned at a particular angle for ideal mode. Refer to {numref}`TOLD9200ExternalCavity` for an image of the whole laser stage. 
 ```{figure} ../Images/Phys128L_LDS/ExternalCavity.png
 :name: TOLD9200ExternalCavity
 On the left is a ray diagram denoting the primary and secondary laser beams of different optical paths. A quick note, the laser has an internal cavity within the epitaxial wafer, formed between the front and back facet, as seen in {numref}`TOLD9200EEL` along the direction anti-parallel to the light ray, also known as the internal resonant cavity. On the right is the full laser stage, also including the collimating lens, which works to converge the diverging light ray onto the grating feedback. 
