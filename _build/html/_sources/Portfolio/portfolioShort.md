@@ -1,13 +1,13 @@
 # A More Detailed Resume
 
 ## Link to my resume:
-[Here's the link to my resume!](https://drive.google.com/file/d/1ohCaZ4zYy7jsV-XTIUjNUCC0HNrKbPzj/view?usp=drive_link)
+[Here's the link to my resume!](https://drive.google.com/file/d/1BTK4mx_tq7eiRbBGjcmcdsayEseARWo0/view)
 
 ## My background:
 I am a recent [Physics](https://www.physics.ucsb.edu/education) graduate from [UCSB](https://www.ucsb.edu/). If I were to come up with a name for the focus of courses that I have taken, I would say Condensed Matter and Optics Applications. In my opinion, my two quarters of Condensed Matter, one quarter of Optics and one quarter of Quantum Photonics Experiment shaped my perspective as a physics student driven by physical applications.
 
 ## Research:
-I have one year of research experience in UV photonics in the [Materials Department](https://ssleec.ucsb.edu/) under the supervision of [Dr. Shuji Nakamura](https://materials.ucsb.edu/people/faculty/shuji-nakamura). 
+I have one year of research experience in UV photonics in the [Materials Department](https://ssleec.ucsb.edu/) under the supervision of [2014 Physics Nobel Prize Winner Dr. Shuji Nakamura](https://materials.ucsb.edu/people/faculty/shuji-nakamura). 
 ```{figure} ../Images/SSLEECNovConference2022.jpeg
 Try and find me!
 ```

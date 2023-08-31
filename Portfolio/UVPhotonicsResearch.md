@@ -13,7 +13,7 @@ One of the biggest challenges in UV-A LED research is in growing AlGaN on top of
 Characterization is instrumental in modelling growth trend and monitoring growth result. Without characterization, there would be no data to study from. The tools used for characterization include but are not limited to High Resolution X-Ray Diffraction (HRXRD), Atomic Force Microscopy, Scanning Electron Microscopy, Photoluminescence Test, quick test and Hall Measurements. 
 
 #### X-Ray Diffraction:
-XRD is performed to generate what is called a Reciprocal Space Map, which works to parameterize the growth condition of the AlGaN crystal in momentum/reciprocal space. (Or you can say $\hbar=1$, $\hbar a\hbar a$.) The diffractometer is also capable of characterizing the samples in other ways, such as the rocking curve, and others. 
+XRD is performed to generate what is called a Reciprocal Space Map in <105> plane, which works to parameterize the growth condition of the AlGaN crystal in momentum/reciprocal space. (Or you can say $\hbar=1$, $\hbar a\hbar a$.) The diffractometer is also capable of characterizing the samples in other ways, such as the rocking curve, and others. 
 
 ##### Reciprocal Space Map (RSM) Analysis for AlGaN:
 The following description of Reciprocal Space specifically addresses AlGaN only:
