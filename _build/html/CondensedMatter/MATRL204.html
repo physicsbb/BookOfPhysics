@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Linear Algebra in Physics &#8212; Book Of Physics</title>
+    <title>(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials &#8212; Book Of Physics</title>
   
   
   
@@ -64,11 +64,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Review/linalg';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'CondensedMatter/MATRL204';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials" href="../CondensedMatter/MATRL204.html" />
-    <link rel="prev" title="Foreword" href="foreword.html" />
+    <link rel="next" title="Random ideas?" href="../ForFun/Ideas.html" />
+    <link rel="prev" title="Linear Algebra in Physics" href="../Review/linalg.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -167,13 +167,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../Portfolio/Phys128Lab.html">Senior Lab Experiment: Laser Diode Spectroscopy</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Handwavy background in mathematics</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="foreword.html">Foreword</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Linear Algebra in Physics</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Review/foreword.html">Foreword</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Review/linalg.html">Linear Algebra in Physics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Condensed Matter</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../CondensedMatter/MATRL204.html">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">For Fun?</span></p>
@@ -250,7 +250,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/physicsbb/BookOfPhysics/issues/new?title=Issue%20on%20page%20%2FReview/linalg.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/physicsbb/BookOfPhysics/issues/new?title=Issue%20on%20page%20%2FCondensedMatter/MATRL204.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -280,7 +280,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/Review/linalg.md" target="_blank"
+      <li><a href="../_sources/CondensedMatter/MATRL204.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -362,7 +362,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Linear Algebra in Physics</h1>
+    <h1>(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -372,9 +372,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elementary-descriptions-of-linear-algebra-and-notations">Elementary Descriptions Of Linear Algebra and notations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#completeness-of-a-function-fourier-s-trick">Completeness of a function &amp; Fourier’s Trick</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-1-review-of-maxwell-s-equations">Lecture 1: Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equations">Maxwell’s equations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equation-in-dielectric-materials">Maxwell’s equation in Dielectric Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-response-of-dielectric-materials">Linear Response of Dielectric Materials</a></li>
 </ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4">Lorentz Force (Griffiths E&amp;M Ch 10.1.4)</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -385,214 +395,85 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="linear-algebra-in-physics">
-<h1>Linear Algebra in Physics<a class="headerlink" href="#linear-algebra-in-physics" title="Permalink to this heading">#</a></h1>
-<section id="elementary-descriptions-of-linear-algebra-and-notations">
-<h2>Elementary Descriptions Of Linear Algebra and notations<a class="headerlink" href="#elementary-descriptions-of-linear-algebra-and-notations" title="Permalink to this heading">#</a></h2>
-<p>A state is described by the wavefunction, which can be written as a vector; the observable is represented by an <span class="math notranslate nohighlight">\(n\times n\)</span> operator, be it linear or not. Naturally, the operator happens to have a matrix representation, then an <span class="math notranslate nohighlight">\(n\times n\)</span> matrix would act on the state vector, hence a linear transformation. The most friendly approach to quantum mechanics is to realize that a part of quantum mechanics satisfy the Eigenequation. That is, the (eigen)energy is an eigenvalue; the state vector is an eigenvector (or an eigenstate); the operator is a linear operator. Wavefunction lives in Hilbert Space. This “book” will only discuss the linear algebra up to the physicist’s standard –– no <span class="math notranslate nohighlight">\(\varepsilon - \delta\)</span> proofs, we simply accept that the math just works as perfectly fine tools.</p>
-<p>We are most accustomed to the linear algebra fashion of writing your vector as a column vector, because that is the easiest introduction to the treatement of a vector.</p>
-<p>The simplest n-dimensional vector takes the form</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
-    \vec{e_1} + \vec{e_2} + \vec{e_3} + \dots + \vec{e_n}
-    =
-    \begin{bmatrix}x_1 \\ 0   \\ 0   \\ \vdots \\ 0   \end{bmatrix} + 
-    \begin{bmatrix}  0 \\ x_2 \\ 0   \\ \vdots \\ 0   \end{bmatrix} + 
-    \begin{bmatrix}  0 \\ 0   \\ x_3 \\ \vdots \\ 0   \end{bmatrix} +
-    \dots +  
-    \begin{bmatrix}  0 \\ 0   \\ 0   \\ \vdots \\ x_n \end{bmatrix} 
-\end{align}
-\end{split}\]</div>
-<p>which, if I write them as ket vector in the bra-ket (dirac) notation, it would look like</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{align}
-    |\psi\rangle
-    =
-    | \psi_1 \rangle + |\psi_2\rangle 
-    + | \psi_3 \rangle + \dots + |\psi_n \rangle
-\end{align}
-\]</div>
-<p>Moving on, when we talk about what a linear combination is, we typically mean if the solution is spanned by the set. Hence, a linear combination. In lower division linear algebra, you were only used to working with vectors in, at max 5 or 6 dimensions.</p>
-<p>Keys to remember:</p>
-<ol class="arabic simple">
-<li><p>we are working in n dimensions.</p></li>
-<li><p>the general solution to a system of equations in n-dimensional space has the form</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[ 
-\begin{align}
-    \vec{v}(x) = c_1 \vec{v}_1(x) + c_2 \vec{v}_2(x) +  c_3 \vec{v}_3(x) + \dots + c_n \vec{v}_n(x)
-\end{align}
-\]</div>
-<p>In which case, we can write the general solution as a summation series.</p>
-<div class="math notranslate nohighlight">
-\[
-\begin{align}
-    \vec{v}(x) = \sum _{n=1} ^{N} c_n \vec{v}_n(x)
-\end{align}
-\]</div>
-<p>Now that we have already established a basic understanding of how to work with n-dimensional vectors, we can move onto Hilbert Space: infinite dimensional space.</p>
-<p>In Quantum Mechanics, wavefunctions live in Hilbert Space. For mastery of Hilbert Space, refer to a topic called <a class="reference external" href="https://en.wikipedia.org/wiki/Square-integrable_function">functional analysis</a> in mathematics which is not meant to be covered in here.</p>
-<p>Since the mathematical model of quantum mechanics builds off of Hilbert Space, and that Hilbert Space has a property that</p>
-<div class="proof property admonition" id="square-integrability">
-<p class="admonition-title"><span class="caption-number">Property 1 </span></p>
-<section class="property-content" id="proof-content">
-<p>The set of all <span class="math notranslate nohighlight">\(\textbf{square-integrable}\)</span> functions, on specified interval</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
-    f(x) &amp;\text{ such that } \int _a ^b f^{*}(x) f(x) dx &lt; \infty \\ &amp; \text{ where a and b are almost always } \pm \infty
-\end{align}
-\end{split}\]</div>
-<p>contributes to a (much smaller) finite dimension vector subspace (that lives in <span class="math notranslate nohighlight">\(\mathbb{R}^{\infty}\)</span>).</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="ucsb-matrl-204-intro-to-magnetism-and-magnetic-materials">
+<h1>(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials<a class="headerlink" href="#ucsb-matrl-204-intro-to-magnetism-and-magnetic-materials" title="Permalink to this heading">#</a></h1>
 </section>
-</div><p>Since the vectors are infinite dimensional, you would have to add them infinitely. That is</p>
+<section class="tex2jax_ignore mathjax_ignore" id="lecture-1-review-of-maxwell-s-equations">
+<h1>Lecture 1: Review of Maxwell’s equations<a class="headerlink" href="#lecture-1-review-of-maxwell-s-equations" title="Permalink to this heading">#</a></h1>
+<p>This topic is aimed towards its applications in Condensed Matter. The physics involved includes Electromagnetism and Quantum Mechanics.</p>
+<section id="maxwell-s-equations">
+<h2>Maxwell’s equations<a class="headerlink" href="#maxwell-s-equations" title="Permalink to this heading">#</a></h2>
+<section id="standard-maxwell-s-equations">
+<h3>Standard Maxwell’s equations<a class="headerlink" href="#standard-maxwell-s-equations" title="Permalink to this heading">#</a></h3>
+<p>We start off with the four Maxwell’s equations</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{align}
-    \sum _{i=1} ^{\infty} \vec{e_i} &amp;= 
-    \vec{e_1} + \vec{e_2} + \vec{e_3} + \dots + \vec{e_n} + \dots 
-    \\ \\
-    \begin{bmatrix}x_1 \\ x_2 \\ x_3 \\ \vdots \\ x_n \\ \vdots  \end{bmatrix} &amp;= 
-    \begin{bmatrix}x_1 \\ 0   \\ 0   \\ \vdots \\ 0   \\ \vdots  \end{bmatrix} + 
-    \begin{bmatrix}  0 \\ x_2 \\ 0   \\ \vdots \\ 0   \\ \vdots  \end{bmatrix} + 
-    \begin{bmatrix}  0 \\ 0   \\ x_3 \\ \vdots \\ 0   \\ \vdots  \end{bmatrix} +
-    \dots +  
-    \begin{bmatrix}  0 \\ 0   \\ 0   \\ \vdots \\ x_n \\ \vdots  \end{bmatrix} + 
-    \dots 
-    \\ \\
-    | \psi   \rangle &amp;= 
-    | \psi_1 \rangle + |\psi_2 \rangle + | \psi_3 \rangle + \dots + |\psi_n \rangle + \dots
-\end{align}
-\end{split}\]</div>
-<p>What I have denoted above are the same expressions but in general coordinate, column vectors, and dirac notation.</p>
-<p>Now, we are finally ready to talk about completeness of a function.</p>
-</section>
-<section id="completeness-of-a-function-fourier-s-trick">
-<h2>Completeness of a function &amp; Fourier’s Trick<a class="headerlink" href="#completeness-of-a-function-fourier-s-trick" title="Permalink to this heading">#</a></h2>
-<p>To reiterate, a function can be a vector.</p>
-<p>As I quote Griffiths here, “a set of functions is complete if any other function (in Hilbert Space) can be expressed as a linear combination of them”</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
-    f(x) 
-    &amp;= 
-    \sum_{n=1} ^{\infty} c_n f_n(x) 
-    \\&amp;= 
-    c_1f_1(x) + c_2f_2(x) + c_3f_3(x) + \dots + c_nf_n(x) + \dots
-\end{align}
-\end{split}\]</div>
-<p>Or in Dirac notation, it would be</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
-    |\psi\rangle &amp;=
-    c_1|\psi _1\rangle + c_2|\psi _2\rangle + \dots + c_n|\psi _n\rangle + \dots \\ &amp;= 
-    \sum _{i=1} ^{\infty} c_i |\psi _i\rangle
-\end{align}
-\end{split}\]</div>
-<p>Note that <span class="math notranslate nohighlight">\(f_n(x)\)</span> is just any generic function. If this is still confusing to you (because it was confusing to me at first), then to reverse our progress (back to ancient understanding), the above expression, if written as vectors, is just</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
-    \begin{bmatrix} c_1x_1\\c_2x_2\\c_3x_3\\ \vdots \\ c_nx_n \\ \vdots \end{bmatrix}
-    =
-    c_1\begin{bmatrix} x_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
-    c_2\begin{bmatrix} 0  \\ x_2  \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
-    c_3\begin{bmatrix} 0  \\  0   \\ x_3  \\ \vdots \\  0   \\\vdots \end{bmatrix} +
-    \dots +  
-    c_n\begin{bmatrix} 0  \\  0   \\  0   \\ \vdots \\ x_n  \\\vdots \end{bmatrix} + 
-    \dots
-\end{align}
-\end{split}\]</div>
-<p>In other words,</p>
-<div class="proof definition admonition" id="completeness">
-<p class="admonition-title"><span class="caption-number">Definition 2 </span></p>
-<section class="definition-content" id="proof-content">
-<p>A set <span class="math notranslate nohighlight">\(\mathcal{F}\in\{f_1,f_2,\dots,f_n,\dots\}\)</span> is complete if any function <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x) \in \textbf{Span}\{\mathcal{F}\}\)</span>.</p>
-<p>A set <span class="math notranslate nohighlight">\(\mathcal{F} \in \{f_1, f_2, \dots , f_n, \dots\}\)</span> (of functions) is complete if any other vectors (or functions) <span class="math notranslate nohighlight">\(f_{\textbf{any}}(x)\)</span> can be spanned by (is a linear combination of) the set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span>.</p>
-</section>
-</div><p>To demonstrate Fourier’s trick, with the assumption in mind that a basis should be orthonormal (of unit length 1, and perpendicular to each other).</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
-    c_n &amp;= 
-    \langle f_n|f \rangle \\&amp;=
-    \begin{bmatrix} 0      &amp;      0   &amp;  \dots  &amp;      f_n &amp;  \dots \end{bmatrix}
-    \begin{bmatrix} c_1 f_1\\ c_2 f_2 \\ \vdots \\ c_n f_n \\ \vdots\end{bmatrix} 
-    \\&amp;=
-    \begin{bmatrix} 0      &amp;      0   &amp;  \dots  &amp;      f_n &amp;  \dots \end{bmatrix}
-    \left(
-        c_1\begin{bmatrix} f_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
-    c_2\begin{bmatrix} 0  \\ f_2  \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix} + 
-    c_3\begin{bmatrix} 0  \\  0   \\ f_3  \\ \vdots \\  0   \\\vdots \end{bmatrix} +
-    \dots +  
-    c_n\begin{bmatrix} 0  \\  0   \\  0   \\ \vdots \\ f_n  \\\vdots \end{bmatrix} + 
-    \dots  
-    \right)
-\end{align}
-\end{split}\]</div>
-<p>which, since the set <span class="math notranslate nohighlight">\(\mathcal{F}\)</span> is orthonormal, all other terms vanish. For example,</p>
-<div class="proof definition admonition" id="kroneckerDelta">
-<p class="admonition-title"><span class="caption-number">Definition 3 </span></p>
-<section class="definition-content" id="proof-content">
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
-    \begin{bmatrix} 0      &amp;      0   &amp;  \dots  &amp;      f_n &amp;  \dots \end{bmatrix}
-    c_1\begin{bmatrix} f_1\\  0   \\  0   \\ \vdots \\  0   \\\vdots \end{bmatrix}
-    = 0 \because 1 \neq n
-\end{align}
-\end{split}\]</div>
-<p><span class="math notranslate nohighlight">\(f_n\cdot f_1\)</span> vanishes and only one term (<span class="math notranslate nohighlight">\(f_n\cdot f_n\)</span>) survives.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align}
-    c_n &amp;= 
-    \begin{bmatrix} 0      &amp;  0   &amp;  \dots  &amp;  f_n &amp;  \dots \end{bmatrix}
-    \cdot
-    c_n\begin{bmatrix} 0  \\  0   \\ \vdots \\ f_n \\\vdots \end{bmatrix}     
-    \\&amp;=
-    c_n \cancelto{1 \textbf{ due to orthonormality}}{
-    \begin{bmatrix} 0   &amp;  0   &amp;  \dots  &amp;  f_n &amp;  \dots \end{bmatrix}
-    \cdot
-    \begin{bmatrix} 0  \\  0   \\ \vdots \\ f_n \\\vdots \end{bmatrix}
-    }
-\end{align}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-    \langle \psi | \psi \rangle = \sum_i \sum_j \psi_i \psi_j \delta_{ij}
-    \rightarrow \delta_{ij} =
-    \begin{cases}
-    1 \text{ if } i=j\\
-    0 \text{ if } i\neq j
-    \end{cases}
+\nabla\cdot \vec{E} &amp;= \rho/\varepsilon _o           \\
+\nabla\cdot \vec{B} &amp;= 0 \text{ no magnetic monopole}\\
+\nabla\times\vec{E} &amp;= - \frac{\partial\vec{B}}{\partial t}\\
+\nabla\times\vec{B} &amp;= \mu _0 \vec{J} + \mu _0 \varepsilon _0 \frac{\partial\vec{E}}{\partial t} \\
 \end{split}\]</div>
 </section>
-</div><p>The above two vectors’ inner (higher-dimensional dot) product denotes the essence of kronecker delta <span class="math notranslate nohighlight">\(\delta_{ij}\)</span>.</p>
-<p>Now, we are finally ready for Dirac notation. (at this point you should have no reason to not understand what Fourier’s trick is given the gruesome detail by writing everything out by brute force.)</p>
+<section id="maxwell-s-equation-in-dielectric-materials">
+<h3>Maxwell’s equation in Dielectric Materials<a class="headerlink" href="#maxwell-s-equation-in-dielectric-materials" title="Permalink to this heading">#</a></h3>
+<p>And that inside materials, the Maxwell’s equation have similar forms</p>
 <div class="math notranslate nohighlight">
-\[\begin{split} 
-\begin{align}
-    c_n &amp;=
-    \langle f_n | f\rangle 
-    \\ &amp;=
-    \langle f_n |\big( c_1|f_1\rangle+ c_2|f_2\rangle + \dots + c_n|f_n \rangle + \dots \big)
-    \\ &amp;=
-    c_1\cancelto{0 = \delta_{n1}}{\langle f_n |f_1\rangle} +
-    c_2\cancelto{0 = \delta_{n2}}{\langle f_n |f_2\rangle} + 
-    \dots  
-    \langle f_n | c_n |f_n \rangle + 
-    \dots
-    \\&amp;=
-    c_n\cancelto{1 = \delta_{nn}}{\langle f_n | f_n \rangle}
-    \\
-    c_n&amp;=c_n
-\end{align}
+\[\begin{split}
+\nabla\cdot \vec{D} &amp;= \rho _{\text{free}}           \\
+\nabla\cdot \vec{B} &amp;= 0                             
+\text{ with } \vec{B}= \mu_0(\vec{H}+\vec{M})\\
+\nabla\times\vec{E} &amp;= - \frac{\partial\vec{B}}{\partial t} \\
+\nabla\times\vec{H} &amp;= \vec{J}_{free} + \frac{\partial\vec{D}}{\partial t} \\
 \end{split}\]</div>
+</section>
+<section id="linear-response-of-dielectric-materials">
+<h3>Linear Response of Dielectric Materials<a class="headerlink" href="#linear-response-of-dielectric-materials" title="Permalink to this heading">#</a></h3>
+<p>And for the linear response of dielectric materials, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{P} &amp;=\varepsilon_0 \chi_e \vec{E}\\
+\vec{M} &amp;=\chi_e\vec{H}               \\
+\vec{D} &amp;=\varepsilon_0(1+\chi_e)\vec{E}=\varepsilon\vec{E}\\
+\vec{B} &amp;=\mu_0(1+\chi_m)\vec{H}=\mu\vec{H}
+\end{split}\]</div>
+<p>where</p>
+<p><span class="math notranslate nohighlight">\(\vec{P}\)</span> is the charge polarization;</p>
+<p><span class="math notranslate nohighlight">\(\vec{M}\)</span> is the magnetization of the material;</p>
+<p><span class="math notranslate nohighlight">\(\vec{D}\)</span> is the electric displacement field;</p>
+<p><span class="math notranslate nohighlight">\(\vec{H}\)</span> is the auxiliary magnetic field;</p>
+<p>with <span class="math notranslate nohighlight">\(\mu\)</span> denoting permeability of dielectric material and <span class="math notranslate nohighlight">\(\varepsilon\)</span> denoting permittivity of material.</p>
+</section>
+</section>
+<section id="lorentz-force-griffiths-e-m-ch-10-1-4">
+<h2>Lorentz Force (Griffiths E&amp;M Ch 10.1.4)<a class="headerlink" href="#lorentz-force-griffiths-e-m-ch-10-1-4" title="Permalink to this heading">#</a></h2>
+<p>To briefly cover the Lorentz force, it describes when charged particles are exposed to external magnetic and electric fields.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{F} =\frac{d\vec{p}}{dt}&amp;= q\vec{E} + q\vec{v}\times \vec{B} \text{ giving cyclotron motion} \\
+= m\frac{d\vec{v}}{dt} 
+&amp;= q(-\nabla V - \partial_t \vec{A}) + q(\vec{v}\times\nabla\times\vec{A})\\
+&amp;= q(-\nabla V - \partial_t \vec{A} + 
+\nabla{(\vec{v}\cdot{\vec{A}})}-\vec{A}(\vec{v}\cdot\vec{\nabla})\\
+m\frac{d\vec{v}}{dt} + q(\partial _t\vec{A}+(\vec{v}\cdot\nabla)\vec{A})&amp;=-q\vec{\nabla}V + q\vec{\nabla}(\vec{v}\cdot\vec{A})) \\
+\end{split}\]</div>
+<p>Recall that the convective derivative is to expose the chain rule in the partial derivative, a math trick, where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{A} &amp;= \vec{A}(\vec{r}_i (t),t) \\
+\frac{d}{dt}\left[\vec{A}\right]
+&amp;= \sum _{i=1}^{3}\frac{\partial \vec{A}}{\partial \vec{r}_i}\frac{d\vec{r}_i(t)}{dt}
++ \frac{\partial\vec{A}}{\partial t}\\
+&amp;= \left(\sum _{i=1}^{3}\frac{\partial }{\partial \vec{r}_i}\cdot\frac{d\vec{r}_i(t)}{dt}\right) \vec{A}
++ \frac{\partial\vec{A}}{\partial t}\\
+\frac{d}{dt}\left[\vec{A}\right]&amp;=(\vec{v}\cdot\vec{\nabla})\vec{A} + \frac{\partial\vec{A}}{\partial t}\\
+\end{split}\]</div>
+<p>Combining the  expressions, we then yield</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+m\frac{d\vec{v}}{dt} + q\frac{d\vec{A}}{dt }&amp;=\\
+\frac{d\vec{p}_{\text{can}}}{dt}=\frac{d}{dt}\left[ p+ q\vec{A}\right] &amp;= -q\vec{\nabla}(V - \vec{v}\cdot\vec{A}) = -\vec{\nabla}U
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{p}_{\text{can}}=\vec{p} + q\vec{A}\)</span> is the canonical momentum, and the <span class="math notranslate nohighlight">\(U_{\text{vel}} = q(V-\vec{v}\cdot\vec{A})\)</span> is the potential of velocity-dependent quantity.</p>
 </section>
 </section>
 
@@ -609,7 +490,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./Review"
+            path: "./CondensedMatter"
         },
         predefinedOutput: true
     }
@@ -628,20 +509,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="foreword.html"
+       href="../Review/linalg.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Foreword</p>
+        <p class="prev-next-title">Linear Algebra in Physics</p>
       </div>
     </a>
     <a class="right-next"
-       href="../CondensedMatter/MATRL204.html"
+       href="../ForFun/Ideas.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</p>
+        <p class="prev-next-title">Random ideas?</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -663,9 +544,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elementary-descriptions-of-linear-algebra-and-notations">Elementary Descriptions Of Linear Algebra and notations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#completeness-of-a-function-fourier-s-trick">Completeness of a function &amp; Fourier’s Trick</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-1-review-of-maxwell-s-equations">Lecture 1: Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equations">Maxwell’s equations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equation-in-dielectric-materials">Maxwell’s equation in Dielectric Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-response-of-dielectric-materials">Linear Response of Dielectric Materials</a></li>
 </ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4">Lorentz Force (Griffiths E&amp;M Ch 10.1.4)</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>

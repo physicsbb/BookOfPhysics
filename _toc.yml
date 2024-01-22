@@ -15,3 +15,11 @@ parts:
     chapters:
     - file: Review/foreword
     - file: Review/linalg
+
+  - caption: Condensed Matter
+    chapters:
+    - file: CondensedMatter/MATRL204
+
+  - caption: For Fun?
+    chapters:  
+    - file: ForFun/Ideas

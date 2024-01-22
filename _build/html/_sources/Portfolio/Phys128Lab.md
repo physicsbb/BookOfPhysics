@@ -20,6 +20,12 @@ The most important part of this lab is to know what mode the laser is operating 
 
 ## Making [Physics Lab Manual](https://web.physics.indiana.edu/courses/p451/background_info/TeachSpin_man_Diode-Laser-Spectroscopy.pdf) more comprehensible and accessible to students:
 
+Here is a quick outline of topics for what needs to be covered to complete this lab. 
+
+1. How to work with the experimental setups
+2. What kind of physics are we probing?  
+3. Can we understand the physics with the mathematical models/derivation that we know? 
+
 ### How does this laser work?
 As provided by the lab manual, the laser model TOLD9200 is a gain guided laser diode (gain will be discussed in later section), with the diode itself being an edge emitting laser (where light exits from the sides of the epitaxial wafer), and the external cavity forms between the laser and the Bragg's grating. See {numref}`TOLD9200EEL` for an image of the wafer, which shows the laser diode itself, made out of crystal grown epitaxially. 
 ```{figure} ../Images/Phys128L_LDS/TOLD9200.png
@@ -49,3 +55,5 @@ Various attributes to mode hopping. Top two graphs indicating the available mode
 Injection current changes the output wavelength of the laser. But various external factors can also cause the injection current/temperature to fluctuate, resulting in one kind of mode hopping.
 
 Bottom left of the graph in {numref}`ModeHopping` indicates that the external cavity has a closely packed profile of gain, similar to a sine wave, because spatially, assuming the treatement of light is a standing wave is appropriate, the back facet of the laser and the front facet of the external cavity form the boundaries of a standing wave. If the laser is lasing in IR range (1000 nm), a number as many as 300,000 nodes (of the standing wave) can exist in a mere 30 cm, and positioning the external cavity closer to or further from the laser can also result in changing the "boundary condition" of the standing wave, resulting in a very small change of mode in gain. 
+
+Once we have an idea how to work with the gain of a laser, then we know how to tune it, and can then begin with the experiment. 
