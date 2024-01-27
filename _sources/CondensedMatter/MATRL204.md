@@ -164,7 +164,7 @@ $$
 Z &\propto \int\int\dots\int \exp 
 \left( 
 \frac{
-    E(
+    -E(
         \left\{
             \vec{r}_i,\vec{p}_i 
     \right\}
@@ -175,7 +175,8 @@ Z &\propto \int\int\dots\int \exp
 d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
 \\
 &\text{where}\\
-&E= \sum _i ^N \frac{
+&E\left(\left\{\vec{r}_i,\vec{p}_i\right\}\right)= 
+\sum _i ^N \frac{
     \left( \vec{p}_{\text{can},i}-q\vec{A}_i\right)^2
     }{2m_i} +V(\vec{r}_i)
 
