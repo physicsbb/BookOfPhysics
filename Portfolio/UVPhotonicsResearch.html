@@ -68,7 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Mandelbrot set for computational competency" href="MandelbrotSet.html" />
-    <link rel="prev" title="A More Detailed Resume" href="portfolioShort.html" />
+    <link rel="prev" title="Who wrote this website?" href="portfolioShort.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -161,7 +161,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Portfolio</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="portfolioShort.html">A More Detailed Resume</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolioShort.html">Who wrote this website?</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">UV Photonics Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MandelbrotSet.html">Mandelbrot set for computational competency</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Phys128Lab.html">Senior Lab Experiment: Laser Diode Spectroscopy</a></li>
@@ -407,11 +407,11 @@ document.write(`
 <h1>UV Photonics Research<a class="headerlink" href="#uv-photonics-research" title="Permalink to this heading">#</a></h1>
 <section id="a-partial-picture-of-uv-photonic-device-research-leds-fp-eelds">
 <h2>A partial picture of UV photonic device research (LEDs &amp; FP-EELDs)<a class="headerlink" href="#a-partial-picture-of-uv-photonic-device-research-leds-fp-eelds" title="Permalink to this heading">#</a></h2>
-<p>UV photonic devices utilize AlGaN (Aluminum Gallium Nitride) crystal (both a ZincBlende and Wurtzite) to achieve the generation of photons at the wavelength of 200nm to 350nm. Different regions of UV spectrum may have different growth technique, and each region in the spectrum has its challenges. See  <a class="reference internal" href="#alganwavelength"><span class="std std-numref">Fig. 3</span></a> for reference.</p>
+<p>UV photonic devices utilize AlGaN (Aluminum Gallium Nitride) crystal (both a ZincBlende and Wurtzite) to achieve the generation of photons at the wavelength of 200nm to 350nm. Different regions of UV spectrum may have different growth technique, and each region in the spectrum has its challenges. See  <a class="reference internal" href="#alganwavelength"><span class="std std-numref">Fig. 5</span></a> for reference.</p>
 <figure class="align-default" id="alganwavelength">
 <img alt="../_images/AlGaNWavelength.jpg" src="../_images/AlGaNWavelength.jpg" />
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Change in Al content in <span class="math notranslate nohighlight">\(\text{Al}_\text{x}\text{Ga}_{\text{(1-x)}}\text{N}\)</span> results in widening the optical bandgap, which results in emitting photons of shorter wavelength. Graph from [<a class="reference external" href="https://www.mdpi.com/1424-8220/13/8/10482">SLS13</a>].</span><a class="headerlink" href="#alganwavelength" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Change in Al content in <span class="math notranslate nohighlight">\(\text{Al}_\text{x}\text{Ga}_{\text{(1-x)}}\text{N}\)</span> results in widening the optical bandgap, which results in emitting photons of shorter wavelength. Graph from [<a class="reference external" href="https://www.mdpi.com/1424-8220/13/8/10482">SLS13</a>].</span><a class="headerlink" href="#alganwavelength" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>One of the biggest challenges in UV-A LED research is in growing AlGaN on top of AlN/Sapphire due to large lattice mismatch between GaN and AlN. If the lattice mismatch is too great, cracks may be observed on the crystal as a result of great tensile strain. Note also that Al lattice constant and Ga lattice constant expand at different temperatures, and along different orientations of the plane (think Miller Indicies) the thermal expansion of lattice constant differs as well, all of which adds to the challenge of finding ideal growth conditions in terms of how strained and relaxed the crystal lattice should be. [<a class="reference external" href="http://doi.org/10.1088/1361-6641/ac27e7">Zol+21</a>] Another challenge in UV photonics research as a whole is the fact that UV wavelength of light is not transparent to GaN (n = 2.5), due to Total Internal Reflection (TIR) where light gets trapped in the cladding layer[<a class="reference external" href="https://www.energy.gov/sites/default/files/2020/02/f71/ssl-rd2020-weisbuch-extraction.pdf">Wei+20</a>], hence a low External Quantum Efficiency as a result of Light Extraction Efficiency (LEE) suffering a huge loss. This is especially true further into Deep UV wavelength – high p-GaN absorption of UV radiation is exhibited. This is the exact reason why a flip chip design for UV LEDs are used – light rays exit from the n-AlGaN side.</p>
@@ -427,11 +427,11 @@ document.write(`
 <p>Along the vertical axis (<span class="math notranslate nohighlight">\(p_z\)</span>) gives you the Al-content. The further up top along <span class="math notranslate nohighlight">\(p_z\)</span>, the higher Al-content; the lower along <span class="math notranslate nohighlight">\(p_z\)</span>, the more Ga-content.</p>
 <p>Along the horizontal axis (<span class="math notranslate nohighlight">\(p_x\)</span>) tells you the lattice constant of the AlGaN crystal.</p>
 <p>The crystal may or may not have a narrow stream of intensity. In which case, if the crystal follows along a straight line pointing downward, the crystal is strained, meaning the interface between different layers of different AlGaN composition are neatly aligned, with minimal defects. Keep in mind that defects may or may not be a bad thing. (Sometimes annealing can help)</p>
-<p>In <a class="reference internal" href="#rsmjustification"><span class="std std-numref">Fig. 4</span></a>, it mentions <a class="reference external" href="https://en.wikipedia.org/wiki/Poisson%27s_ratio">Poisson’s effect</a>, and you should not feel intimidated by the word “Poissons”. To give an example, <strong>if you have been given a cubic lattice, at the level of Bravais lattice, you can simply think of the crystal as a cube. All that Poisson’s effect is saying is that upon lattice mismatch, the crystal has been stretched from a cubic lattice into a rectangular lattice, while its total volume remains unchanged. Such is the ideal case for a perfectly strained lattice.</strong> But is reality perfect?</p>
+<p>In <a class="reference internal" href="#rsmjustification"><span class="std std-numref">Fig. 6</span></a>, it mentions <a class="reference external" href="https://en.wikipedia.org/wiki/Poisson%27s_ratio">Poisson’s effect</a>, and you should not feel intimidated by the word “Poissons”. To give an example, <strong>if you have been given a cubic lattice, at the level of Bravais lattice, you can simply think of the crystal as a cube. All that Poisson’s effect is saying is that upon lattice mismatch, the crystal has been stretched from a cubic lattice into a rectangular lattice, while its total volume remains unchanged. Such is the ideal case for a perfectly strained lattice.</strong> But is reality perfect?</p>
 <figure class="align-default" id="rsmjustification">
 <img alt="../_images/RSM_Justification.jpg" src="../_images/RSM_Justification.jpg" />
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">RSM Justification.</span><a class="headerlink" href="#rsmjustification" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">RSM Justification.</span><a class="headerlink" href="#rsmjustification" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -453,12 +453,12 @@ document.write(`
 <li><p>If the roughness is too strong, the layers grown on top can misalign in terms of the discussion of lattice plane, resulting in the collapse of any layers grown on top. It may or may not be an indicator of relaxed lattice.</p>
 <ul class="simple">
 <li><p>In an LED, strong Root-Mean-Squared (RMS) surface roughness of the n-AlGaN layers can result in the collapse of quantum well alignment in the active regions, causing the crystal to fail.</p></li>
-<li><p>In an Edge Emitting Laser where waveguides/cladding layers are used, poor RMS surface roughness can be a factor that affects the stability of guided modes, resulting in unstable transverse mode hopping (<span class="math notranslate nohighlight">\(\text{TEM}_{nm}\)</span>) unrelated to longitudinal mode hopping, or longitudinal gain (intensity vs. wavelength). It is also accountable for the light extraction efficiency loss. see <a class="reference internal" href="#surfacemorphologyloss"><span class="std std-numref">Fig. 5</span></a> for an image example.</p></li>
+<li><p>In an Edge Emitting Laser where waveguides/cladding layers are used, poor RMS surface roughness can be a factor that affects the stability of guided modes, resulting in unstable transverse mode hopping (<span class="math notranslate nohighlight">\(\text{TEM}_{nm}\)</span>) unrelated to longitudinal mode hopping, or longitudinal gain (intensity vs. wavelength). It is also accountable for the light extraction efficiency loss. see <a class="reference internal" href="#surfacemorphologyloss"><span class="std std-numref">Fig. 7</span></a> for an image example.</p></li>
 </ul>
 <figure class="align-default" id="surfacemorphologyloss">
 <img alt="../_images/SurfaceMorphology_Pedrotti.png" src="../_images/SurfaceMorphology_Pedrotti.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Discussion of microdefects in the discussion of attenuation and Fiber Optics from chatper 10 of <a class="reference external" href="https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335">Introduction to Optics 3rd Ed. by Pedrotti</a>.[<a class="reference external" href="https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335">PPP17</a>] While the topic differs slightly, the concept still applies in terms of applying Snell’s law and Total Internal Reflection in the discussion of a waveguide.</span><a class="headerlink" href="#surfacemorphologyloss" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Discussion of microdefects in the discussion of attenuation and Fiber Optics from chatper 10 of <a class="reference external" href="https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335">Introduction to Optics 3rd Ed. by Pedrotti</a>.[<a class="reference external" href="https://www.amazon.com/Introduction-Optics-3rd-Frank-Pedrotti/dp/0131499335">PPP17</a>] While the topic differs slightly, the concept still applies in terms of applying Snell’s law and Total Internal Reflection in the discussion of a waveguide.</span><a class="headerlink" href="#surfacemorphologyloss" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </li>
@@ -469,13 +469,13 @@ document.write(`
 <figure class="align-default" id="id1">
 <img alt="../_images/AFM_UV_20x20.jpg" src="../_images/AFM_UV_20x20.jpg" />
 <figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">AFM  Images for epi layers at size 20um x 20um</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">AFM  Images for epi layers at size 20um x 20um</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id2">
 <img alt="../_images/AFM_UV_05x05.jpg" src="../_images/AFM_UV_05x05.jpg" />
 <figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">AFM  Images for epi layers at size 5um x 5um</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">AFM  Images for epi layers at size 5um x 5um</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -490,11 +490,11 @@ document.write(`
 <li><p>Engage and autotune the tip such that the computer generates a graph showing that the tip is working.</p></li>
 <li><p>Adjust the scan rate, amplitude, voltage, Integral Gain, and size of the images accordingly.</p></li>
 </ol>
-<p>Typically, when doing AFM for epitaxial substrates, non-contact mode is used. In physics language, non-contact mode means that the AFM device utilizes the non-contact portion of Lennard-Jones potential. Lennard Jones Potential is a non-bonding atomic force felt between the two different “molecules” (between the tip and the substrate). Refer to <a class="reference internal" href="#explanationforafm"><span class="std std-numref">Fig. 8</span></a> for an image summary.</p>
+<p>Typically, when doing AFM for epitaxial substrates, non-contact mode is used. In physics language, non-contact mode means that the AFM device utilizes the non-contact portion of Lennard-Jones potential. Lennard Jones Potential is a non-bonding atomic force felt between the two different “molecules” (between the tip and the substrate). Refer to <a class="reference internal" href="#explanationforafm"><span class="std std-numref">Fig. 10</span></a> for an image summary.</p>
 <figure class="align-default" id="explanationforafm">
 <img alt="../_images/ExplanationForAFM.jpg" src="../_images/ExplanationForAFM.jpg" />
 <figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Lennard Jones Potential, AFM setup, MFP3D! Images are found on google!</span><a class="headerlink" href="#explanationforafm" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Lennard Jones Potential, AFM setup, MFP3D! Images are found on google!</span><a class="headerlink" href="#explanationforafm" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>For more detailed procedures, check out <a class="reference external" href="https://www.afmhelp.com/docs/manuals/mfp3dmanual.pdf">the manual published by Oxford Instrument Asylum Research</a>.</p>
@@ -582,7 +582,7 @@ Christian J Zollner et al. “Germicidal ultraviolet LEDs: A review of applicati
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">A More Detailed Resume</p>
+        <p class="prev-next-title">Who wrote this website?</p>
       </div>
     </a>
     <a class="right-next"
