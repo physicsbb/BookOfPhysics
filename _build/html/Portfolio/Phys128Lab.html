@@ -159,7 +159,7 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Portfolio</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="portfolioShort.html">A More Detailed Resume</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolioShort.html">Who wrote this website?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="UVPhotonicsResearch.html">UV Photonics Research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MandelbrotSet.html">Mandelbrot set for computational competency</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Senior Lab Experiment: Laser Diode Spectroscopy</a></li>
@@ -430,18 +430,18 @@ document.write(`
 </ol>
 <section id="how-does-this-laser-work">
 <h3>How does this laser work?<a class="headerlink" href="#how-does-this-laser-work" title="Permalink to this heading">#</a></h3>
-<p>As provided by the lab manual, the laser model TOLD9200 is a gain guided laser diode (gain will be discussed in later section), with the diode itself being an edge emitting laser (where light exits from the sides of the epitaxial wafer), and the external cavity forms between the laser and the Bragg’s grating. See <a class="reference internal" href="#told9200eel"><span class="std std-numref">Fig. 9</span></a> for an image of the wafer, which shows the laser diode itself, made out of crystal grown epitaxially.</p>
+<p>As provided by the lab manual, the laser model TOLD9200 is a gain guided laser diode (gain will be discussed in later section), with the diode itself being an edge emitting laser (where light exits from the sides of the epitaxial wafer), and the external cavity forms between the laser and the Bragg’s grating. See <a class="reference internal" href="#told9200eel"><span class="std std-numref">Fig. 11</span></a> for an image of the wafer, which shows the laser diode itself, made out of crystal grown epitaxially.</p>
 <figure class="align-default" id="told9200eel">
 <img alt="../_images/TOLD9200.png" src="../_images/TOLD9200.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">A picture denoting the properties of a gain-guided Edge Emitting Laser.</span><a class="headerlink" href="#told9200eel" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">A picture denoting the properties of a gain-guided Edge Emitting Laser.</span><a class="headerlink" href="#told9200eel" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>The laser stage of the experiment/schematic is not to be adjusted too much except to tune the injection current and voltage inputs. Depending on the setup of the lab, set up the power supply and to a 10mA:1V ratio for better control. The external cavity is also optimally positioned at a particular angle for ideal mode. Refer to <a class="reference internal" href="#told9200externalcavity"><span class="std std-numref">Fig. 10</span></a> for an image of the whole laser stage.</p>
+<p>The laser stage of the experiment/schematic is not to be adjusted too much except to tune the injection current and voltage inputs. Depending on the setup of the lab, set up the power supply and to a 10mA:1V ratio for better control. The external cavity is also optimally positioned at a particular angle for ideal mode. Refer to <a class="reference internal" href="#told9200externalcavity"><span class="std std-numref">Fig. 12</span></a> for an image of the whole laser stage.</p>
 <figure class="align-default" id="told9200externalcavity">
 <img alt="../_images/ExternalCavity.png" src="../_images/ExternalCavity.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">On the left is a ray diagram denoting the primary and secondary laser beams of different optical paths. A quick note, the laser has an internal cavity on the edge of the wafer, formed by reflective coating between the front and back facet, as seen in <a class="reference internal" href="#told9200eel"><span class="std std-numref">Fig. 9</span></a> along the direction anti-parallel to the light ray, also known as the internal resonant cavity. The left graph is also to add a bit more context as to why you could see split peaks or double peaks. On the right is the full laser stage, also including the collimating lens, which works to converge the diverging light ray onto the grating feedback.</span><a class="headerlink" href="#told9200externalcavity" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">On the left is a ray diagram denoting the primary and secondary laser beams of different optical paths. A quick note, the laser has an internal cavity on the edge of the wafer, formed by reflective coating between the front and back facet, as seen in <a class="reference internal" href="#told9200eel"><span class="std std-numref">Fig. 11</span></a> along the direction anti-parallel to the light ray, also known as the internal resonant cavity. The left graph is also to add a bit more context as to why you could see split peaks or double peaks. On the right is the full laser stage, also including the collimating lens, which works to converge the diverging light ray onto the grating feedback.</span><a class="headerlink" href="#told9200externalcavity" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Now that we have briefly established an idea as to how the laser works and the functions of each individual component, we can discuss the operation of the laser.</p>
@@ -449,15 +449,15 @@ document.write(`
 <section id="what-is-gain-for-a-laser">
 <h3>What is “gain” for a laser?<a class="headerlink" href="#what-is-gain-for-a-laser" title="Permalink to this heading">#</a></h3>
 <p>In this lab, having an experimental intuition on gain is extremely important!<a class="footnote-reference brackets" href="#tmi" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> This is essential in getting the laser to lase in the desired mode. While mode hopping is a phenomenon with many attributes, this experiment has two primary attributes, the external cavity and the injection current. Temperature is omitted since it is held at a constant 50˚C. <a class="footnote-reference brackets" href="#offtopic01" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
-<p>A pictorial definition from the lab manual of mode hopping is seen in <a class="reference internal" href="#modehopping"><span class="std std-numref">Fig. 11</span></a>.</p>
+<p>A pictorial definition from the lab manual of mode hopping is seen in <a class="reference internal" href="#modehopping"><span class="std std-numref">Fig. 13</span></a>.</p>
 <figure class="align-default" id="modehopping">
 <img alt="../_images/ModeHoppingJustification.png" src="../_images/ModeHoppingJustification.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Various attributes to mode hopping. Top two graphs indicating the available modes/wavelengths supported by close-to-constant current/temperature. Bottom two graphs indicate the gain of the internal and external cavity, and the grating feedback.</span><a class="headerlink" href="#modehopping" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Various attributes to mode hopping. Top two graphs indicating the available modes/wavelengths supported by close-to-constant current/temperature. Bottom two graphs indicate the gain of the internal and external cavity, and the grating feedback.</span><a class="headerlink" href="#modehopping" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Injection current changes the output wavelength of the laser. But various external factors can also cause the injection current/temperature to fluctuate, resulting in one kind of mode hopping.</p>
-<p>Bottom left of the graph in <a class="reference internal" href="#modehopping"><span class="std std-numref">Fig. 11</span></a> indicates that the external cavity has a closely packed profile of gain, similar to a sine wave, because spatially, assuming the treatement of light is a standing wave is appropriate, the back facet of the laser and the front facet of the external cavity form the boundaries of a standing wave. If the laser is lasing in IR range (1000 nm), a number as many as 300,000 nodes (of the standing wave) can exist in a mere 30 cm, and positioning the external cavity closer to or further from the laser can also result in changing the “boundary condition” of the standing wave, resulting in a very small change of mode in gain.</p>
+<p>Bottom left of the graph in <a class="reference internal" href="#modehopping"><span class="std std-numref">Fig. 13</span></a> indicates that the external cavity has a closely packed profile of gain, similar to a sine wave, because spatially, assuming the treatement of light is a standing wave is appropriate, the back facet of the laser and the front facet of the external cavity form the boundaries of a standing wave. If the laser is lasing in IR range (1000 nm), a number as many as 300,000 nodes (of the standing wave) can exist in a mere 30 cm, and positioning the external cavity closer to or further from the laser can also result in changing the “boundary condition” of the standing wave, resulting in a very small change of mode in gain.</p>
 <p>Once we have an idea how to work with the gain of a laser, then we know how to tune it, and can then begin with the experiment.</p>
 <hr class="footnotes docutils" />
 <aside class="footnote brackets" id="tmi" role="note">

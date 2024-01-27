@@ -1,16 +1,17 @@
-# A More Detailed Resume
+# Who wrote this website?
 
 ## Link to my resume:
 [Here's the link to my resume!](https://drive.google.com/file/d/1RsUJHFE5haeqTYd1qlcp8zZBbDN9Yb7w/view?usp=sharing)
 
 ## My background:
-I am a recent [Physics](https://www.physics.ucsb.edu/) graduate from [UCSB](https://www.ucsb.edu/). If I were to come up with a name for the focus of courses that I have taken, I would say Condensed Matter and Optics Applications. In my opinion, my two quarters of Condensed Matter, one quarter of Optics and one quarter of Quantum Photonics Experiment shaped my perspective as a physics student driven by physical applications.
+I am a recent [Physics](https://www.physics.ucsb.edu/) graduate from [UCSB](https://www.ucsb.edu/). If I were to come up with a name for the focus of courses that I have taken, I would say Condensed Matter and Optics Applications. In my opinion, my two quarters of Condensed Matter, one quarter of Optics and one quarter of Quantum Photonics Experiment gave me a really unique perspective to pursue physical applications, with a motivation aimed towards translating scientific investigation into commercialization. I have seen this translation in the field of photonics in two separate applications, the currently-pretty-Novel Quantum Photonics Integrated Circuits (QPIC), and a Novel-30-Years-Ago Optoelectronics. 
 
 ## Research:
 I have one year of research experience in UV photonics in the [Materials Department](https://ssleec.ucsb.edu/) under the supervision of [2014 Physics Nobel Prize Winner Dr. Shuji Nakamura](https://materials.ucsb.edu/people/faculty/shuji-nakamura). 
 ```{figure} ../Images/SSLEECNovConference2022.jpeg
 Try and find me!
 ```
+
 I have also previously conducted research at [San Francisco State University](https://engineering.sfsu.edu/) for a mitigation lab to help develop a MATLAB program for [Dr. Zhaoshuo Jiang](https://engineering.sfsu.edu/faculty-profile-zhaoshuo-jiang) in 2019.
 ```{figure} ../Images/SFSUJiang2019.JPG
 Also try and find me!
@@ -20,26 +21,34 @@ Also try and find me!
 Please check out the three available publications that I have as a co-author here.
 
 * *High external quantum efficiency (6.8%) UV-A LEDs on AlN templates with quantum barrier optimization*
-    * authors: Yifan Yao, Hongjian Li, Michael Wang, Panpan Li, ***Michael Lam***, Michael Iza, James Speck, Steve DenBaars, and Shuji Nakamura
-    * DOI: [10.1364/OE.491622](https://doi.org/10.1364/OE.491622)
+    * **Authors**: Yifan Yao, Hongjian Li, Michael Wang, Panpan Li, ***Michael Lam***, Michael Iza, James Speck, Steve DenBaars, and Shuji Nakamura
+    * **DOI**: [10.1364/OE.491622](https://doi.org/10.1364/OE.491622)
     * The experimental HRXRD data in <105> plane generated on this paper was done by me. This also includes finding the experimental value of Al content found in this growth recipe.  
 
 ```{figure} ../Images/PublicationXRD.jpeg
-:height: 300px
+---
+height: 200px
+width: 400px
+---
+Graph from [10.1364/OE.491622](https://doi.org/10.1364/OE.491622)
 ```
 
 ```{figure} ../Images/B221014BL_RSM.jpg
-:height: 400px
+---
+height: 300px
+width: 300px
+---
+A screenshot of the XRD data I generated
 ```
 
 * *External Quantum Efficiency (10.6%) Germicidal UV LEDs Grown on Thin Highly Conductive n-AlGaN*
-    * authors: Michael Wang, Feng Wu, Yifan Yao, Christian Zollner, Michael Iza, ***Michael Lam***, Steven DenBaars, Shuji Nakamura, James Speck
-    * DOI: [10.1063/5.0165328](https://doi.org/10.1063/5.0165328)
+    * **Authors**: Michael Wang, Feng Wu, Yifan Yao, Christian Zollner, Michael Iza, ***Michael Lam***, Steven DenBaars, Shuji Nakamura, James Speck
+    * **DOI**: [10.1063/5.0165328](https://doi.org/10.1063/5.0165328)
 
 * *Demonstration of III-Nitride Vertical-Cavity Surface-Emitting Lasers (VCSEL) with a topside dielectric curved mirror*
-    * Authors: Nathan Palmquist, Jared Kearns, Stephen Gee, Arturo Juan, Srinivas Gandrothula, Michael Lam, Steven P. Denbaars, Shuji Nakamura
-    * DOI: [10.1063/5.0165328](https://doi.org/10.35848/1882-0786/ad119b)
-    * I have experimentally reported the RMS roughness on the DBR surface and was first to notice its defects on the surface. They were done through the use of Atomic Force Microscope.
+    * **Authors**: Nathan Palmquist, Jared Kearns, Stephen Gee, Arturo Juan, Srinivas Gandrothula, ***Michael Lam***, Steven P. Denbaars, Shuji Nakamura
+    * **DOI**: [10.35848/1882-0786/ad119b](https://doi.org/10.35848/1882-0786/ad119b)
+    * I have experimentally reported the RMS roughness on the DBR surface and was first to notice additional details on the DBR. They were done through the use of Atomic Force Microscope.
 
 
 ## Featured Coursework:
