@@ -1,9 +1,10 @@
 # (UCSB MATRL 204) Intro to Magnetism and Magnetic Materials
 Books used for all these notes:
 * Griffiths E&M 4th Ed
+* Griffiths QM 3rd Ed
 * Magnetism In Condensed Matter by Stephen Blundell
 
-# Lecture 1: Review of Maxwell's equations
+# (MATRL204L1) Review of Maxwell's equations
 
 This topic is aimed towards its applications in Condensed Matter. The physics involved includes Electromagnetism, Statistical Mechanics, and Quantum Mechanics. Limited Classical Mechanics is also included in terms of its formalism, such as gauge transformation, canonical momentum, and such. 
 
@@ -175,7 +176,8 @@ Z &\propto \int\int\dots\int \exp
 d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
 \\
 &\text{where}\\
-&E\left(\left\{\vec{r}_i,\vec{p}_i\right\}\right)= 
+&E\left(\left\{\v
+ec{r}_i,\vec{p}_i\right\}\right)= 
 \sum _i ^N \frac{
     \left( \vec{p}_{\text{can},i}-q\vec{A}_i\right)^2
     }{2m_i} +V(\vec{r}_i)
@@ -190,3 +192,33 @@ Something to also keep in mind is that magnetic fields do no work because the ve
 * Why is $\sum\mu_s = -\mu_l$? 
 * The diagram shown is that the mini current curls around, we are just summing the microscopic current due to the microscopic motion of electrons, but why is the diagram showing $\mu$ when $\mu$ is supposed to be pointing out of page?
 * What exactly is this vector potential? are we taking into account that the magnetic field affects the vector potential, and not explicitly the external magnetic field, which alters the momentum of a charged particle?
+
+# (MATRL204L2) Review of Quantum Mechanics and Operators
+When a magnetic dipole is placed under an external magnetic field, a torque would be generated as the magnetic dipole moment aligns itself to $\vec{B}_{ext}$. In this context here, we see a trippy example that magnetic field causes the dipole to do work through the torque generated from aligning the dipole to the (non-uniform) external magnetic field. (The field has to be non-uniform at different spatial points, or it won't do any work). For the sake of time, refer to Griffith E&M section 8.3 for an example of emf to show that *a magnetic field can be used as a medium to translate mechanical/external work into potential energy*. **Magnetic field, and magnetic force itselves still do no work**.
+
+Recall that, from general physics, for the non-conservative case, 
+
+$$
+W_{nc} &= \Delta E \\
+&= \int\vec{\tau} d\theta =\int(\vec{m}\times\vec{B})d\theta\\
+&=mB\int_{\theta _i}^{\theta _f} \sin\theta d\theta\\
+&=-mB\left[\cos\theta _f-\cos\theta _i\right]\\
+\Delta U &= U(\theta _f)- U(\theta _i) = U(\theta _{\parallel}) - \cancelto{0}{U(\theta _{\perp})}\\
+&=-mBcos\theta\\
+U=\mathcal{H}'&=-\vec{m}\cdot\vec{B}
+$$
+
+This becomes the first order perturbation $\mathcal{H}_z'$ that would be used for the calculation of Zeeman effect in later discussions.
+
+
+# (MATRL204L4) Review of Spin (supplemented with Griffiths QM)
+Books used for this section:
+* Intro to Quantum Mechanics by Griffiths 3rd Ed. 
+
+Recall that from our last lecture, we have derived the vector potential used for the magnetic field, a coordinate free expression of the magnetic field. The vivid physical reality of electrons in a Magnetic Field can be explained on a few different levels. 
+* Electron in a Magnetic Field
+    1. magnetic dipole moment $\vec{m}$ or some books might use $\vec{\mu}$
+    2. Separate components to the spin, 
+        1. Electron **Spin** Dipole moment 
+        2. Electron **Orbital** Dipole moment
+    3. Zeeman Effect, which uses perturbation to account for the dipole moment under a uniform external magnetic field $\vec{B}$. 

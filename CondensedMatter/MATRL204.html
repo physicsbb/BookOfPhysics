@@ -175,6 +175,8 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
 
+
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">For Fun?</span></p>
 <ul class="nav bd-sidenav">
@@ -373,7 +375,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-1-review-of-maxwell-s-equations">Lecture 1: Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l1-review-of-maxwell-s-equations">(MATRL204L1) Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equations">Maxwell’s equations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-magnetic-monopole-then-how-about-magnetic-dipole">No magnetic monopole, then how about magnetic dipole?</a></li>
@@ -393,6 +395,8 @@ document.write(`
 </li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l2-review-of-quantum-mechanics-and-operators">(MATRL204L2) Review of Quantum Mechanics and Operators</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
 </ul>
 
             </nav>
@@ -410,11 +414,12 @@ document.write(`
 <p>Books used for all these notes:</p>
 <ul class="simple">
 <li><p>Griffiths E&amp;M 4th Ed</p></li>
+<li><p>Griffiths QM 3rd Ed</p></li>
 <li><p>Magnetism In Condensed Matter by Stephen Blundell</p></li>
 </ul>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="lecture-1-review-of-maxwell-s-equations">
-<h1>Lecture 1: Review of Maxwell’s equations<a class="headerlink" href="#lecture-1-review-of-maxwell-s-equations" title="Permalink to this heading">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="matrl204l1-review-of-maxwell-s-equations">
+<h1>(MATRL204L1) Review of Maxwell’s equations<a class="headerlink" href="#matrl204l1-review-of-maxwell-s-equations" title="Permalink to this heading">#</a></h1>
 <p>This topic is aimed towards its applications in Condensed Matter. The physics involved includes Electromagnetism, Statistical Mechanics, and Quantum Mechanics. Limited Classical Mechanics is also included in terms of its formalism, such as gauge transformation, canonical momentum, and such.</p>
 <section id="maxwell-s-equations">
 <h2>Maxwell’s equations<a class="headerlink" href="#maxwell-s-equations" title="Permalink to this heading">#</a></h2>
@@ -569,7 +574,8 @@ M = - \left(\frac{\partial F}{\partial B}\right)_{T,V}
 d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
 \\
 &amp;\text{where}\\
-&amp;E\left(\left\{\vec{r}_i,\vec{p}_i\right\}\right)= 
+&amp;E\left(\left\{\v
+ec{r}_i,\vec{p}_i\right\}\right)= 
 \sum _i ^N \frac{
     \left( \vec{p}_{\text{can},i}-q\vec{A}_i\right)^2
     }{2m_i} +V(\vec{r}_i)\end{split}\]</div>
@@ -585,6 +591,44 @@ d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
 </ul>
 </section>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matrl204l2-review-of-quantum-mechanics-and-operators">
+<h1>(MATRL204L2) Review of Quantum Mechanics and Operators<a class="headerlink" href="#matrl204l2-review-of-quantum-mechanics-and-operators" title="Permalink to this heading">#</a></h1>
+<p>When a magnetic dipole is placed under an external magnetic field, a torque would be generated as the magnetic dipole moment aligns itself to <span class="math notranslate nohighlight">\(\vec{B}_{ext}\)</span>. In this context here, we see a trippy example that magnetic field causes the dipole to do work through the torque generated from aligning the dipole to the (non-uniform) external magnetic field. (The field has to be non-uniform at different spatial points, or it won’t do any work). For the sake of time, refer to Griffith E&amp;M section 8.3 for an example of emf to show that <em>a magnetic field can be used as a medium to translate mechanical/external work into potential energy</em>. <strong>Magnetic field, and magnetic force itselves still do no work</strong>.</p>
+<p>Recall that, from general physics, for the non-conservative case,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+W_{nc} &amp;= \Delta E \\
+&amp;= \int\vec{\tau} d\theta =\int(\vec{m}\times\vec{B})d\theta\\
+&amp;=mB\int_{\theta _i}^{\theta _f} \sin\theta d\theta\\
+&amp;=-mB\left[\cos\theta _f-\cos\theta _i\right]\\
+\Delta U &amp;= U(\theta _f)- U(\theta _i) = U(\theta _{\parallel}) - \cancelto{0}{U(\theta _{\perp})}\\
+&amp;=-mBcos\theta\\
+U=\mathcal{H}'&amp;=-\vec{m}\cdot\vec{B}
+\end{split}\]</div>
+<p>This becomes the first order perturbation <span class="math notranslate nohighlight">\(\mathcal{H}_z'\)</span> that would be used for the calculation of Zeeman effect in later discussions.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matrl204l4-review-of-spin-supplemented-with-griffiths-qm">
+<h1>(MATRL204L4) Review of Spin (supplemented with Griffiths QM)<a class="headerlink" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm" title="Permalink to this heading">#</a></h1>
+<p>Books used for this section:</p>
+<ul class="simple">
+<li><p>Intro to Quantum Mechanics by Griffiths 3rd Ed.</p></li>
+</ul>
+<p>Recall that from our last lecture, we have derived the vector potential used for the magnetic field, a coordinate free expression of the magnetic field. The vivid physical reality of electrons in a Magnetic Field can be explained on a few different levels.</p>
+<ul class="simple">
+<li><p>Electron in a Magnetic Field</p>
+<ol class="arabic simple">
+<li><p>magnetic dipole moment <span class="math notranslate nohighlight">\(\vec{m}\)</span> or some books might use <span class="math notranslate nohighlight">\(\vec{\mu}\)</span></p></li>
+<li><p>Separate components to the spin,</p>
+<ol class="arabic simple">
+<li><p>Electron <strong>Spin</strong> Dipole moment</p></li>
+<li><p>Electron <strong>Orbital</strong> Dipole moment</p></li>
+</ol>
+</li>
+<li><p>Zeeman Effect, which uses perturbation to account for the dipole moment under a uniform external magnetic field <span class="math notranslate nohighlight">\(\vec{B}\)</span>.</p></li>
+</ol>
+</li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -655,7 +699,7 @@ d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture-1-review-of-maxwell-s-equations">Lecture 1: Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l1-review-of-maxwell-s-equations">(MATRL204L1) Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equations">Maxwell’s equations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-magnetic-monopole-then-how-about-magnetic-dipole">No magnetic monopole, then how about magnetic dipole?</a></li>
@@ -675,6 +719,8 @@ d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
 </li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l2-review-of-quantum-mechanics-and-operators">(MATRL204L2) Review of Quantum Mechanics and Operators</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
 </ul>
 
   </nav></div>
