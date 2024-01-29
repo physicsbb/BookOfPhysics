@@ -376,7 +376,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l1-review-of-maxwell-s-equations">(MATRL204L1) Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equations">Maxwell’s equations</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-maxwell-s-equations">Brief Review of Maxwell’s equations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-magnetic-monopole-then-how-about-magnetic-dipole">No magnetic monopole, then how about magnetic dipole?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equation-in-dielectric-materials">Maxwell’s equation in Dielectric Materials</a></li>
@@ -387,15 +387,28 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-001">Rabbit hole #001</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetization-from-vector-and-e-m-standpoint">Magnetization from vector and E&amp;M standpoint:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetization-from-vector-and-e-m-standpoint">Magnetization from vector and E&amp;M standpoint:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-miss-van-leeuwen-theorem-brief-explanation">Bohr-Miss van Leeuwen Theorem (brief explanation):</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-i-want-to-ask-about-lecture-1">Questions I want to ask about lecture 1:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-i-want-to-ask-about-lecture-1">Questions I want to ask about lecture 1:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l2-review-of-quantum-mechanics-and-operators">(MATRL204L2) Review of Quantum Mechanics and Operators</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-origin-of-magnetism">Quantum Origin of Magnetism</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-you-get-the-hamiltonian-that-we-work-with">How do you get the Hamiltonian that we work with?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-solve-the-schrodinger-s-equation">Let’s solve the Schrodinger’s Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tdse">TDSE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tise-and-separation-of-variables">TISE and Separation of Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-component-of-the-wavefunction">Angular Component of the wavefunction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-002">Rabbit hole #002</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l2-review-of-quantum-mechanics-and-operators">(MATRL204L2) Review of Quantum Mechanics and Operators</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
 </ul>
 
@@ -421,8 +434,8 @@ document.write(`
 <section class="tex2jax_ignore mathjax_ignore" id="matrl204l1-review-of-maxwell-s-equations">
 <h1>(MATRL204L1) Review of Maxwell’s equations<a class="headerlink" href="#matrl204l1-review-of-maxwell-s-equations" title="Permalink to this heading">#</a></h1>
 <p>This topic is aimed towards its applications in Condensed Matter. The physics involved includes Electromagnetism, Statistical Mechanics, and Quantum Mechanics. Limited Classical Mechanics is also included in terms of its formalism, such as gauge transformation, canonical momentum, and such.</p>
-<section id="maxwell-s-equations">
-<h2>Maxwell’s equations<a class="headerlink" href="#maxwell-s-equations" title="Permalink to this heading">#</a></h2>
+<section id="brief-review-of-maxwell-s-equations">
+<h2>Brief Review of Maxwell’s equations<a class="headerlink" href="#brief-review-of-maxwell-s-equations" title="Permalink to this heading">#</a></h2>
 <section id="standard-maxwell-s-equations">
 <h3>Standard Maxwell’s equations<a class="headerlink" href="#standard-maxwell-s-equations" title="Permalink to this heading">#</a></h3>
 <p>We start off with the four Maxwell’s equations</p>
@@ -544,12 +557,12 @@ m\frac{d\vec{v}}{dt} + q\frac{d\vec{A}}{dt }&amp;=\\
 \frac{d\vec{p}_{\text{can}}}{dt}=\frac{d}{dt}\left[ p+ q\vec{A}\right] &amp;= -q\nabla(V - \vec{v}\cdot\vec{A}) = -\nabla U_{\text{vel}}
 \end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\vec{p}_{\text{can}}=\vec{p} + q\vec{A}\)</span> is the canonical momentum, and the <span class="math notranslate nohighlight">\(U_{\text{vel}} = q(V-\vec{v}\cdot\vec{A})\)</span> is the potential of velocity-dependent quantity.</p>
+</section>
 <section id="magnetization-from-vector-and-e-m-standpoint">
-<h3>Magnetization from vector and E&amp;M standpoint:<a class="headerlink" href="#magnetization-from-vector-and-e-m-standpoint" title="Permalink to this heading">#</a></h3>
+<h2>Magnetization from vector and E&amp;M standpoint:<a class="headerlink" href="#magnetization-from-vector-and-e-m-standpoint" title="Permalink to this heading">#</a></h2>
 <p>We have discussed in the above section that vector potential and the magnetic field are generated due to the magnetic dipole moment. But what is a dipole moment? What is magnetization?</p>
 <p>When an electric current goes around an area <span class="math notranslate nohighlight">\(\vec{a} = |a|\hat{n}\)</span>, a magnetic dipole moment <span class="math notranslate nohighlight">\(\mu= Ia\hat{n}\)</span> is generated. This is similar to but not the same description as the fourth Maxwell’s equation <span class="math notranslate nohighlight">\(\nabla\times\vec{B}=\mu_0\vec{J}+\frac{1}{c^2}\partial_t\vec{E}\)</span>, this is different than the Amperian loop picture.</p>
 <p>The electric current goes around like a toroid, which forms the shape of a circle. The area enclosed by a circle of radius <span class="math notranslate nohighlight">\(r\)</span> gives <span class="math notranslate nohighlight">\(a=\pi r^2\)</span> and the magnetic dipole moment is formed. The magnetic field circles around the current like a smoke vortex ring, but the dipole points upward normal to the circle. The Ampere model of magnetic dipole moment is analogous to the magnetic field in a solenoid.</p>
-</section>
 <section id="bohr-miss-van-leeuwen-theorem-brief-explanation">
 <h3>Bohr-Miss van Leeuwen Theorem (brief explanation):<a class="headerlink" href="#bohr-miss-van-leeuwen-theorem-brief-explanation" title="Permalink to this heading">#</a></h3>
 <p>Magnetization is considered a “magnetic dipole density”, or dipole moment per unit volume, induced by an external magnetic field. A brief explanation of Bohr-van Leeuwen Theorem is that a classical system does NOT have a thermal equilibruim magnetization. However, reality says you need quantum theory to address why there IS in fact a net magnetization, and so, this theorem breaks down on a quantum level.</p>
@@ -574,16 +587,16 @@ M = - \left(\frac{\partial F}{\partial B}\right)_{T,V}
 d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
 \\
 &amp;\text{where}\\
-&amp;E\left(\left\{\v
-ec{r}_i,\vec{p}_i\right\}\right)= 
+&amp;E\left(\left\{\vec{r}_i,\vec{p}_i\right\}\right)= 
 \sum _i ^N \frac{
     \left( \vec{p}_{\text{can},i}-q\vec{A}_i\right)^2
     }{2m_i} +V(\vec{r}_i)\end{split}\]</div>
 <p>All position and momentum integrals integrate from <span class="math notranslate nohighlight">\(-\infty\)</span> to <span class="math notranslate nohighlight">\(+\infty\)</span> and that the phase space (momentum (3N) with respect to position (3N)) is <span class="math notranslate nohighlight">\(3N + 3N = 6N\)</span> dimensional.</p>
 <p>Something to also keep in mind is that magnetic fields do no work because the velocity’s direction of the charged particle is perpendicular to the force produced by the <span class="math notranslate nohighlight">\(\vec{B}\)</span>-field. Since no work is done by the field, the energy of the system also does not explicitly depend on the external field applied. When the external <span class="math notranslate nohighlight">\(\vec{B}\)</span>-field is removed, then the momentum reverts, as in <span class="math notranslate nohighlight">\(\vec{p}_{\text{can}}-q\vec{A}_i \mapsto \vec{p}_{\text{can}}\)</span>.</p>
 </section>
+</section>
 <section id="questions-i-want-to-ask-about-lecture-1">
-<h3>Questions I want to ask about lecture 1:<a class="headerlink" href="#questions-i-want-to-ask-about-lecture-1" title="Permalink to this heading">#</a></h3>
+<h2>Questions I want to ask about lecture 1:<a class="headerlink" href="#questions-i-want-to-ask-about-lecture-1" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Why is <span class="math notranslate nohighlight">\(\sum\mu_s = -\mu_l\)</span>?</p></li>
 <li><p>The diagram shown is that the mini current curls around, we are just summing the microscopic current due to the microscopic motion of electrons, but why is the diagram showing <span class="math notranslate nohighlight">\(\mu\)</span> when <span class="math notranslate nohighlight">\(\mu\)</span> is supposed to be pointing out of page?</p></li>
@@ -591,11 +604,19 @@ ec{r}_i,\vec{p}_i\right\}\right)=
 </ul>
 </section>
 </section>
-</section>
 <section class="tex2jax_ignore mathjax_ignore" id="matrl204l2-review-of-quantum-mechanics-and-operators">
 <h1>(MATRL204L2) Review of Quantum Mechanics and Operators<a class="headerlink" href="#matrl204l2-review-of-quantum-mechanics-and-operators" title="Permalink to this heading">#</a></h1>
+<p>Book used:</p>
+<ul class="simple">
+<li><p>Griffiths 3rd Ed Intro to QM</p></li>
+<li><p>Griffiths 4th Ed Intro to E&amp;M</p></li>
+</ul>
+<section id="quantum-origin-of-magnetism">
+<h2>Quantum Origin of Magnetism<a class="headerlink" href="#quantum-origin-of-magnetism" title="Permalink to this heading">#</a></h2>
+<section id="how-do-you-get-the-hamiltonian-that-we-work-with">
+<h3>How do you get the Hamiltonian that we work with?<a class="headerlink" href="#how-do-you-get-the-hamiltonian-that-we-work-with" title="Permalink to this heading">#</a></h3>
 <p>When a magnetic dipole is placed under an external magnetic field, a torque would be generated as the magnetic dipole moment aligns itself to <span class="math notranslate nohighlight">\(\vec{B}_{ext}\)</span>. In this context here, we see a trippy example that magnetic field causes the dipole to do work through the torque generated from aligning the dipole to the (non-uniform) external magnetic field. (The field has to be non-uniform at different spatial points, or it won’t do any work). For the sake of time, refer to Griffith E&amp;M section 8.3 for an example of emf to show that <em>a magnetic field can be used as a medium to translate mechanical/external work into potential energy</em>. <strong>Magnetic field, and magnetic force itselves still do no work</strong>.</p>
-<p>Recall that, from general physics, for the non-conservative case,</p>
+<p>Recall that, from general physics, conserved quantity just means <span class="math notranslate nohighlight">\(\Delta E = 0\)</span>, but for the non-conservative case,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 W_{nc} &amp;= \Delta E \\
@@ -603,10 +624,229 @@ W_{nc} &amp;= \Delta E \\
 &amp;=mB\int_{\theta _i}^{\theta _f} \sin\theta d\theta\\
 &amp;=-mB\left[\cos\theta _f-\cos\theta _i\right]\\
 \Delta U &amp;= U(\theta _f)- U(\theta _i) = U(\theta _{\parallel}) - \cancelto{0}{U(\theta _{\perp})}\\
-&amp;=-mBcos\theta\\
+&amp;=-mB\cos\theta\\
 U=\mathcal{H}'&amp;=-\vec{m}\cdot\vec{B}
 \end{split}\]</div>
 <p>This becomes the first order perturbation <span class="math notranslate nohighlight">\(\mathcal{H}_z'\)</span> that would be used for the calculation of Zeeman effect in later discussions.</p>
+</section>
+</section>
+<section id="let-s-solve-the-schrodinger-s-equation">
+<h2>Let’s solve the Schrodinger’s Equation<a class="headerlink" href="#let-s-solve-the-schrodinger-s-equation" title="Permalink to this heading">#</a></h2>
+<section id="tdse">
+<h3>TDSE<a class="headerlink" href="#tdse" title="Permalink to this heading">#</a></h3>
+<p>Let us first accept that the schrodinger’s equation simply reads</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+i \hbar \frac{\partial}{\partial t}\ket{\Psi} &amp;= \mathcal{H}\ket{\Psi} \\
+\mathcal{H} &amp;= -\frac{\hbar^2}{2m}\nabla^2+V \\
+\end{split}\]</div>
+<p>and the laplacian depends on the coordinate of choice. Before that step, we need to find a solution for the wavefunction. To turn the partial differential equation into two ordinary differential equation requires separation of variable, and that means both sides need to equal to each other, and such is only true if they are both the same constant. We can then say</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}E &amp;= E\\
+i\hbar\frac{\partial}{\partial t}\psi\phi&amp;=\mathcal{H}\psi\phi\\
+i\hbar\frac{1}{\phi}\frac{\partial}{\partial t}\phi&amp;=\frac{1}{\psi}\left[-\frac{\hbar^2}{2m}\nabla^2+V\right]\psi\\
+i\hbar\frac{1}{\phi}\frac{d\phi}{dt}&amp;=E\\
+\left[-\frac{\hbar^2}{2m}\nabla^2+V\right]&amp;=E\\
+\end{split}\]</div>
+<p>Separation of variable is completed. Now solve the two ODEs.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+i\hbar\frac{1}{\phi}\frac{d\phi}{dt}&amp;=E\\
+\int\frac{d\phi}{\phi}&amp;=-iEt/\hbar\\
+\phi(t) &amp;= \exp\left[-iEt/\hbar \right]\\
+\end{split}\]</div>
+<p>and like that we get the solution for the “wiggle factor”, or a time dependent phase. Now we have the wavefunction of the form</p>
+<div class="math notranslate nohighlight">
+\[
+\Psi(\vec{r},t)=\phi(t)\psi(\vec{r})=e^{-iEt/\hbar}\psi(\vec{r})
+\]</div>
+</section>
+<section id="tise-and-separation-of-variables">
+<h3>TISE and Separation of Variables<a class="headerlink" href="#tise-and-separation-of-variables" title="Permalink to this heading">#</a></h3>
+<p>Next, solve the time independent Schrodinger’s equation (TISE). We have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[-\frac{\hbar^2}{2m}\nabla^2+V\right]\psi&amp;=E\psi\\
+\end{split}\]</div>
+<p>But our choice for the spin requires the use of spherical coordinate, and the solution of this differential equation requires that the wavefunction be separated into two different components.</p>
+<p>We have <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi) = R(r)Y(\theta,\phi)\)</span>, and that the spherical laplacian is given to be</p>
+<div class="math notranslate nohighlight">
+\[
+\nabla^2 = 
+\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right)
++
+\frac{1}{r^2\sin\theta}
+\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)
++
+\frac{1}{r^2\sin^2\theta}\left(\frac{\partial^2}{\partial\phi^2}\right)
+\]</div>
+<p>and naturally, the schrodinger’s equation will read</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+\left[-\frac{\hbar^2}{2m}\left[\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right)
++
+\frac{1}{r^2\sin\theta}
+\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)
++
+\frac{1}{r^2\sin^2\theta}\left(\frac{\partial^2}{\partial\phi^2}\right)\right]\\+
+V\right]\psi=E\psi
+\end{aligned}\end{align} \]</div>
+<p>And if you accept that the substitution of <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi) = R(r)Y(\theta,\phi)\)</span>, and multiplying both sides with <span class="math notranslate nohighlight">\(\frac{-2mr^2}{\hbar^2}\frac{1}{R(r)Y(\theta,\phi)}\)</span>, then you will get</p>
+<div class="math notranslate nohighlight">
+\[
+\left\{
+\frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right)-\frac{2mr^2}{\hbar^2}\left[V(r)-E\right]
+\right\}
++ 
+\frac{1}{Y}
+\left\{
+\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial Y}{\partial\theta}\right)
++
+\frac{1}{\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}
+\right\}
+=
+0
+\]</div>
+<p>We will yet again use a constant for separation of variables, and to satisfy the homogenous equation, we need a constant <span class="math notranslate nohighlight">\(C\)</span> where <span class="math notranslate nohighlight">\( +C - C = 0\)</span>. Additionally, since the the legendre’s polynomials are used as part of the solution, this arbitrary constant is in fact <span class="math notranslate nohighlight">\(C = l(l+1)\)</span>. In which case, we have two equations from separation of variables.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right)-\frac{2mr^2}{\hbar^2}\left[V(r)-E\right]
+&amp;=
+l(l+1)
+\\
+\frac{1}{Y}
+\left[
+\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial Y}{\partial\theta}\right)
++
+\frac{1}{\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}
+\right]
+&amp;= 
+-l(l+1)
+\\
+l\left(l+1\right)-l\left(l+1\right)&amp;=0\\
+\end{split}\]</div>
+</section>
+<section id="angular-component-of-the-wavefunction">
+<h3>Angular Component of the wavefunction<a class="headerlink" href="#angular-component-of-the-wavefunction" title="Permalink to this heading">#</a></h3>
+<p>Let us now extract the <strong>Angular Component</strong> of the Schrodinger’s equation and solve for the solution (wavefunction) to the differential equation.</p>
+<p>Earlier, we separated the wavefunction into 2 different components <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi)=R(r)Y(\theta,\phi)\)</span>. Now, <span class="math notranslate nohighlight">\(Y(\theta,\phi) = \Theta(\theta)\Phi(\phi)\)</span>, and we will need to do another separation of variable in the angular component of the wavefunction.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{1}{Y}
+\left[
+\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial Y}{\partial\theta}\right)
++
+\frac{1}{\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}
+\right]
+&amp;= 
+-l(l+1)
+\\
+\sin\theta\frac{\partial}{\partial\theta}
+\left(
+\sin\theta\frac{\partial Y}{\partial\theta}
+\right)
++
+\frac{\partial^2 Y}{\partial\phi^2}
+&amp;=
+-l\left(l+1\right)\sin^2\theta Y\\
+\left\{
+\frac{1}{\Theta}
+\left[
+\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)    
+\right]
++l\left(l+1\right)\sin^2\theta
+\right\}
++
+\frac{1}{\Phi}\frac{d^2\Phi}{d\phi^2}
+&amp;=
+0
+\end{split}\]</div>
+<p>and out of that you get two different ODEs, and have the separation constant to be <span class="math notranslate nohighlight">\(m^2\)</span> and get</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{1}{\Theta}
+\left[
+\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)    
+\right]
++l\left(l+1\right)\sin^2\theta
+&amp;=m^2\\
+\frac{1}{\Phi}\frac{d^2\Phi}{d\phi^2} &amp;= -m^2\\
+\end{split}\]</div>
+<p>The general solution to <span class="math notranslate nohighlight">\(\Phi\)</span> is <span class="math notranslate nohighlight">\(D^2\Phi=-m^2\Phi\mapsto\Phi(\phi)=c_1\exp\left[i m \phi\right]+ c_2\exp\left[-i m \phi\right]\)</span> but for our immediate case, it is best to just treat it as <span class="math notranslate nohighlight">\(\Phi(\phi)=\exp\left[im\phi\right]\)</span>, and drop the minus sign. The set of integers m can include negative integers; the arbitrary constant can also be absorbed by the <span class="math notranslate nohighlight">\(\Theta\)</span> component of this angular component of the schrodinger’s equation. Lastly, the periodicity that <span class="math notranslate nohighlight">\(\Phi(\phi+ 2\pi)=\Phi(\phi)\)</span> is also satisfied. The general solution <span class="math notranslate nohighlight">\(\Phi(\phi)=\exp\left[im\phi\right]\)</span> works.</p>
+<p>Moving on to the solution for the polar angle, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)
++\left[l\left(l+1\right)\sin^2\theta - m^2\right]\Theta&amp;=0\\
+\Theta(\theta)&amp;= AP_l^m(\cos\theta)\\
+\end{split}\]</div>
+<p>It has a similar form to the <a class="reference external" href="https://en.wikipedia.org/wiki/Associated_Legendre_polynomials">General Legendre Equation</a>. Simply accept that the solution uses the Legendre polynomials, and save yourself the effort in unrelated/unnecessary derivation. <em>Physics is not Math</em>. <a class="reference external" href="https://arxiv.org/pdf/physics/0612159.pdf">Physics is still physics regardless of how you describe it anyways. Check section: Drude’s electron theory of metals.</a></p>
+<p>The associated Legendre function is the solution to the associated Legendre Equation, and has the form of</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P_l ^m(x)&amp;=\left(-1\right)^{|m|}\left(1-x^2\right)^{\frac{|m|}{2}}\left(\frac{d}{dx}\right)^{|m|}P_l(x)\\
+P_l(x)&amp;=\frac{1}{2^l l!}\left(\frac{d}{dx}\right)^l\left(x^2-1\right)^l\text{(This is the Rodrigues Formula)}\\
+\end{split}\]</div>
+<p>The Legendre function has two parameters, <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(l\)</span>, where the <span class="math notranslate nohighlight">\(l\)</span> determines the degree of the <a class="reference external" href="https://en.wikipedia.org/wiki/Legendre_polynomials">Legendre Polynomial</a>, and its parity (mirror symmetry). The <span class="math notranslate nohighlight">\(m\)</span> integer shows the <span class="math notranslate nohighlight">\(\sin\theta\)</span> term in the Legendre function where if <span class="math notranslate nohighlight">\(x = \cos\theta\)</span>, then <span class="math notranslate nohighlight">\((1-\cos^2\theta)^{m/2}=\sin^m\theta\)</span>.</p>
+<p>Some takeaways in the general Legendre Function:</p>
+<ol class="arabic">
+<li><p>if <span class="math notranslate nohighlight">\(m &gt; l\)</span>, then <span class="math notranslate nohighlight">\(P^m_l = 0\)</span></p></li>
+<li><p>for any given l, the number of m’s available is <span class="math notranslate nohighlight">\((2l+1)\)</span>.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p><span class="math notranslate nohighlight">\( l\)</span></p></th>
+<th class="head text-right"><p><span class="math notranslate nohighlight">\(m \)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td class="text-right"><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+<td class="text-right"><p><span class="math notranslate nohighlight">\(-1,0,+1\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\dots\)</span></p></td>
+<td class="text-right"><p><span class="math notranslate nohighlight">\(\dots\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
+<td class="text-right"><p><span class="math notranslate nohighlight">\(-5,-4,-3,...,0,...,+3,+4,+5\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>If you look at the above table, you see very clearly why <span class="math notranslate nohighlight">\(|m|&gt;l\)</span> is simply not allowed. The magnetic quantum number should only be within the range of orbital angular quantum number <span class="math notranslate nohighlight">\(-l\leq m\leq +l\)</span>.</p></li>
+</ol>
+<p>So after all, we finally have an expression for the spherical harmonics <span class="math notranslate nohighlight">\(Y(\theta,\phi)\)</span></p>
+<p>Earlier we said that when deriving <span class="math notranslate nohighlight">\(\Phi(\phi)\)</span> that we can just let <span class="math notranslate nohighlight">\(\Theta(\theta)\)</span> absorb the normalization constant. We now know that the general solution of <span class="math notranslate nohighlight">\(Y(\theta,\phi)\)</span> takes the form <span class="math notranslate nohighlight">\(Y(\theta,\phi)=A\exp\left[im\phi\right]P_l^m(\cos\theta)\)</span></p>
+<p>To normalize it, throw the full wavefunction into the 3D volume integral</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+1&amp;= \int\int\int|\psi^{*}\psi|r^2\sin\theta dr d\theta d\phi \\
+&amp;= \int R^{*}(r) R(r)r^2dr\int\int Y^{*}(\theta,\phi)Y(\theta,\phi)\sin\theta d\theta d\phi\\
+\end{split}\]</div>
+<p>But you want to normalize the two different components of the wavefunction separately, and this is legal because <span class="math notranslate nohighlight">\(1\times 1 = 1\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+1&amp;=\int R^{*}(r) R(r) r^2 dr\\ 
+1&amp;=\int\int Y^{*}(\theta,\phi)Y(\theta,\phi)\sin\theta d\theta d\phi\\
+1&amp;=\int\int A^{*}e^{-im\phi}P_l^{*m}(\cos\theta)Ae^{im\phi}P_l^m(\cos\theta) \sin\theta d\theta d\phi\\
+\end{split}\]</div>
+<p>Skipping the derivation for the normalization, and you get the solution for spherical harmonics to be</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+Y_l^m(\theta,\phi)=\sqrt{
+    \frac{(2l+1)}{4\pi}\frac{(l-m)!}{(l+m)!}
+    }
+    e^{im\phi}P_l^m(\cos\theta)
+}
+\]</div>
+</section>
+<section id="rabbit-hole-002">
+<h3>Rabbit hole #002<a class="headerlink" href="#rabbit-hole-002" title="Permalink to this heading">#</a></h3>
+<p>Why can you use the solution of the general legendre equation to a different differential equation? This is an entirely unrelated question to physics, but it would be helpful to know why.</p>
+</section>
+</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="matrl204l4-review-of-spin-supplemented-with-griffiths-qm">
 <h1>(MATRL204L4) Review of Spin (supplemented with Griffiths QM)<a class="headerlink" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm" title="Permalink to this heading">#</a></h1>
@@ -700,7 +940,7 @@ U=\mathcal{H}'&amp;=-\vec{m}\cdot\vec{B}
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l1-review-of-maxwell-s-equations">(MATRL204L1) Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equations">Maxwell’s equations</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-maxwell-s-equations">Brief Review of Maxwell’s equations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-magnetic-monopole-then-how-about-magnetic-dipole">No magnetic monopole, then how about magnetic dipole?</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equation-in-dielectric-materials">Maxwell’s equation in Dielectric Materials</a></li>
@@ -711,15 +951,28 @@ U=\mathcal{H}'&amp;=-\vec{m}\cdot\vec{B}
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-001">Rabbit hole #001</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetization-from-vector-and-e-m-standpoint">Magnetization from vector and E&amp;M standpoint:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetization-from-vector-and-e-m-standpoint">Magnetization from vector and E&amp;M standpoint:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-miss-van-leeuwen-theorem-brief-explanation">Bohr-Miss van Leeuwen Theorem (brief explanation):</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-i-want-to-ask-about-lecture-1">Questions I want to ask about lecture 1:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-i-want-to-ask-about-lecture-1">Questions I want to ask about lecture 1:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l2-review-of-quantum-mechanics-and-operators">(MATRL204L2) Review of Quantum Mechanics and Operators</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-origin-of-magnetism">Quantum Origin of Magnetism</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-you-get-the-hamiltonian-that-we-work-with">How do you get the Hamiltonian that we work with?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#let-s-solve-the-schrodinger-s-equation">Let’s solve the Schrodinger’s Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tdse">TDSE</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tise-and-separation-of-variables">TISE and Separation of Variables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-component-of-the-wavefunction">Angular Component of the wavefunction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-002">Rabbit hole #002</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l2-review-of-quantum-mechanics-and-operators">(MATRL204L2) Review of Quantum Mechanics and Operators</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
 </ul>
 

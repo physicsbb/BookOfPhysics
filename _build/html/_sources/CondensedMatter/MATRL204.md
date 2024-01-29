@@ -8,7 +8,7 @@ Books used for all these notes:
 
 This topic is aimed towards its applications in Condensed Matter. The physics involved includes Electromagnetism, Statistical Mechanics, and Quantum Mechanics. Limited Classical Mechanics is also included in terms of its formalism, such as gauge transformation, canonical momentum, and such. 
 
-## Maxwell's equations
+## Brief Review of Maxwell's equations
 
 ### Standard Maxwell's equations
 We start off with the four Maxwell's equations
@@ -141,7 +141,7 @@ m\frac{d\vec{v}}{dt} + q\frac{d\vec{A}}{dt }&=\\
 $$
 where $\vec{p}_{\text{can}}=\vec{p} + q\vec{A}$ is the canonical momentum, and the $U_{\text{vel}} = q(V-\vec{v}\cdot\vec{A})$ is the potential of velocity-dependent quantity.
 
-### Magnetization from vector and E&M standpoint:
+## Magnetization from vector and E&M standpoint:
 We have discussed in the above section that vector potential and the magnetic field are generated due to the magnetic dipole moment. But what is a dipole moment? What is magnetization? 
 
 When an electric current goes around an area $\vec{a} = |a|\hat{n}$, a magnetic dipole moment $\mu= Ia\hat{n}$ is generated. This is similar to but not the same description as the fourth Maxwell's equation $\nabla\times\vec{B}=\mu_0\vec{J}+\frac{1}{c^2}\partial_t\vec{E}$, this is different than the Amperian loop picture. 
@@ -176,8 +176,7 @@ Z &\propto \int\int\dots\int \exp
 d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
 \\
 &\text{where}\\
-&E\left(\left\{\v
-ec{r}_i,\vec{p}_i\right\}\right)= 
+&E\left(\left\{\vec{r}_i,\vec{p}_i\right\}\right)= 
 \sum _i ^N \frac{
     \left( \vec{p}_{\text{can},i}-q\vec{A}_i\right)^2
     }{2m_i} +V(\vec{r}_i)
@@ -188,15 +187,22 @@ All position and momentum integrals integrate from $-\infty$ to $+\infty$ and th
 
 Something to also keep in mind is that magnetic fields do no work because the velocity's direction of the charged particle is perpendicular to the force produced by the $\vec{B}$-field. Since no work is done by the field, the energy of the system also does not explicitly depend on the external field applied. When the external $\vec{B}$-field is removed, then the momentum reverts, as in $\vec{p}_{\text{can}}-q\vec{A}_i \mapsto \vec{p}_{\text{can}}$.
 
-### Questions I want to ask about lecture 1:
+## Questions I want to ask about lecture 1:
 * Why is $\sum\mu_s = -\mu_l$? 
 * The diagram shown is that the mini current curls around, we are just summing the microscopic current due to the microscopic motion of electrons, but why is the diagram showing $\mu$ when $\mu$ is supposed to be pointing out of page?
 * What exactly is this vector potential? are we taking into account that the magnetic field affects the vector potential, and not explicitly the external magnetic field, which alters the momentum of a charged particle?
 
 # (MATRL204L2) Review of Quantum Mechanics and Operators
+Book used:
+* Griffiths 3rd Ed Intro to QM
+* Griffiths 4th Ed Intro to E&M
+
+## Quantum Origin of Magnetism
+
+### How do you get the Hamiltonian that we work with?
 When a magnetic dipole is placed under an external magnetic field, a torque would be generated as the magnetic dipole moment aligns itself to $\vec{B}_{ext}$. In this context here, we see a trippy example that magnetic field causes the dipole to do work through the torque generated from aligning the dipole to the (non-uniform) external magnetic field. (The field has to be non-uniform at different spatial points, or it won't do any work). For the sake of time, refer to Griffith E&M section 8.3 for an example of emf to show that *a magnetic field can be used as a medium to translate mechanical/external work into potential energy*. **Magnetic field, and magnetic force itselves still do no work**.
 
-Recall that, from general physics, for the non-conservative case, 
+Recall that, from general physics, conserved quantity just means $\Delta E = 0$, but for the non-conservative case, 
 
 $$
 W_{nc} &= \Delta E \\
@@ -204,12 +210,232 @@ W_{nc} &= \Delta E \\
 &=mB\int_{\theta _i}^{\theta _f} \sin\theta d\theta\\
 &=-mB\left[\cos\theta _f-\cos\theta _i\right]\\
 \Delta U &= U(\theta _f)- U(\theta _i) = U(\theta _{\parallel}) - \cancelto{0}{U(\theta _{\perp})}\\
-&=-mBcos\theta\\
+&=-mB\cos\theta\\
 U=\mathcal{H}'&=-\vec{m}\cdot\vec{B}
 $$
 
 This becomes the first order perturbation $\mathcal{H}_z'$ that would be used for the calculation of Zeeman effect in later discussions.
 
+## Let's solve the Schrodinger's Equation
+
+### TDSE
+Let us first accept that the schrodinger's equation simply reads
+
+$$
+i \hbar \frac{\partial}{\partial t}\ket{\Psi} &= \mathcal{H}\ket{\Psi} \\
+\mathcal{H} &= -\frac{\hbar^2}{2m}\nabla^2+V \\
+$$
+
+and the laplacian depends on the coordinate of choice. Before that step, we need to find a solution for the wavefunction. To turn the partial differential equation into two ordinary differential equation requires separation of variable, and that means both sides need to equal to each other, and such is only true if they are both the same constant. We can then say
+
+$$ 
+
+E &= E\\
+i\hbar\frac{\partial}{\partial t}\psi\phi&=\mathcal{H}\psi\phi\\
+i\hbar\frac{1}{\phi}\frac{\partial}{\partial t}\phi&=\frac{1}{\psi}\left[-\frac{\hbar^2}{2m}\nabla^2+V\right]\psi\\
+i\hbar\frac{1}{\phi}\frac{d\phi}{dt}&=E\\
+\left[-\frac{\hbar^2}{2m}\nabla^2+V\right]&=E\\
+$$
+
+Separation of variable is completed. Now solve the two ODEs. 
+
+$$
+i\hbar\frac{1}{\phi}\frac{d\phi}{dt}&=E\\
+\int\frac{d\phi}{\phi}&=-iEt/\hbar\\
+\phi(t) &= \exp\left[-iEt/\hbar \right]\\
+$$
+
+and like that we get the solution for the "wiggle factor", or a time dependent phase. Now we have the wavefunction of the form 
+
+$$
+\Psi(\vec{r},t)=\phi(t)\psi(\vec{r})=e^{-iEt/\hbar}\psi(\vec{r})
+$$
+
+
+### TISE and Separation of Variables
+Next, solve the time independent Schrodinger's equation (TISE). We have
+
+$$
+\left[-\frac{\hbar^2}{2m}\nabla^2+V\right]\psi&=E\psi\\
+$$
+
+But our choice for the spin requires the use of spherical coordinate, and the solution of this differential equation requires that the wavefunction be separated into two different components. 
+
+We have $\psi(r,\theta,\phi) = R(r)Y(\theta,\phi)$, and that the spherical laplacian is given to be 
+
+$$
+\nabla^2 = 
+\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right)
++
+\frac{1}{r^2\sin\theta}
+\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)
++
+\frac{1}{r^2\sin^2\theta}\left(\frac{\partial^2}{\partial\phi^2}\right)
+$$
+
+and naturally, the schrodinger's equation will read
+
+$$
+\left[-\frac{\hbar^2}{2m}\left[\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial}{\partial r}\right)
++
+\frac{1}{r^2\sin\theta}
+\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)
++
+\frac{1}{r^2\sin^2\theta}\left(\frac{\partial^2}{\partial\phi^2}\right)\right]
+
++
+V\right]\psi=E\psi
+$$
+
+And if you accept that the substitution of $\psi(r,\theta,\phi) = R(r)Y(\theta,\phi)$, and multiplying both sides with $\frac{-2mr^2}{\hbar^2}\frac{1}{R(r)Y(\theta,\phi)}$, then you will get 
+
+$$
+\left\{
+\frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right)-\frac{2mr^2}{\hbar^2}\left[V(r)-E\right]
+\right\}
++ 
+\frac{1}{Y}
+\left\{
+\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial Y}{\partial\theta}\right)
++
+\frac{1}{\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}
+\right\}
+=
+0
+$$
+
+We will yet again use a constant for separation of variables, and to satisfy the homogenous equation, we need a constant $C$ where $ +C - C = 0$. Additionally, since the the legendre's polynomials are used as part of the solution, this arbitrary constant is in fact $C = l(l+1)$. In which case, we have two equations from separation of variables. 
+
+$$
+\frac{1}{R}\frac{d}{dr}\left(r^2\frac{dR}{dr}\right)-\frac{2mr^2}{\hbar^2}\left[V(r)-E\right]
+&=
+l(l+1)
+\\
+\frac{1}{Y}
+\left[
+\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial Y}{\partial\theta}\right)
++
+\frac{1}{\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}
+\right]
+&= 
+-l(l+1)
+\\
+l\left(l+1\right)-l\left(l+1\right)&=0\\
+$$
+
+### Angular Component of the wavefunction
+Let us now extract the **Angular Component** of the Schrodinger's equation and solve for the solution (wavefunction) to the differential equation. 
+
+Earlier, we separated the wavefunction into 2 different components $\psi(r,\theta,\phi)=R(r)Y(\theta,\phi)$. Now, $Y(\theta,\phi) = \Theta(\theta)\Phi(\phi)$, and we will need to do another separation of variable in the angular component of the wavefunction. 
+
+
+$$
+\frac{1}{Y}
+\left[
+\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial Y}{\partial\theta}\right)
++
+\frac{1}{\sin^2\theta}\frac{\partial^2Y}{\partial\phi^2}
+\right]
+&= 
+-l(l+1)
+\\
+\sin\theta\frac{\partial}{\partial\theta}
+\left(
+\sin\theta\frac{\partial Y}{\partial\theta}
+\right)
++
+\frac{\partial^2 Y}{\partial\phi^2}
+&=
+-l\left(l+1\right)\sin^2\theta Y\\
+\left\{
+\frac{1}{\Theta}
+\left[
+\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)    
+\right]
++l\left(l+1\right)\sin^2\theta
+\right\}
++
+\frac{1}{\Phi}\frac{d^2\Phi}{d\phi^2}
+&=
+0
+$$
+
+and out of that you get two different ODEs, and have the separation constant to be $m^2$ and get
+
+$$
+\frac{1}{\Theta}
+\left[
+\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)    
+\right]
++l\left(l+1\right)\sin^2\theta
+&=m^2\\
+\frac{1}{\Phi}\frac{d^2\Phi}{d\phi^2} &= -m^2\\
+$$
+
+The general solution to $\Phi$ is $D^2\Phi=-m^2\Phi\mapsto\Phi(\phi)=c_1\exp\left[i m \phi\right]+ c_2\exp\left[-i m \phi\right]$ but for our immediate case, it is best to just treat it as $\Phi(\phi)=\exp\left[im\phi\right]$, and drop the minus sign. The set of integers m can include negative integers; the arbitrary constant can also be absorbed by the $\Theta$ component of this angular component of the schrodinger's equation. Lastly, the periodicity that $\Phi(\phi+ 2\pi)=\Phi(\phi)$ is also satisfied. The general solution $\Phi(\phi)=\exp\left[im\phi\right]$ works. 
+
+Moving on to the solution for the polar angle, we have 
+
+$$
+\sin\theta\frac{d}{d\theta}\left(\sin\theta\frac{d\Theta}{d\theta}\right)
++\left[l\left(l+1\right)\sin^2\theta - m^2\right]\Theta&=0\\
+\Theta(\theta)&= AP_l^m(\cos\theta)\\
+$$
+
+It has a similar form to the [General Legendre Equation](https://en.wikipedia.org/wiki/Associated_Legendre_polynomials). Simply accept that the solution uses the Legendre polynomials, and save yourself the effort in unrelated/unnecessary derivation. *Physics is not Math*. [Physics is still physics regardless of how you describe it anyways. Check section: Drude's electron theory of metals.](https://arxiv.org/pdf/physics/0612159.pdf)  
+
+The associated Legendre function is the solution to the associated Legendre Equation, and has the form of 
+
+$$
+P_l ^m(x)&=\left(-1\right)^{|m|}\left(1-x^2\right)^{\frac{|m|}{2}}\left(\frac{d}{dx}\right)^{|m|}P_l(x)\\
+P_l(x)&=\frac{1}{2^l l!}\left(\frac{d}{dx}\right)^l\left(x^2-1\right)^l\text{(This is the Rodrigues Formula)}\\
+$$
+
+The Legendre function has two parameters, $m$ and $l$, where the $l$ determines the degree of the [Legendre Polynomial](https://en.wikipedia.org/wiki/Legendre_polynomials), and its parity (mirror symmetry). The $m$ integer shows the $\sin\theta$ term in the Legendre function where if $x = \cos\theta$, then $(1-\cos^2\theta)^{m/2}=\sin^m\theta$.
+
+Some takeaways in the general Legendre Function:
+1. if $m > l$, then $P^m_l = 0$
+2. for any given l, the number of m's available is $(2l+1)$. 
+    |   $ l$   |    $m $        |
+    | :------- | -----:         |
+    | $0$      |    $0$         |
+    | $1$      |    $-1,0,+1$   |
+    | $\dots$  |    $\dots$     |
+    | $5$      | $-5,-4,-3,...,0,...,+3,+4,+5$|
+3. If you look at the above table, you see very clearly why $|m|>l$ is simply not allowed. The magnetic quantum number should only be within the range of orbital angular quantum number $-l\leq m\leq +l$.
+
+So after all, we finally have an expression for the spherical harmonics $Y(\theta,\phi)$
+
+Earlier we said that when deriving $\Phi(\phi)$ that we can just let $\Theta(\theta)$ absorb the normalization constant. We now know that the general solution of $Y(\theta,\phi)$ takes the form $Y(\theta,\phi)=A\exp\left[im\phi\right]P_l^m(\cos\theta)$
+
+To normalize it, throw the full wavefunction into the 3D volume integral
+
+$$
+1&= \int\int\int|\psi^{*}\psi|r^2\sin\theta dr d\theta d\phi \\
+&= \int R^{*}(r) R(r)r^2dr\int\int Y^{*}(\theta,\phi)Y(\theta,\phi)\sin\theta d\theta d\phi\\
+$$
+
+But you want to normalize the two different components of the wavefunction separately, and this is legal because $1\times 1 = 1$. 
+
+$$
+1&=\int R^{*}(r) R(r) r^2 dr\\ 
+1&=\int\int Y^{*}(\theta,\phi)Y(\theta,\phi)\sin\theta d\theta d\phi\\
+1&=\int\int A^{*}e^{-im\phi}P_l^{*m}(\cos\theta)Ae^{im\phi}P_l^m(\cos\theta) \sin\theta d\theta d\phi\\
+$$
+
+Skipping the derivation for the normalization, and you get the solution for spherical harmonics to be 
+
+$$
+\boxed{
+Y_l^m(\theta,\phi)=\sqrt{
+    \frac{(2l+1)}{4\pi}\frac{(l-m)!}{(l+m)!}
+    }
+    e^{im\phi}P_l^m(\cos\theta)
+}
+$$
+
+### Rabbit hole #002 
+Why can you use the solution of the general legendre equation to a different differential equation? This is an entirely unrelated question to physics, but it would be helpful to know why. 
 
 # (MATRL204L4) Review of Spin (supplemented with Griffiths QM)
 Books used for this section:

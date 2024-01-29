@@ -9,3 +9,11 @@
 * BS flavored politics? haha
 
 Hey! Time enjoyed getting wasted is not wasting time, right?
+
+## Scratching my head again... 
+What are the four types of invariance in physics again? 
+1. Translational
+2. Rotational
+3. Time-reversal 
+
+WHich one is the 4th one again? 
