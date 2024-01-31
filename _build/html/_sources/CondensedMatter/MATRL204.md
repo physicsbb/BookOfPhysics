@@ -395,8 +395,8 @@ The Legendre function has two parameters, $m$ and $l$, where the $l$ determines 
 
 Some takeaways in the general Legendre Function:
 1. if $m > l$, then $P^m_l = 0$
-2. for any given l, the number of m's available is $(2l+1)$. 
-    |   $ l$   |    $m $        |
+2. for any given $l$, the number of $m$'s available is $(2l+1)$. 
+    |    orbital quantum number $l$   |     "magnetic" quantum number $m$       |
     | :------- | -----:         |
     | $0$      |    $0$         |
     | $1$      |    $-1,0,+1$   |
@@ -436,6 +436,105 @@ $$
 
 ### Rabbit hole #002 
 Why can you use the solution of the general legendre equation to a different differential equation? This is an entirely unrelated question to physics, but it would be helpful to know why. 
+
+### Things to keep in the back of your mind
+* Spherical Harmonics cannot capture half integer angular momentum.
+* Spherical Harmonics is the embodiment that we have a spherically symmetrical potential. However, in a solid, you no longer have this continuous rotational symmetry.
+* When symmetry is broken in an attempt to align the magnetic dipole moment to the external field, the (orbital) degeneracy is "lifted" and requires the use of perturbation theory to find the correction. The orbital degeneracy is what generates the orbital magnetism. This is the so-called "crystal field solution". 
+
+## What is angular momentum operators?
+Classical description of angular momentum is 
+
+$$
+\vec{L} = \vec{r}\times\vec{p}
+$$
+
+and the linear momenta has the form of 
+
+$$ 
+&(y p_z - zp_y)\hat{x} -(xp_z-zp_x)\hat{y}+(xp_y-yp_x)\hat{z}\\
+=&\hat{L}_x + \hat{L}_y + \hat{L}_z
+$$
+
+The commutator gives
+
+$$
+&\left[\hat{L}_x,\hat{L}_y\right] =\hat{L}_x\hat{L}_y-\hat{L}_y\hat{L}_x=i\hbar\hat{L}_z\\
+&\left[\hat{L}_y,\hat{L}_z\right] =\hat{L}_x\\
+&\left[\hat{L}_z,\hat{L}_x\right] =\hat{L}_y\\
+$$
+
+The above 3 commutation show that these operators do not have simultaneous eigenfunctions.
+
+However, $\left[\hat{L}^2,\hat{L}_x\right]=\left[\hat{L}^2,L_y\right]=\left[\hat{L}^2,\hat{L}_z\right]=0$, and since the two operators are compatible, they can have simultaneous eigenfunctions and can even share eigenvalues. Note also that the typical convention is to have $\hat{L_z}$ as the special direction. 
+
+In Quantum Harmonic Oscillator, you develop ladder operators to move through the different eigenstates, and the different energies of the harmonic oscillator.
+
+Now, define the ladder operators. 
+
+$$
+\hat{L}_+ = \hat{L}_x+i\hat{L}_y;\hat{L}_- = \hat{L}_x - i\hat{L}_y;\\
+\left[\hat{L}_z,\hat{L}_{\pm}\right]=\pm\hbar\hat{L}_{\pm}
+$$
+
+Now we can use the algebra trick to find the simultaneous eigenfunctions of $\hat{L}^2$ and $\hat{L}_z$. Suppose we have an electronic wavefunction $\ket{\psi}$, and have the operators $\hat{L}^2$ and $\hat{L}_z$ acting on it, we can get
+
+$$
+\hat{L}^2\ket{\hat{L}}          &=\alpha\ket{\psi}\\
+\hat{L}_z\ket{\psi}             &=\beta\ket{\psi}\\
+\hat{L}^2\hat{L}_{\pm}\ket{\psi}&=\hat{L}_{\pm}\hat{L}^2\ket{\psi}\\
+                                &=\hat{L}_{\pm}\alpha\ket{\psi}\\
+                                &=\alpha\hat{L}_{\pm}\ket{\psi}\\
+$$
+
+The above is legal with $\hat{L}_{\pm}$ because we know that $\left[\hat{L}^2,\hat{L}_{x/y/z}\right]=0$ and the $i$ can simply be thought of as a constant. 
+
+Applying the same concept to the $\hat{L}_z$ operator,
+
+$$
+\left[\hat{L}_{z},\hat{L}_{\pm}\right]\ket{\psi}=\left(\hat{L}_z\hat{L}_{\pm}-\hat{L}_{\pm}\hat{L}_{z}\right)\ket{\psi}
+&=\pm\hbar\hat{L}_\pm\ket{\psi}\\
+\hat{L}_z\hat{L}_{\pm}\ket{\psi}
+&=\left(\pm\hbar\hat{L}_{\pm}+\hat{L}_{\pm}\hat{L}_z\right)\ket{\psi}\\
+&=(\pm\hbar+\beta)\hat{L}_\pm\ket{\psi}\\
+$$
+
+and so by some clever algebraic tricks, we now know that the operator $\hat{L}_z\mapsto\left(\pm\hbar+\beta\right)$ carries such eigenvalue depending on the raising or lowering operator. 
+
+
+## Correlating the eigenvalues of $l$ and $m$:
+Let us now correlate the two different eigenvalues of $l$ orbital angular momentum quantum number and $m$ magnetic quantum number. 
+
+we have 
+
+$$
+\left<\hat{L}^2\right> = \bra{\psi}\hat{L}^2\ket{\psi}= \left<\hat{L}_x^2\right>+ \left<\hat{L}_y^2\right>+\left<\hat{L}_z^2\right>
+$$
+
+Intuitively, we have specified previously that $hat{z}$ is the special direction, and we correlate this special direction to the direction along the magnetic dipole moment. 
+
+By more clever algebraic tricks, and since we know that the expectation value of each of the $\left<\hat{L}^2\right>\geq 0$, we can then incorporate what we have previously stated to say
+
+$$
+\hat{L}^2&\mapsto\alpha\\
+\hat{L}_z&\mapsto\beta \\
+\because \left<\hat{L}^2\right>&=\left<\hat{L}_x^2\right>+\left<\hat{L}_y^2\right>+\left<\hat{L}_z^2\right>\geq 0\\
+\therefore \left<\hat{L}^2\right>&=\alpha\geq\beta^2\\
+$$
+
+I have used the symbol "$\mapsto$" to denote the operator's corresponding eigenvalue. Get used to it. 
+
+Let us take our final step and find the correspondance of the eigenvalues to the quantum numbers. 
+It is important to note that since $\beta$ is bounded by $\alpha$, then we can easily say that the followings are true. You are imposing the equality condition from the expectation value to impose the maximum and minimum of the $\beta$ value from $\alpha$.
+
+$$
+\alpha            &= \hbar l(l+1)\\
+\beta             &= \hbar m     \\
+\beta_{\text{max}}&=+\hbar l     \\
+\beta_{\text{min}}&=-\hbar l     \\
+$$
+
+The angular momentum of the electronic wavefunction is a spherical harmonic. The $\theta$ component is associated to legendre polynomial of integer $l$.
 
 # (MATRL204L4) Review of Spin (supplemented with Griffiths QM)
 Books used for this section:

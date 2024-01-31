@@ -405,8 +405,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tise-and-separation-of-variables">TISE and Separation of Variables</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-component-of-the-wavefunction">Angular Component of the wavefunction</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-002">Rabbit hole #002</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#things-to-keep-in-the-back-of-your-mind">Things to keep in the back of your mind</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-angular-momentum-operators">What is angular momentum operators?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-the-eigenvalues-of-l-and-m">Correlating the eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>:</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
@@ -791,11 +794,11 @@ P_l(x)&amp;=\frac{1}{2^l l!}\left(\frac{d}{dx}\right)^l\left(x^2-1\right)^l\text
 <p>Some takeaways in the general Legendre Function:</p>
 <ol class="arabic">
 <li><p>if <span class="math notranslate nohighlight">\(m &gt; l\)</span>, then <span class="math notranslate nohighlight">\(P^m_l = 0\)</span></p></li>
-<li><p>for any given l, the number of m’s available is <span class="math notranslate nohighlight">\((2l+1)\)</span>.</p>
+<li><p>for any given <span class="math notranslate nohighlight">\(l\)</span>, the number of <span class="math notranslate nohighlight">\(m\)</span>’s available is <span class="math notranslate nohighlight">\((2l+1)\)</span>.</p>
 <table class="table">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p><span class="math notranslate nohighlight">\( l\)</span></p></th>
-<th class="head text-right"><p><span class="math notranslate nohighlight">\(m \)</span></p></th>
+<tr class="row-odd"><th class="head text-left"><p>orbital quantum number <span class="math notranslate nohighlight">\(l\)</span></p></th>
+<th class="head text-right"><p>“magnetic” quantum number <span class="math notranslate nohighlight">\(m\)</span></p></th>
 </tr>
 </thead>
 <tbody>
@@ -846,6 +849,93 @@ Y_l^m(\theta,\phi)=\sqrt{
 <h3>Rabbit hole #002<a class="headerlink" href="#rabbit-hole-002" title="Permalink to this heading">#</a></h3>
 <p>Why can you use the solution of the general legendre equation to a different differential equation? This is an entirely unrelated question to physics, but it would be helpful to know why.</p>
 </section>
+<section id="things-to-keep-in-the-back-of-your-mind">
+<h3>Things to keep in the back of your mind<a class="headerlink" href="#things-to-keep-in-the-back-of-your-mind" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Spherical Harmonics cannot capture half integer angular momentum.</p></li>
+<li><p>Spherical Harmonics is the embodiment that we have a spherically symmetrical potential. However, in a solid, you no longer have this continuous rotational symmetry.</p></li>
+<li><p>When symmetry is broken in an attempt to align the magnetic dipole moment to the external field, the (orbital) degeneracy is “lifted” and requires the use of perturbation theory to find the correction. The orbital degeneracy is what generates the orbital magnetism. This is the so-called “crystal field solution”.</p></li>
+</ul>
+</section>
+</section>
+<section id="what-is-angular-momentum-operators">
+<h2>What is angular momentum operators?<a class="headerlink" href="#what-is-angular-momentum-operators" title="Permalink to this heading">#</a></h2>
+<p>Classical description of angular momentum is</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{L} = \vec{r}\times\vec{p}
+\]</div>
+<p>and the linear momenta has the form of</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+&amp;(y p_z - zp_y)\hat{x} -(xp_z-zp_x)\hat{y}+(xp_y-yp_x)\hat{z}\\
+=&amp;\hat{L}_x + \hat{L}_y + \hat{L}_z
+\end{split}\]</div>
+<p>The commutator gives</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+&amp;\left[\hat{L}_x,\hat{L}_y\right] =\hat{L}_x\hat{L}_y-\hat{L}_y\hat{L}_x=i\hbar\hat{L}_z\\
+&amp;\left[\hat{L}_y,\hat{L}_z\right] =\hat{L}_x\\
+&amp;\left[\hat{L}_z,\hat{L}_x\right] =\hat{L}_y\\
+\end{split}\]</div>
+<p>The above 3 commutation show that these operators do not have simultaneous eigenfunctions.</p>
+<p>However, <span class="math notranslate nohighlight">\(\left[\hat{L}^2,\hat{L}_x\right]=\left[\hat{L}^2,L_y\right]=\left[\hat{L}^2,\hat{L}_z\right]=0\)</span>, and since the two operators are compatible, they can have simultaneous eigenfunctions and can even share eigenvalues. Note also that the typical convention is to have <span class="math notranslate nohighlight">\(\hat{L_z}\)</span> as the special direction.</p>
+<p>In Quantum Harmonic Oscillator, you develop ladder operators to move through the different eigenstates, and the different energies of the harmonic oscillator.</p>
+<p>Now, define the ladder operators.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{L}_+ = \hat{L}_x+i\hat{L}_y;\hat{L}_- = \hat{L}_x - i\hat{L}_y;\\
+\left[\hat{L}_z,\hat{L}_{\pm}\right]=\pm\hbar\hat{L}_{\pm}
+\end{split}\]</div>
+<p>Now we can use the algebra trick to find the simultaneous eigenfunctions of <span class="math notranslate nohighlight">\(\hat{L}^2\)</span> and <span class="math notranslate nohighlight">\(\hat{L}_z\)</span>. Suppose we have an electronic wavefunction <span class="math notranslate nohighlight">\(\ket{\psi}\)</span>, and have the operators <span class="math notranslate nohighlight">\(\hat{L}^2\)</span> and <span class="math notranslate nohighlight">\(\hat{L}_z\)</span> acting on it, we can get</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{L}^2\ket{\hat{L}}          &amp;=\alpha\ket{\psi}\\
+\hat{L}_z\ket{\psi}             &amp;=\beta\ket{\psi}\\
+\hat{L}^2\hat{L}_{\pm}\ket{\psi}&amp;=\hat{L}_{\pm}\hat{L}^2\ket{\psi}\\
+                                &amp;=\hat{L}_{\pm}\alpha\ket{\psi}\\
+                                &amp;=\alpha\hat{L}_{\pm}\ket{\psi}\\
+\end{split}\]</div>
+<p>The above is legal with <span class="math notranslate nohighlight">\(\hat{L}_{\pm}\)</span> because we know that <span class="math notranslate nohighlight">\(\left[\hat{L}^2,\hat{L}_{x/y/z}\right]=0\)</span> and the <span class="math notranslate nohighlight">\(i\)</span> can simply be thought of as a constant.</p>
+<p>Applying the same concept to the <span class="math notranslate nohighlight">\(\hat{L}_z\)</span> operator,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[\hat{L}_{z},\hat{L}_{\pm}\right]\ket{\psi}=\left(\hat{L}_z\hat{L}_{\pm}-\hat{L}_{\pm}\hat{L}_{z}\right)\ket{\psi}
+&amp;=\pm\hbar\hat{L}_\pm\ket{\psi}\\
+\hat{L}_z\hat{L}_{\pm}\ket{\psi}
+&amp;=\left(\pm\hbar\hat{L}_{\pm}+\hat{L}_{\pm}\hat{L}_z\right)\ket{\psi}\\
+&amp;=(\pm\hbar+\beta)\hat{L}_\pm\ket{\psi}\\
+\end{split}\]</div>
+<p>and so by some clever algebraic tricks, we now know that the operator <span class="math notranslate nohighlight">\(\hat{L}_z\mapsto\left(\pm\hbar+\beta\right)\)</span> carries such eigenvalue depending on the raising or lowering operator.</p>
+</section>
+<section id="correlating-the-eigenvalues-of-l-and-m">
+<h2>Correlating the eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>:<a class="headerlink" href="#correlating-the-eigenvalues-of-l-and-m" title="Permalink to this heading">#</a></h2>
+<p>Let us now correlate the two different eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> orbital angular momentum quantum number and <span class="math notranslate nohighlight">\(m\)</span> magnetic quantum number.</p>
+<p>we have</p>
+<div class="math notranslate nohighlight">
+\[
+\left&lt;\hat{L}^2\right&gt; = \bra{\psi}\hat{L}^2\ket{\psi}= \left&lt;\hat{L}_x^2\right&gt;+ \left&lt;\hat{L}_y^2\right&gt;+\left&lt;\hat{L}_z^2\right&gt;
+\]</div>
+<p>Intuitively, we have specified previously that <span class="math notranslate nohighlight">\(hat{z}\)</span> is the special direction, and we correlate this special direction to the direction along the magnetic dipole moment.</p>
+<p>By more clever algebraic tricks, and since we know that the expectation value of each of the <span class="math notranslate nohighlight">\(\left&lt;\hat{L}^2\right&gt;\geq 0\)</span>, we can then incorporate what we have previously stated to say</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{L}^2&amp;\mapsto\alpha\\
+\hat{L}_z&amp;\mapsto\beta \\
+\because \left&lt;\hat{L}^2\right&gt;&amp;=\left&lt;\hat{L}_x^2\right&gt;+\left&lt;\hat{L}_y^2\right&gt;+\left&lt;\hat{L}_z^2\right&gt;\geq 0\\
+\therefore \left&lt;\hat{L}^2\right&gt;&amp;=\alpha\geq\beta^2\\
+\end{split}\]</div>
+<p>I have used the symbol “<span class="math notranslate nohighlight">\(\mapsto\)</span>” to denote the operator’s corresponding eigenvalue. Get used to it.</p>
+<p>Let us take our final step and find the correspondance of the eigenvalues to the quantum numbers.
+It is important to note that since <span class="math notranslate nohighlight">\(\beta\)</span> is bounded by <span class="math notranslate nohighlight">\(\alpha\)</span>, then we can easily say that the followings are true. You are imposing the equality condition from the expectation value to impose the maximum and minimum of the <span class="math notranslate nohighlight">\(\beta\)</span> value from <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\alpha            &amp;= \hbar l(l+1)\\
+\beta             &amp;= \hbar m     \\
+\beta_{\text{max}}&amp;=+\hbar l     \\
+\beta_{\text{min}}&amp;=-\hbar l     \\
+\end{split}\]</div>
+<p>The angular momentum of the electronic wavefunction is a spherical harmonic. The <span class="math notranslate nohighlight">\(\theta\)</span> component is associated to legendre polynomial of integer <span class="math notranslate nohighlight">\(l\)</span>.</p>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="matrl204l4-review-of-spin-supplemented-with-griffiths-qm">
@@ -969,8 +1059,11 @@ Y_l^m(\theta,\phi)=\sqrt{
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tise-and-separation-of-variables">TISE and Separation of Variables</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#angular-component-of-the-wavefunction">Angular Component of the wavefunction</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-002">Rabbit hole #002</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#things-to-keep-in-the-back-of-your-mind">Things to keep in the back of your mind</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-angular-momentum-operators">What is angular momentum operators?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-the-eigenvalues-of-l-and-m">Correlating the eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>:</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
