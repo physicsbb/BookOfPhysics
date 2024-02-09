@@ -413,7 +413,14 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-the-eigenvalues-of-l-and-m">Correlating the eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>:</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l3-intro-to-dirac-s-equation-and-spin">(MATRL204L3) Intro to Dirac’s equation and spin</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l3-intro-to-dirac-s-equation-and-spin">(MATRL204L3) Intro to Dirac’s equation and spin</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-spherical-harmonics">Recap of Spherical Harmonics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation">Dirac’s equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-to-ask-about-this-lecture">Questions to ask about this lecture:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
 </ul>
 
@@ -447,7 +454,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \nabla\cdot \vec{E} &amp;= \rho/\varepsilon _o           \\
-\nabla\cdot \vec{B} &amp;= 0 \text{ no magnetic monopole}\\
+\nabla\cdot \vec{B} &amp;= 0 \text{ (no magnetic monopole)}\\
 \nabla\times\vec{E} &amp;= - \frac{\partial\vec{B}}{\partial t}\\
 \nabla\times\vec{B} &amp;= \mu _0 \vec{J} + \mu _0 \varepsilon _0 \frac{\partial\vec{E}}{\partial t} \\
 \end{split}\]</div>
@@ -944,6 +951,8 @@ It is important to note that since <span class="math notranslate nohighlight">\(
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="matrl204l3-intro-to-dirac-s-equation-and-spin">
 <h1>(MATRL204L3) Intro to Dirac’s equation and spin<a class="headerlink" href="#matrl204l3-intro-to-dirac-s-equation-and-spin" title="Permalink to this heading">#</a></h1>
+<section id="recap-of-spherical-harmonics">
+<h2>Recap of Spherical Harmonics<a class="headerlink" href="#recap-of-spherical-harmonics" title="Permalink to this heading">#</a></h2>
 <p>Recall that from previous lecture, we have derived in spherical coordinate that</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -953,6 +962,47 @@ It is important to note that since <span class="math notranslate nohighlight">\(
 \hat{L}^2 &amp;=-\hbar^2\left(\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right)\\
 \hat{L}_z\ket{\psi}=\hbar m\ket{\psi};\hat{L}^2\ket{\psi}&amp;=\hbar^2 l\left(l+1\right)\ket{\psi} \longmapsto \ket{\psi}=Y^m_l(\theta,\phi)
 \end{split}\]</div>
+<p>Something to keep in mind is that half-integer spin rotates in <span class="math notranslate nohighlight">\(4\pi\)</span> rotation, and integer spin rotates in <span class="math notranslate nohighlight">\(2\pi\)</span> rotation.</p>
+<p>The mathematical intuition on half-integer spin rotation can be thought of as a mobius strip.</p>
+<p>The primary highlight is that Spherical Harmonics cannot capture half integers angular momentum because Spin rotates from up/down to down/up in <span class="math notranslate nohighlight">\(2\pi\)</span> rotation, and for spin to rotate from up to up again requires a <span class="math notranslate nohighlight">\(4\pi\)</span> rotation.</p>
+<p>This gives rise to the necessity of SU(2) for spin and SO(3) for angular momentum. For this reason, spin angular momentum and orbital angular momentum are of two different groups, requiring different treatments.</p>
+</section>
+<section id="dirac-s-equation">
+<h2>Dirac’s equation<a class="headerlink" href="#dirac-s-equation" title="Permalink to this heading">#</a></h2>
+<p>For non-relativistic energy, we have</p>
+<div class="math notranslate nohighlight">
+\[ 
+E = \frac{1}{2m}\left(p^2_x + p^2_y + p^2_z\right) \implies i\hbar\partial_t\psi=\frac{\hbar^2}{2m}\nabla^2\psi 
+\]</div>
+<p>In relativity,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E               &amp;= mc^2 = \sqrt{\left(pc\right)^2+\left(m_0 c^2\right)^2}=\gamma _0 mc^2 + \sum^3_{i=1}\gamma _i p_i c\\
+E^2             &amp;= m_0^2c^4 + p_x^2c^2 + p_y^2c^2 + p_z^2c^2\\
+\frac{E^2}{c^2} &amp;= m_0^2c^2 + p_x^2    + p_y^2    + p_z^2 
+\end{split}\]</div>
+<p>Alternatively, you can also use <span class="math notranslate nohighlight">\(E = \gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\)</span> to derive <span class="math notranslate nohighlight">\(E^2/c^2\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E&amp;=\gamma _0 mc^2 + \sum^3_{i=1}\gamma _i p_i c\\
+E^2 &amp;= \left[\gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\right]^2 \\
+&amp;=\left[\gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\right]\left[\gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\right]
+\end{split}\]</div>
+<p>Recall that since <span class="math notranslate nohighlight">\(\gamma_i\)</span> anti-commute, having the property that <span class="math notranslate nohighlight">\(\left\{\gamma_i\gamma_j+\gamma_j\gamma_i\right\} =2\delta_{ij}\mathbb{I}\)</span>
+and that <span class="math notranslate nohighlight">\((a+b+c+d)^2=a^2+b^2+c^2+d^2 + 2ab+2ac+2ad+2bc++2bd+2cd\)</span> indicating the cross terms <span class="math notranslate nohighlight">\(ab, ac, ad,bc, bd,cd\)</span> all carry <span class="math notranslate nohighlight">\(2\delta_{ij}\mathbb{I}\)</span> and only the squared terms survive. Also <span class="math notranslate nohighlight">\(\gamma_i^2=\mathbb{I}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E^2 &amp;= \gamma _0^2 m_0^2(c^2)^2 + \gamma _1^2 p_1^2c^2 + \gamma _2 ^2 p_2^2c^2 + \gamma _3 ^2 p_3^2c^2\\
+\frac{E^2}{c^2}&amp;=m_0c^2 + p_1^2 + p_2^2 + p_3^2
+\end{split}\]</div>
+<p>Now, we ask:
+What form do the gamma matricies <span class="math notranslate nohighlight">\(\gamma _i\)</span> take?
+Generally speaking,</p>
+<section id="questions-to-ask-about-this-lecture">
+<h3>Questions to ask about this lecture:<a class="headerlink" href="#questions-to-ask-about-this-lecture" title="Permalink to this heading">#</a></h3>
+<p>How about the spin? how does half-integer spin fail in a spherically symmetric potential? I know Spherical Harmonic fails to describe it because</p>
+</section>
+</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="matrl204l4-review-of-spin-supplemented-with-griffiths-qm">
 <h1>(MATRL204L4) Review of Spin (supplemented with Griffiths QM)<a class="headerlink" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm" title="Permalink to this heading">#</a></h1>
@@ -1082,7 +1132,14 @@ It is important to note that since <span class="math notranslate nohighlight">\(
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-the-eigenvalues-of-l-and-m">Correlating the eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>:</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l3-intro-to-dirac-s-equation-and-spin">(MATRL204L3) Intro to Dirac’s equation and spin</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l3-intro-to-dirac-s-equation-and-spin">(MATRL204L3) Intro to Dirac’s equation and spin</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-spherical-harmonics">Recap of Spherical Harmonics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation">Dirac’s equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-to-ask-about-this-lecture">Questions to ask about this lecture:</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
 </ul>
 
