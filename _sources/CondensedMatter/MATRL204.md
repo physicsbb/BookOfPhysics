@@ -15,7 +15,7 @@ We start off with the four Maxwell's equations
 
 $$
 \nabla\cdot \vec{E} &= \rho/\varepsilon _o           \\
-\nabla\cdot \vec{B} &= 0 \text{ no magnetic monopole}\\
+\nabla\cdot \vec{B} &= 0 \text{ (no magnetic monopole)}\\
 \nabla\times\vec{E} &= - \frac{\partial\vec{B}}{\partial t}\\
 \nabla\times\vec{B} &= \mu _0 \vec{J} + \mu _0 \varepsilon _0 \frac{\partial\vec{E}}{\partial t} \\
 $$
@@ -541,6 +541,7 @@ Let us look at the allowed quantum numbers a little more carefully.
 
 # (MATRL204L3) Intro to Dirac's equation and spin
 
+## Recap of Spherical Harmonics
 Recall that from previous lecture, we have derived in spherical coordinate that 
 
 $$
@@ -550,7 +551,53 @@ $$
 \hat{L}^2 &=-\hbar^2\left(\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right)\\
 \hat{L}_z\ket{\psi}=\hbar m\ket{\psi};\hat{L}^2\ket{\psi}&=\hbar^2 l\left(l+1\right)\ket{\psi} \longmapsto \ket{\psi}=Y^m_l(\theta,\phi)
 $$
+Something to keep in mind is that half-integer spin rotates in $4\pi$ rotation, and integer spin rotates in $2\pi$ rotation. 
 
+The mathematical intuition on half-integer spin rotation can be thought of as a mobius strip. 
+
+The primary highlight is that Spherical Harmonics cannot capture half integers angular momentum because Spin rotates from up/down to down/up in $2\pi$ rotation, and for spin to rotate from up to up again requires a $4\pi$ rotation. 
+
+This gives rise to the necessity of SU(2) for spin and SO(3) for angular momentum. For this reason, spin angular momentum and orbital angular momentum are of two different groups, requiring different treatments. 
+
+## Dirac's equation
+
+For non-relativistic energy, we have 
+
+$$ 
+E = \frac{1}{2m}\left(p^2_x + p^2_y + p^2_z\right) \implies i\hbar\partial_t\psi=\frac{\hbar^2}{2m}\nabla^2\psi 
+$$
+
+
+In relativity, 
+
+$$
+E               &= mc^2 = \sqrt{\left(pc\right)^2+\left(m_0 c^2\right)^2}=\gamma _0 mc^2 + \sum^3_{i=1}\gamma _i p_i c\\
+E^2             &= m_0^2c^4 + p_x^2c^2 + p_y^2c^2 + p_z^2c^2\\
+\frac{E^2}{c^2} &= m_0^2c^2 + p_x^2    + p_y^2    + p_z^2 
+$$
+
+Alternatively, you can also use $E = \gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c$ to derive $E^2/c^2$. 
+
+$$
+E&=\gamma _0 mc^2 + \sum^3_{i=1}\gamma _i p_i c\\
+E^2 &= \left[\gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\right]^2 \\
+&=\left[\gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\right]\left[\gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\right]
+$$
+Recall that since $\gamma_i$ anti-commute, having the property that $\left\{\gamma_i\gamma_j+\gamma_j\gamma_i\right\} =2\delta_{ij}\mathbb{I}$
+and that $(a+b+c+d)^2=a^2+b^2+c^2+d^2 + 2ab+2ac+2ad+2bc++2bd+2cd$ indicating the cross terms $ab, ac, ad,bc, bd,cd$ all carry $2\delta_{ij}\mathbb{I}$ and only the squared terms survive. Also $\gamma_i^2=\mathbb{I}$ 
+
+$$
+E^2 &= \gamma _0^2 m_0^2(c^2)^2 + \gamma _1^2 p_1^2c^2 + \gamma _2 ^2 p_2^2c^2 + \gamma _3 ^2 p_3^2c^2\\
+\frac{E^2}{c^2}&=m_0c^2 + p_1^2 + p_2^2 + p_3^2
+$$
+
+Now, we ask:
+What form do the gamma matricies $\gamma _i$ take? 
+Generally speaking, 
+
+
+### Questions to ask about this lecture:
+How about the spin? how does half-integer spin fail in a spherically symmetric potential? I know Spherical Harmonic fails to describe it because 
 # (MATRL204L4) Review of Spin (supplemented with Griffiths QM)
 Books used for this section:
 * Intro to Quantum Mechanics by Griffiths 3rd Ed. 
