@@ -1,6 +1,8 @@
 # Welcome To Book Of Physics
 
 ## Employment:
+I have recently committed to working at GaNify, LLC, a startup specializing in GaN based technology for wide bandgap medium/high voltage FETs, as a Development Engineer.  
+
 If you would like to work with me or hire me, please send an email to 
 
 mhtlam1355 [at] gmail [dot] com.

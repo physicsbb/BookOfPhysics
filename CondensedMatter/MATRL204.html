@@ -177,6 +177,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">For Fun?</span></p>
 <ul class="nav bd-sidenav">
@@ -408,10 +409,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#things-to-keep-in-the-back-of-your-mind">Things to keep in the back of your mind</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-angular-momentum-operators">What is angular momentum operators?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-angular-momentum-operators">What are angular momentum operators?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-the-eigenvalues-of-l-and-m">Correlating the eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>:</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l3-intro-to-dirac-s-equation-and-spin">(MATRL204L3) Intro to Dirac’s equation and spin</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
 </ul>
 
@@ -524,7 +526,7 @@ document.write(`
 \boxed{\vec{B}
 =\frac{\mu_0}{4\pi r^3}\left[3\left[\vec{m}\cdot\hat{r}\right]\hat{r}-\vec{m}\right]}
 \]</div>
-<p>Notice also that the magnetic field is partially anti-parallel to the magnetic moment, and partially along the radial direction parallel to the position vector.</p>
+<p>Notice also that the magnetic field is partially anti-parallel to the magnetic moment, and partially parallel to the position vector along the radial direction.</p>
 <section id="rabbit-hole-001">
 <h3>Rabbit hole #001<a class="headerlink" href="#rabbit-hole-001" title="Permalink to this heading">#</a></h3>
 <p>Alternatively, one can attempt to get lost in vector algebra, which I believe is not impossible and in fact more general, and can shed more insight into a truly coordinate-free derivation. which involves <span class="math notranslate nohighlight">\(\nabla\times\vec{A}=\nabla\times\left[\frac{\mu_0}{4\pi}\frac{\vec{m}\times\hat{r}}{r^2}\right]\)</span>. But since we are now on a time-constraint, let’s save ourselves the mental gymnastics and pursue ideas more worthwhile, not vector and differential geometry.</p>
@@ -542,7 +544,7 @@ document.write(`
 \nabla{(\vec{v}\cdot{\vec{A}})}-\vec{A}(\vec{v}\cdot\nabla)\\
 m\frac{d\vec{v}}{dt} + q(\partial _t\vec{A}+(\vec{v}\cdot\nabla)\vec{A})&amp;=-q\nabla V + q\nabla(\vec{v}\cdot\vec{A})) \\
 \end{split}\]</div>
-<p>Recall that the convective derivative is to expose the chain rule in the partial derivative, a math trick, where</p>
+<p>Recall that the convective derivative is to expose the chain rule in the partial derivative, a math trick, where (be a little more careful and revisit again)</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \vec{A} &amp;= \vec{A}(\vec{r}_i (t),t) \\
@@ -618,7 +620,7 @@ d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
 <h2>Quantum Origin of Magnetism<a class="headerlink" href="#quantum-origin-of-magnetism" title="Permalink to this heading">#</a></h2>
 <section id="how-do-you-get-the-hamiltonian-that-we-work-with">
 <h3>How do you get the Hamiltonian that we work with?<a class="headerlink" href="#how-do-you-get-the-hamiltonian-that-we-work-with" title="Permalink to this heading">#</a></h3>
-<p>When a magnetic dipole is placed under an external magnetic field, a torque would be generated as the magnetic dipole moment aligns itself to <span class="math notranslate nohighlight">\(\vec{B}_{ext}\)</span>. In this context here, we see a trippy example that magnetic field causes the dipole to do work through the torque generated from aligning the dipole to the (non-uniform) external magnetic field. (The field has to be non-uniform at different spatial points, or it won’t do any work). For the sake of time, refer to Griffith E&amp;M section 8.3 for an example of emf to show that <em>a magnetic field can be used as a medium to translate mechanical/external work into potential energy</em>. <strong>Magnetic field, and magnetic force itselves still do no work</strong>.</p>
+<p>When a magnetic dipole is placed under an external magnetic field, a torque would be generated as the magnetic dipole moment aligns itself to <span class="math notranslate nohighlight">\(\vec{B}_{ext}\)</span>. In this context here, we see a trippy example that magnetic field causes the dipole to do work through the torque generated from aligning the dipole to the (non-uniform) external magnetic field. (The field has to be non-uniform at different spatial points, or it won’t do any work). For the sake of time, refer to Griffiths E&amp;M section 8.3 for an example of emf to show that <em>a magnetic field can be used as a medium to translate mechanical/external work into potential energy</em>. <strong>Magnetic field, and magnetic force itselves still do no work</strong>.</p>
 <p>Recall that, from general physics, conserved quantity just means <span class="math notranslate nohighlight">\(\Delta E = 0\)</span>, but for the non-conservative case,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -671,7 +673,7 @@ i\hbar\frac{1}{\phi}\frac{d\phi}{dt}&amp;=E\\
 \[\begin{split}
 \left[-\frac{\hbar^2}{2m}\nabla^2+V\right]\psi&amp;=E\psi\\
 \end{split}\]</div>
-<p>But our choice for the spin requires the use of spherical coordinate, and the solution of this differential equation requires that the wavefunction be separated into two different components.</p>
+<p>But our choice for the spin requires the use of spherical coordinate, and we are working with <em><strong>spherically symmetric potential</strong></em>, and the solution of this differential equation requires that the wavefunction be separated into two different components.</p>
 <p>We have <span class="math notranslate nohighlight">\(\psi(r,\theta,\phi) = R(r)Y(\theta,\phi)\)</span>, and that the spherical laplacian is given to be</p>
 <div class="math notranslate nohighlight">
 \[
@@ -808,8 +810,8 @@ P_l(x)&amp;=\frac{1}{2^l l!}\left(\frac{d}{dx}\right)^l\left(x^2-1\right)^l\text
 <tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
 <td class="text-right"><p><span class="math notranslate nohighlight">\(-1,0,+1\)</span></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\dots\)</span></p></td>
-<td class="text-right"><p><span class="math notranslate nohighlight">\(\dots\)</span></p></td>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td class="text-right"><p><span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(5\)</span></p></td>
 <td class="text-right"><p><span class="math notranslate nohighlight">\(-5,-4,-3,...,0,...,+3,+4,+5\)</span></p></td>
@@ -858,8 +860,8 @@ Y_l^m(\theta,\phi)=\sqrt{
 </ul>
 </section>
 </section>
-<section id="what-is-angular-momentum-operators">
-<h2>What is angular momentum operators?<a class="headerlink" href="#what-is-angular-momentum-operators" title="Permalink to this heading">#</a></h2>
+<section id="what-are-angular-momentum-operators">
+<h2>What are angular momentum operators?<a class="headerlink" href="#what-are-angular-momentum-operators" title="Permalink to this heading">#</a></h2>
 <p>Classical description of angular momentum is</p>
 <div class="math notranslate nohighlight">
 \[
@@ -880,12 +882,13 @@ Y_l^m(\theta,\phi)=\sqrt{
 \end{split}\]</div>
 <p>The above 3 commutation show that these operators do not have simultaneous eigenfunctions.</p>
 <p>However, <span class="math notranslate nohighlight">\(\left[\hat{L}^2,\hat{L}_x\right]=\left[\hat{L}^2,L_y\right]=\left[\hat{L}^2,\hat{L}_z\right]=0\)</span>, and since the two operators are compatible, they can have simultaneous eigenfunctions and can even share eigenvalues. Note also that the typical convention is to have <span class="math notranslate nohighlight">\(\hat{L_z}\)</span> as the special direction.</p>
-<p>In Quantum Harmonic Oscillator, you develop ladder operators to move through the different eigenstates, and the different energies of the harmonic oscillator.</p>
+<p>In Quantum Harmonic Oscillator, you develop ladder operators to move through the different eigenstates, and the different energies of the harmonic oscillator. We can also devise the same tools for spherically symmetric potential. The spherically symmetric potential can be used to model physics such as Hydrogen atom.</p>
 <p>Now, define the ladder operators.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\hat{L}_+ = \hat{L}_x+i\hat{L}_y;\hat{L}_- = \hat{L}_x - i\hat{L}_y;\\
-\left[\hat{L}_z,\hat{L}_{\pm}\right]=\pm\hbar\hat{L}_{\pm}
+\hat{L}_+ &amp;= \hat{L}_x + i\hat{L}_y\\
+\hat{L}_- &amp;= \hat{L}_x - i\hat{L}_y\\
+\left[\hat{L}_z,\hat{L}_{\pm}\right]&amp;=\pm\hbar\hat{L}_{\pm}
 \end{split}\]</div>
 <p>Now we can use the algebra trick to find the simultaneous eigenfunctions of <span class="math notranslate nohighlight">\(\hat{L}^2\)</span> and <span class="math notranslate nohighlight">\(\hat{L}_z\)</span>. Suppose we have an electronic wavefunction <span class="math notranslate nohighlight">\(\ket{\psi}\)</span>, and have the operators <span class="math notranslate nohighlight">\(\hat{L}^2\)</span> and <span class="math notranslate nohighlight">\(\hat{L}_z\)</span> acting on it, we can get</p>
 <div class="math notranslate nohighlight">
@@ -916,7 +919,7 @@ Y_l^m(\theta,\phi)=\sqrt{
 \[
 \left&lt;\hat{L}^2\right&gt; = \bra{\psi}\hat{L}^2\ket{\psi}= \left&lt;\hat{L}_x^2\right&gt;+ \left&lt;\hat{L}_y^2\right&gt;+\left&lt;\hat{L}_z^2\right&gt;
 \]</div>
-<p>Intuitively, we have specified previously that <span class="math notranslate nohighlight">\(hat{z}\)</span> is the special direction, and we correlate this special direction to the direction along the magnetic dipole moment.</p>
+<p>Intuitively, we have specified previously that <span class="math notranslate nohighlight">\(\hat{z}\)</span> is the special direction, and we correlate this special direction to the direction along the magnetic dipole moment.</p>
 <p>By more clever algebraic tricks, and since we know that the expectation value of each of the <span class="math notranslate nohighlight">\(\left&lt;\hat{L}^2\right&gt;\geq 0\)</span>, we can then incorporate what we have previously stated to say</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -927,7 +930,7 @@ Y_l^m(\theta,\phi)=\sqrt{
 \end{split}\]</div>
 <p>I have used the symbol “<span class="math notranslate nohighlight">\(\mapsto\)</span>” to denote the operator’s corresponding eigenvalue. Get used to it.</p>
 <p>Let us take our final step and find the correspondance of the eigenvalues to the quantum numbers.
-It is important to note that since <span class="math notranslate nohighlight">\(\beta\)</span> is bounded by <span class="math notranslate nohighlight">\(\alpha\)</span>, then we can easily say that the followings are true. You are imposing the equality condition from the expectation value to impose the maximum and minimum of the <span class="math notranslate nohighlight">\(\beta\)</span> value from <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
+It is important to note that since <span class="math notranslate nohighlight">\(\beta\)</span> is bounded by <span class="math notranslate nohighlight">\(\alpha\)</span>, then we can easily say that the followings are true. You are using the equality condition from the expectation value to impose the maximum and minimum of the <span class="math notranslate nohighlight">\(\beta\)</span> value from <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \alpha            &amp;= \hbar l(l+1)\\
@@ -936,7 +939,20 @@ It is important to note that since <span class="math notranslate nohighlight">\(
 \beta_{\text{min}}&amp;=-\hbar l     \\
 \end{split}\]</div>
 <p>The angular momentum of the electronic wavefunction is a spherical harmonic. The <span class="math notranslate nohighlight">\(\theta\)</span> component is associated to legendre polynomial of integer <span class="math notranslate nohighlight">\(l\)</span>.</p>
+<p>Let us look at the allowed quantum numbers a little more carefully.</p>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matrl204l3-intro-to-dirac-s-equation-and-spin">
+<h1>(MATRL204L3) Intro to Dirac’s equation and spin<a class="headerlink" href="#matrl204l3-intro-to-dirac-s-equation-and-spin" title="Permalink to this heading">#</a></h1>
+<p>Recall that from previous lecture, we have derived in spherical coordinate that</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\hat{L}&amp;= \vec{r}\times\vec{p}=\vec{r}\times(i\hbar\nabla)=\left[\frac{\partial}{\partial\theta}\hat{\phi}+ \frac{-1}{\sin\theta}\frac{\partial}{\partial\phi}\hat{\theta}\right]\left(-i\hbar\right)\\
+\nabla&amp;=\frac{\partial}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial}{\partial\theta}\hat{\theta}+ \frac{1}{r\sin\theta}\frac{\partial}{\partial\phi}\hat{\phi}\\
+\hat{L}_z=-i\hbar\frac{\partial}{\partial\phi}; 
+\hat{L}^2 &amp;=-\hbar^2\left(\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right)\\
+\hat{L}_z\ket{\psi}=\hbar m\ket{\psi};\hat{L}^2\ket{\psi}&amp;=\hbar^2 l\left(l+1\right)\ket{\psi} \longmapsto \ket{\psi}=Y^m_l(\theta,\phi)
+\end{split}\]</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="matrl204l4-review-of-spin-supplemented-with-griffiths-qm">
 <h1>(MATRL204L4) Review of Spin (supplemented with Griffiths QM)<a class="headerlink" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm" title="Permalink to this heading">#</a></h1>
@@ -1062,10 +1078,11 @@ It is important to note that since <span class="math notranslate nohighlight">\(
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#things-to-keep-in-the-back-of-your-mind">Things to keep in the back of your mind</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-angular-momentum-operators">What is angular momentum operators?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-angular-momentum-operators">What are angular momentum operators?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-the-eigenvalues-of-l-and-m">Correlating the eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>:</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l3-intro-to-dirac-s-equation-and-spin">(MATRL204L3) Intro to Dirac’s equation and spin</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
 </ul>
 

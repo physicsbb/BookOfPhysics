@@ -103,7 +103,7 @@ $$
 =\frac{\mu_0}{4\pi r^3}\left[3\left[\vec{m}\cdot\hat{r}\right]\hat{r}-\vec{m}\right]}
 $$
 
-Notice also that the magnetic field is partially anti-parallel to the magnetic moment, and partially along the radial direction parallel to the position vector.
+Notice also that the magnetic field is partially anti-parallel to the magnetic moment, and partially parallel to the position vector along the radial direction.
 
 ###### Rabbit hole #001
 Alternatively, one can attempt to get lost in vector algebra, which I believe is not impossible and in fact more general, and can shed more insight into a truly coordinate-free derivation. which involves $\nabla\times\vec{A}=\nabla\times\left[\frac{\mu_0}{4\pi}\frac{\vec{m}\times\hat{r}}{r^2}\right]$. But since we are now on a time-constraint, let's save ourselves the mental gymnastics and pursue ideas more worthwhile, not vector and differential geometry. 
@@ -120,7 +120,7 @@ $$
 m\frac{d\vec{v}}{dt} + q(\partial _t\vec{A}+(\vec{v}\cdot\nabla)\vec{A})&=-q\nabla V + q\nabla(\vec{v}\cdot\vec{A})) \\
 $$
 
-Recall that the convective derivative is to expose the chain rule in the partial derivative, a math trick, where
+Recall that the convective derivative is to expose the chain rule in the partial derivative, a math trick, where (be a little more careful and revisit again)
 
 
 $$
@@ -200,7 +200,7 @@ Book used:
 ## Quantum Origin of Magnetism
 
 ### How do you get the Hamiltonian that we work with?
-When a magnetic dipole is placed under an external magnetic field, a torque would be generated as the magnetic dipole moment aligns itself to $\vec{B}_{ext}$. In this context here, we see a trippy example that magnetic field causes the dipole to do work through the torque generated from aligning the dipole to the (non-uniform) external magnetic field. (The field has to be non-uniform at different spatial points, or it won't do any work). For the sake of time, refer to Griffith E&M section 8.3 for an example of emf to show that *a magnetic field can be used as a medium to translate mechanical/external work into potential energy*. **Magnetic field, and magnetic force itselves still do no work**.
+When a magnetic dipole is placed under an external magnetic field, a torque would be generated as the magnetic dipole moment aligns itself to $\vec{B}_{ext}$. In this context here, we see a trippy example that magnetic field causes the dipole to do work through the torque generated from aligning the dipole to the (non-uniform) external magnetic field. (The field has to be non-uniform at different spatial points, or it won't do any work). For the sake of time, refer to Griffiths E&M section 8.3 for an example of emf to show that *a magnetic field can be used as a medium to translate mechanical/external work into potential energy*. **Magnetic field, and magnetic force itselves still do no work**.
 
 Recall that, from general physics, conserved quantity just means $\Delta E = 0$, but for the non-conservative case, 
 
@@ -259,7 +259,7 @@ $$
 \left[-\frac{\hbar^2}{2m}\nabla^2+V\right]\psi&=E\psi\\
 $$
 
-But our choice for the spin requires the use of spherical coordinate, and the solution of this differential equation requires that the wavefunction be separated into two different components. 
+But our choice for the spin requires the use of spherical coordinate, and we are working with ***spherically symmetric potential***, and the solution of this differential equation requires that the wavefunction be separated into two different components. 
 
 We have $\psi(r,\theta,\phi) = R(r)Y(\theta,\phi)$, and that the spherical laplacian is given to be 
 
@@ -400,7 +400,7 @@ Some takeaways in the general Legendre Function:
     | :------- | -----:         |
     | $0$      |    $0$         |
     | $1$      |    $-1,0,+1$   |
-    | $\dots$  |    $\dots$     |
+    | $\vdots$  |    $\vdots$     |
     | $5$      | $-5,-4,-3,...,0,...,+3,+4,+5$|
 3. If you look at the above table, you see very clearly why $|m|>l$ is simply not allowed. The magnetic quantum number should only be within the range of orbital angular quantum number $-l\leq m\leq +l$.
 
@@ -442,7 +442,7 @@ Why can you use the solution of the general legendre equation to a different dif
 * Spherical Harmonics is the embodiment that we have a spherically symmetrical potential. However, in a solid, you no longer have this continuous rotational symmetry.
 * When symmetry is broken in an attempt to align the magnetic dipole moment to the external field, the (orbital) degeneracy is "lifted" and requires the use of perturbation theory to find the correction. The orbital degeneracy is what generates the orbital magnetism. This is the so-called "crystal field solution". 
 
-## What is angular momentum operators?
+## What are angular momentum operators?
 Classical description of angular momentum is 
 
 $$
@@ -468,13 +468,14 @@ The above 3 commutation show that these operators do not have simultaneous eigen
 
 However, $\left[\hat{L}^2,\hat{L}_x\right]=\left[\hat{L}^2,L_y\right]=\left[\hat{L}^2,\hat{L}_z\right]=0$, and since the two operators are compatible, they can have simultaneous eigenfunctions and can even share eigenvalues. Note also that the typical convention is to have $\hat{L_z}$ as the special direction. 
 
-In Quantum Harmonic Oscillator, you develop ladder operators to move through the different eigenstates, and the different energies of the harmonic oscillator.
+In Quantum Harmonic Oscillator, you develop ladder operators to move through the different eigenstates, and the different energies of the harmonic oscillator. We can also devise the same tools for spherically symmetric potential. The spherically symmetric potential can be used to model physics such as Hydrogen atom.
 
 Now, define the ladder operators. 
 
 $$
-\hat{L}_+ = \hat{L}_x+i\hat{L}_y;\hat{L}_- = \hat{L}_x - i\hat{L}_y;\\
-\left[\hat{L}_z,\hat{L}_{\pm}\right]=\pm\hbar\hat{L}_{\pm}
+\hat{L}_+ &= \hat{L}_x + i\hat{L}_y\\
+\hat{L}_- &= \hat{L}_x - i\hat{L}_y\\
+\left[\hat{L}_z,\hat{L}_{\pm}\right]&=\pm\hbar\hat{L}_{\pm}
 $$
 
 Now we can use the algebra trick to find the simultaneous eigenfunctions of $\hat{L}^2$ and $\hat{L}_z$. Suppose we have an electronic wavefunction $\ket{\psi}$, and have the operators $\hat{L}^2$ and $\hat{L}_z$ acting on it, we can get
@@ -511,7 +512,7 @@ $$
 \left<\hat{L}^2\right> = \bra{\psi}\hat{L}^2\ket{\psi}= \left<\hat{L}_x^2\right>+ \left<\hat{L}_y^2\right>+\left<\hat{L}_z^2\right>
 $$
 
-Intuitively, we have specified previously that $hat{z}$ is the special direction, and we correlate this special direction to the direction along the magnetic dipole moment. 
+Intuitively, we have specified previously that $\hat{z}$ is the special direction, and we correlate this special direction to the direction along the magnetic dipole moment. 
 
 By more clever algebraic tricks, and since we know that the expectation value of each of the $\left<\hat{L}^2\right>\geq 0$, we can then incorporate what we have previously stated to say
 
@@ -525,7 +526,7 @@ $$
 I have used the symbol "$\mapsto$" to denote the operator's corresponding eigenvalue. Get used to it. 
 
 Let us take our final step and find the correspondance of the eigenvalues to the quantum numbers. 
-It is important to note that since $\beta$ is bounded by $\alpha$, then we can easily say that the followings are true. You are imposing the equality condition from the expectation value to impose the maximum and minimum of the $\beta$ value from $\alpha$.
+It is important to note that since $\beta$ is bounded by $\alpha$, then we can easily say that the followings are true. You are using the equality condition from the expectation value to impose the maximum and minimum of the $\beta$ value from $\alpha$.
 
 $$
 \alpha            &= \hbar l(l+1)\\
@@ -535,6 +536,20 @@ $$
 $$
 
 The angular momentum of the electronic wavefunction is a spherical harmonic. The $\theta$ component is associated to legendre polynomial of integer $l$.
+
+Let us look at the allowed quantum numbers a little more carefully. 
+
+# (MATRL204L3) Intro to Dirac's equation and spin
+
+Recall that from previous lecture, we have derived in spherical coordinate that 
+
+$$
+\hat{L}&= \vec{r}\times\vec{p}=\vec{r}\times(i\hbar\nabla)=\left[\frac{\partial}{\partial\theta}\hat{\phi}+ \frac{-1}{\sin\theta}\frac{\partial}{\partial\phi}\hat{\theta}\right]\left(-i\hbar\right)\\
+\nabla&=\frac{\partial}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial}{\partial\theta}\hat{\theta}+ \frac{1}{r\sin\theta}\frac{\partial}{\partial\phi}\hat{\phi}\\
+\hat{L}_z=-i\hbar\frac{\partial}{\partial\phi}; 
+\hat{L}^2 &=-\hbar^2\left(\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right)\\
+\hat{L}_z\ket{\psi}=\hbar m\ket{\psi};\hat{L}^2\ket{\psi}&=\hbar^2 l\left(l+1\right)\ket{\psi} \longmapsto \ket{\psi}=Y^m_l(\theta,\phi)
+$$
 
 # (MATRL204L4) Review of Spin (supplemented with Griffiths QM)
 Books used for this section:
