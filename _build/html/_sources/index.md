@@ -3,6 +3,8 @@
 ## Employment:
 I have recently committed to working at GaNify, LLC, a startup specializing in GaN based technology for wide bandgap medium/high voltage FETs, as a Development Engineer.  
 
+If you have found any mathematical/physics errors in this blog, you are encouraged to write me an email and inform me about this and we can begin discussing the error. Thank you in advance! 
+
 If you would like to work with me or hire me, please send an email to 
 
 mhtlam1355 [at] gmail [dot] com.

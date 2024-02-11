@@ -1,0 +1,736 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials &#8212; Book Of Physics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'CondensedMatter/MATRL204L1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="(MATRL204L2) Review of Quantum Mechanics and Operators" href="MATRL204L2.html" />
+    <link rel="prev" title="Linear Algebra in Physics" href="../Review/linalg.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome To Book Of Physics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Portfolio</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Portfolio/portfolioShort.html">Who wrote this website?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Portfolio/UVPhotonicsResearch.html">UV Photonics Research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Portfolio/MandelbrotSet.html">Mandelbrot set for computational competency</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Portfolio/Phys128Lab.html">Senior Lab Experiment: Laser Diode Spectroscopy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Handwavy background in mathematics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Review/foreword.html">Foreword</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Review/linalg.html">Linear Algebra in Physics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Condensed Matter Magnetism &amp; Magnetic Materials</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="MATRL204L2.html">(MATRL204L2) Review of Quantum Mechanics and Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MATRL204L3.html">(MATRL204L3) Intro to Dirac’s equation and spin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MATRL204L4.html">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">For Fun?</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../ForFun/Ideas.html">Random ideas?</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/physicsbb/BookOfPhysics" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/physicsbb/BookOfPhysics/issues/new?title=Issue%20on%20page%20%2FCondensedMatter/MATRL204L1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/CondensedMatter/MATRL204L1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l1-review-of-maxwell-s-equations">(MATRL204L1) Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-maxwell-s-equations">Brief Review of Maxwell’s equations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-magnetic-monopole-then-how-about-magnetic-dipole">No magnetic monopole, then how about magnetic dipole?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equation-in-dielectric-materials">Maxwell’s equation in Dielectric Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-response-of-dielectric-materials-griffiths-e-m-ch-5-6">Linear Response of Dielectric Materials (Griffiths E&amp;M Ch 5&amp;6)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-vector-potential-griffith-e-m-ch-5">Brief Review of Vector Potential: (Griffith E&amp;M Ch 5)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-001">Rabbit hole #001</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetization-from-vector-and-e-m-standpoint">Magnetization from vector and E&amp;M standpoint:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-miss-van-leeuwen-theorem-brief-explanation">Bohr-Miss van Leeuwen Theorem (brief explanation):</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-i-want-to-ask-about-lecture-1">Questions I want to ask about lecture 1:</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ucsb-matrl-204-intro-to-magnetism-and-magnetic-materials">
+<h1>(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials<a class="headerlink" href="#ucsb-matrl-204-intro-to-magnetism-and-magnetic-materials" title="Permalink to this heading">#</a></h1>
+<p>Books used for all these notes:</p>
+<ul class="simple">
+<li><p>Griffiths E&amp;M 4th Ed</p></li>
+<li><p>Griffiths QM 3rd Ed</p></li>
+<li><p>Magnetism In Condensed Matter by Stephen Blundell</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matrl204l1-review-of-maxwell-s-equations">
+<h1>(MATRL204L1) Review of Maxwell’s equations<a class="headerlink" href="#matrl204l1-review-of-maxwell-s-equations" title="Permalink to this heading">#</a></h1>
+<p>This topic is aimed towards its applications in Condensed Matter. The physics involved includes Electromagnetism, Statistical Mechanics, and Quantum Mechanics. Limited Classical Mechanics is also included in terms of its formalism, such as gauge transformation, canonical momentum, and such.</p>
+<section id="brief-review-of-maxwell-s-equations">
+<h2>Brief Review of Maxwell’s equations<a class="headerlink" href="#brief-review-of-maxwell-s-equations" title="Permalink to this heading">#</a></h2>
+<section id="standard-maxwell-s-equations">
+<h3>Standard Maxwell’s equations<a class="headerlink" href="#standard-maxwell-s-equations" title="Permalink to this heading">#</a></h3>
+<p>We start off with the four Maxwell’s equations</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\nabla\cdot \vec{E} &amp;= \rho/\varepsilon _o           \\
+\nabla\cdot \vec{B} &amp;= 0 \text{ (no magnetic monopole)}\\
+\nabla\times\vec{E} &amp;= - \frac{\partial\vec{B}}{\partial t}\\
+\nabla\times\vec{B} &amp;= \mu _0 \vec{J} + \mu _0 \varepsilon _0 \frac{\partial\vec{E}}{\partial t} \\
+\end{split}\]</div>
+</section>
+<section id="no-magnetic-monopole-then-how-about-magnetic-dipole">
+<h3>No magnetic monopole, then how about magnetic dipole?<a class="headerlink" href="#no-magnetic-monopole-then-how-about-magnetic-dipole" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="maxwell-s-equation-in-dielectric-materials">
+<h3>Maxwell’s equation in Dielectric Materials<a class="headerlink" href="#maxwell-s-equation-in-dielectric-materials" title="Permalink to this heading">#</a></h3>
+<p>And that inside materials, the Maxwell’s equation have similar forms</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\nabla\cdot \vec{D} &amp;= \rho _{\text{free}}           \\
+\nabla\cdot \vec{B} &amp;= 0                             
+\text{ with } \vec{B}= \mu_0(\vec{H}+\vec{M})\\
+\nabla\times\vec{E} &amp;= - \frac{\partial\vec{B}}{\partial t} \\
+\nabla\times\vec{H} &amp;= \vec{J}_{free} + \frac{\partial\vec{D}}{\partial t} \\
+\end{split}\]</div>
+</section>
+<section id="linear-response-of-dielectric-materials-griffiths-e-m-ch-5-6">
+<h3>Linear Response of Dielectric Materials (Griffiths E&amp;M Ch 5&amp;6)<a class="headerlink" href="#linear-response-of-dielectric-materials-griffiths-e-m-ch-5-6" title="Permalink to this heading">#</a></h3>
+<p>And for the linear response of dielectric materials, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{P} &amp;=\varepsilon_0 \chi_e \vec{E}\\
+\vec{M} &amp;=\chi_m\vec{H}               \\
+\vec{D} &amp;=\varepsilon_0(1+\chi_e)\vec{E}=\varepsilon\vec{E}=\varepsilon_0\vec{E}+\vec{P}\\
+\vec{B} &amp;=\mu_0(1+\chi_m)\vec{H}=\mu\vec{H}= \mu_0(\vec{H}+\vec{M})
+\end{split}\]</div>
+<p>where</p>
+<p><span class="math notranslate nohighlight">\(\vec{P}\)</span> is the charge polarization;</p>
+<p><span class="math notranslate nohighlight">\(\vec{M}\)</span> is the magnetization of the material;</p>
+<p><span class="math notranslate nohighlight">\(\vec{D}\)</span> is the electric displacement field;</p>
+<p><span class="math notranslate nohighlight">\(\vec{H}\)</span> is the auxiliary magnetic field;</p>
+<p>with <span class="math notranslate nohighlight">\(\mu\)</span> denoting permeability of dielectric material and <span class="math notranslate nohighlight">\(\varepsilon\)</span> denoting permittivity of material.</p>
+</section>
+</section>
+<section id="brief-review-of-vector-potential-griffith-e-m-ch-5">
+<h2>Brief Review of Vector Potential: (Griffith E&amp;M Ch 5)<a class="headerlink" href="#brief-review-of-vector-potential-griffith-e-m-ch-5" title="Permalink to this heading">#</a></h2>
+<p>The vector potential <span class="math notranslate nohighlight">\(\vec{A}\)</span> is an analog of the potential in electrostatics. For magnetostatics, it has the form of</p>
+<div class="math notranslate nohighlight">
+\[
+\vec{A}_{\text{dipole}}(\vec{r})=\frac{\mu_0}{4\pi}\frac{\vec{m}\times\hat{r}}{r^2}
+\]</div>
+<p>To find the magnetic field due to the magnetic dipole moment, we can find the <span class="math notranslate nohighlight">\(\vec{m}\)</span> based on the diagram and substitute the <span class="math notranslate nohighlight">\(\vec{m}\)</span> in Cartesian/Cylindrical coordinate to Spherical Coordinate. Refer to the diagram from Griffiths’ Figure 5.54 and the spherical coordinate unit vectors.</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/GriffithsEM_Fig5_54.png"><img alt="../_images/GriffithsEM_Fig5_54.png" src="../_images/GriffithsEM_Fig5_54.png" style="width: 240px; height: 200px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">magnetic field due to a perfect dipole along z-direction.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/SphericalCoordinate.png"><img alt="../_images/SphericalCoordinate.png" src="../_images/SphericalCoordinate.png" style="height: 200px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Spherical Coordinate with unit vector at point (<span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>,<span class="math notranslate nohighlight">\(\phi\)</span>)</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>We can then find the dot product of <span class="math notranslate nohighlight">\(\vec{m}\)</span> and <span class="math notranslate nohighlight">\(\vec{r}\)</span> and recognize that along the position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{m}\)</span> has both <span class="math notranslate nohighlight">\(\hat{r}\)</span> and <span class="math notranslate nohighlight">\(\hat{\theta}\)</span> components, and can be found graphically. (Insert diagram of the dot product here) For this, we get</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{m}&amp;=|m|\left(\hat{r}\left[\cos\theta\right]+ 
+                 \hat{\theta}\left[-\sin\theta\right] \right)\\
+       &amp;=\vec{m}_{\parallel} + \vec{m}_{\perp}
+\end{split}\]</div>
+<p>Adopting the expression that <span class="math notranslate nohighlight">\(\vec{B}=\frac{\mu_0}{4\pi r^3}(2m\cos\theta\hat{r}+m\sin\theta\hat{\theta})\)</span>, we can simply abuse the arithmetics for a bit and get</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{B}&amp;=\frac{\mu_0}{4\pi r^3}(2m\cos\theta\hat{r}+m\sin\theta\hat{\theta})\\
+&amp;=\frac{\mu_0}{4\pi r^3}\left(3m\cos\theta\hat{r}-m\cos\theta\hat{r}+m\sin\theta\hat{\theta}\right)\\
+&amp;=\frac{\mu_0}{4\pi r^3}\left(3\left[\vec{m}\cdot\hat{r}\right]\hat{r}-|m|\left(\hat{r}\left[\cos\theta\right]+ 
+                 \hat{\theta}\left[-\sin\theta\right] \right)\right)\\
+\end{split}\]</div>
+<p>which gives us the coordinate-free form of magnetic field expression due to a magnetic dipole moment.</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{\vec{B}
+=\frac{\mu_0}{4\pi r^3}\left[3\left[\vec{m}\cdot\hat{r}\right]\hat{r}-\vec{m}\right]}
+\]</div>
+<p>Notice also that the magnetic field is partially anti-parallel to the magnetic moment, and partially parallel to the position vector along the radial direction.</p>
+<section id="rabbit-hole-001">
+<h3>Rabbit hole #001<a class="headerlink" href="#rabbit-hole-001" title="Permalink to this heading">#</a></h3>
+<p>Alternatively, one can attempt to get lost in vector algebra, which I believe is not impossible and in fact more general, and can shed more insight into a truly coordinate-free derivation. which involves <span class="math notranslate nohighlight">\(\nabla\times\vec{A}=\nabla\times\left[\frac{\mu_0}{4\pi}\frac{\vec{m}\times\hat{r}}{r^2}\right]\)</span>. But since we are now on a time-constraint, let’s save ourselves the mental gymnastics and pursue ideas more worthwhile, not vector and differential geometry.</p>
+</section>
+</section>
+<section id="lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">
+<h2>Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]<a class="headerlink" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision" title="Permalink to this heading">#</a></h2>
+<p>To briefly cover the Lorentz force, it describes when charged particles are exposed to external magnetic and electric fields. In electrodynamics, <span class="math notranslate nohighlight">\(\nabla\times\vec{E}\)</span> gives us a time dependent term, and can contribute to the <span class="math notranslate nohighlight">\(\vec{A}(\vec{r}_i(t),t)\)</span> term, affecting the magnetic field.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{F} =\frac{d\vec{p}}{dt}&amp;= q\vec{E} + q\vec{v}\times \vec{B} \text{ giving cyclotron motion} \\
+= m\frac{d\vec{v}}{dt} 
+&amp;= q(-\nabla V - \partial_t \vec{A}) + q(\vec{v}\times\nabla\times\vec{A})\\
+&amp;= q(-\nabla V - \partial_t \vec{A} + 
+\nabla{(\vec{v}\cdot{\vec{A}})}-\vec{A}(\vec{v}\cdot\nabla)\\
+m\frac{d\vec{v}}{dt} + q(\partial _t\vec{A}+(\vec{v}\cdot\nabla)\vec{A})&amp;=-q\nabla V + q\nabla(\vec{v}\cdot\vec{A})) \\
+\end{split}\]</div>
+<p>Recall that the convective derivative is to expose the chain rule in the partial derivative, a math trick, where (be a little more careful and revisit again)</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec{A} &amp;= \vec{A}(\vec{r}_i (t),t) \\
+\frac{d}{dt}\left[\vec{A}\right]
+&amp;= \sum _{i=1}^{3}\frac{\partial \vec{A}}{\partial \vec{r}_i}\frac{d\vec{r}_i(t)}{dt}
++ \frac{\partial\vec{A}}{\partial t}\\
+&amp;= \left(\sum _{i=1}^{3}\frac{d\vec{r}_i(t)}{dt}\cdot\frac{\partial }{\partial \vec{r}_i}\right) \vec{A}
++ \frac{\partial\vec{A}}{\partial t}\\
+\frac{d}{dt}\left[\vec{A}\right]&amp;=(\vec{v}\cdot\nabla)\vec{A} + \frac{\partial\vec{A}}{\partial t}\\
+\end{split}\]</div>
+<p>Combining the expressions, we then yield</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+m\frac{d\vec{v}}{dt} + q\frac{d\vec{A}}{dt }&amp;=\\
+\frac{d\vec{p}_{\text{can}}}{dt}=\frac{d}{dt}\left[ p+ q\vec{A}\right] &amp;= -q\nabla(V - \vec{v}\cdot\vec{A}) = -\nabla U_{\text{vel}}
+\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{p}_{\text{can}}=\vec{p} + q\vec{A}\)</span> is the canonical momentum, and the <span class="math notranslate nohighlight">\(U_{\text{vel}} = q(V-\vec{v}\cdot\vec{A})\)</span> is the potential of velocity-dependent quantity.</p>
+</section>
+<section id="magnetization-from-vector-and-e-m-standpoint">
+<h2>Magnetization from vector and E&amp;M standpoint:<a class="headerlink" href="#magnetization-from-vector-and-e-m-standpoint" title="Permalink to this heading">#</a></h2>
+<p>We have discussed in the above section that vector potential and the magnetic field are generated due to the magnetic dipole moment. But what is a dipole moment? What is magnetization?</p>
+<p>When an electric current goes around an area <span class="math notranslate nohighlight">\(\vec{a} = |a|\hat{n}\)</span>, a magnetic dipole moment <span class="math notranslate nohighlight">\(\mu= Ia\hat{n}\)</span> is generated. This is similar to but not the same description as the fourth Maxwell’s equation <span class="math notranslate nohighlight">\(\nabla\times\vec{B}=\mu_0\vec{J}+\frac{1}{c^2}\partial_t\vec{E}\)</span>, this is different than the Amperian loop picture.</p>
+<p>The electric current goes around like a toroid, which forms the shape of a circle. The area enclosed by a circle of radius <span class="math notranslate nohighlight">\(r\)</span> gives <span class="math notranslate nohighlight">\(a=\pi r^2\)</span> and the magnetic dipole moment is formed. The magnetic field circles around the current like a smoke vortex ring, but the dipole points upward normal to the circle. The Ampere model of magnetic dipole moment is analogous to the magnetic field in a solenoid.</p>
+<section id="bohr-miss-van-leeuwen-theorem-brief-explanation">
+<h3>Bohr-Miss van Leeuwen Theorem (brief explanation):<a class="headerlink" href="#bohr-miss-van-leeuwen-theorem-brief-explanation" title="Permalink to this heading">#</a></h3>
+<p>Magnetization is considered a “magnetic dipole density”, or dipole moment per unit volume, induced by an external magnetic field. A brief explanation of Bohr-van Leeuwen Theorem is that a classical system does NOT have a thermal equilibruim magnetization. However, reality says you need quantum theory to address why there IS in fact a net magnetization, and so, this theorem breaks down on a quantum level.</p>
+<p>Mathematically, we know that</p>
+<div class="math notranslate nohighlight">
+\[
+M = - \left(\frac{\partial F}{\partial B}\right)_{T,V}
+\]</div>
+<p>So the partition function <span class="math notranslate nohighlight">\(Z\)</span> for N particles, and each with charge q, would take the form of</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}Z &amp;\propto \int\int\dots\int \exp 
+\left( 
+\frac{
+    -E(
+        \left\{
+            \vec{r}_i,\vec{p}_i 
+    \right\}
+    )
+    }
+    {k_B T}
+\right)
+d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
+\\
+&amp;\text{where}\\
+&amp;E\left(\left\{\vec{r}_i,\vec{p}_i\right\}\right)= 
+\sum _i ^N \frac{
+    \left( \vec{p}_{\text{can},i}-q\vec{A}_i\right)^2
+    }{2m_i} +V(\vec{r}_i)\end{split}\]</div>
+<p>All position and momentum integrals integrate from <span class="math notranslate nohighlight">\(-\infty\)</span> to <span class="math notranslate nohighlight">\(+\infty\)</span> and that the phase space (momentum (3N) with respect to position (3N)) is <span class="math notranslate nohighlight">\(3N + 3N = 6N\)</span> dimensional.</p>
+<p>Something to also keep in mind is that magnetic fields do no work because the velocity’s direction of the charged particle is perpendicular to the force produced by the <span class="math notranslate nohighlight">\(\vec{B}\)</span>-field. Since no work is done by the field, the energy of the system also does not explicitly depend on the external field applied. When the external <span class="math notranslate nohighlight">\(\vec{B}\)</span>-field is removed, then the momentum reverts, as in <span class="math notranslate nohighlight">\(\vec{p}_{\text{can}}-q\vec{A}_i \mapsto \vec{p}_{\text{can}}\)</span>.</p>
+</section>
+</section>
+<section id="questions-i-want-to-ask-about-lecture-1">
+<h2>Questions I want to ask about lecture 1:<a class="headerlink" href="#questions-i-want-to-ask-about-lecture-1" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Why is <span class="math notranslate nohighlight">\(\sum\mu_s = -\mu_l\)</span>?</p></li>
+<li><p>The diagram shown is that the mini current curls around, we are just summing the microscopic current due to the microscopic motion of electrons, but why is the diagram showing <span class="math notranslate nohighlight">\(\mu\)</span> when <span class="math notranslate nohighlight">\(\mu\)</span> is supposed to be pointing out of page?</p></li>
+<li><p>What exactly is this vector potential? are we taking into account that the magnetic field affects the vector potential, and not explicitly the external magnetic field, which alters the momentum of a charged particle?</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./CondensedMatter"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Review/linalg.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Linear Algebra in Physics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="MATRL204L2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">(MATRL204L2) Review of Quantum Mechanics and Operators</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l1-review-of-maxwell-s-equations">(MATRL204L1) Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-maxwell-s-equations">Brief Review of Maxwell’s equations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-magnetic-monopole-then-how-about-magnetic-dipole">No magnetic monopole, then how about magnetic dipole?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equation-in-dielectric-materials">Maxwell’s equation in Dielectric Materials</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-response-of-dielectric-materials-griffiths-e-m-ch-5-6">Linear Response of Dielectric Materials (Griffiths E&amp;M Ch 5&amp;6)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-vector-potential-griffith-e-m-ch-5">Brief Review of Vector Potential: (Griffith E&amp;M Ch 5)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-001">Rabbit hole #001</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetization-from-vector-and-e-m-standpoint">Magnetization from vector and E&amp;M standpoint:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-miss-van-leeuwen-theorem-brief-explanation">Bohr-Miss van Leeuwen Theorem (brief explanation):</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-i-want-to-ask-about-lecture-1">Questions I want to ask about lecture 1:</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Physics BB
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -16,9 +16,12 @@ parts:
     - file: Review/foreword
     - file: Review/linalg
 
-  - caption: Condensed Matter
-    chapters:
-    - file: CondensedMatter/MATRL204
+  - caption: Condensed Matter (Intro to Magnetism & Magnetic Materials)
+    chapters: 
+    - file: CondensedMatter/MATRL204L1
+    - file: CondensedMatter/MATRL204L2
+    - file: CondensedMatter/MATRL204L3
+    - file: CondensedMatter/MATRL204L4
 
   - caption: For Fun?
     chapters:  

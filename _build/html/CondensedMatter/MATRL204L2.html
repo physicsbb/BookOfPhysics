@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials &#8212; Book Of Physics</title>
+    <title>(MATRL204L2) Review of Quantum Mechanics and Operators &#8212; Book Of Physics</title>
   
   
   
@@ -64,11 +64,11 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'CondensedMatter/MATRL204';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'CondensedMatter/MATRL204L2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Random ideas?" href="../ForFun/Ideas.html" />
-    <link rel="prev" title="Linear Algebra in Physics" href="../Review/linalg.html" />
+    <link rel="next" title="(MATRL204L3) Intro to Dirac’s equation and spin" href="MATRL204L3.html" />
+    <link rel="prev" title="(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials" href="MATRL204L1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -171,13 +171,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../Review/foreword.html">Foreword</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Review/linalg.html">Linear Algebra in Physics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Condensed Matter</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Condensed Matter Magnetism &amp; Magnetic Materials</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MATRL204L1.html">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
 
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">(MATRL204L2) Review of Quantum Mechanics and Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MATRL204L3.html">(MATRL204L3) Intro to Dirac’s equation and spin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MATRL204L4.html">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">For Fun?</span></p>
 <ul class="nav bd-sidenav">
@@ -253,7 +253,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/physicsbb/BookOfPhysics/issues/new?title=Issue%20on%20page%20%2FCondensedMatter/MATRL204.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/physicsbb/BookOfPhysics/issues/new?title=Issue%20on%20page%20%2FCondensedMatter/MATRL204L2.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -283,7 +283,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/CondensedMatter/MATRL204.md" target="_blank"
+      <li><a href="../_sources/CondensedMatter/MATRL204L2.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -365,7 +365,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</h1>
+    <h1>(MATRL204L2) Review of Quantum Mechanics and Operators</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -375,28 +375,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l1-review-of-maxwell-s-equations">(MATRL204L1) Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-maxwell-s-equations">Brief Review of Maxwell’s equations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-magnetic-monopole-then-how-about-magnetic-dipole">No magnetic monopole, then how about magnetic dipole?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equation-in-dielectric-materials">Maxwell’s equation in Dielectric Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-response-of-dielectric-materials-griffiths-e-m-ch-5-6">Linear Response of Dielectric Materials (Griffiths E&amp;M Ch 5&amp;6)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-vector-potential-griffith-e-m-ch-5">Brief Review of Vector Potential: (Griffith E&amp;M Ch 5)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-001">Rabbit hole #001</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetization-from-vector-and-e-m-standpoint">Magnetization from vector and E&amp;M standpoint:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-miss-van-leeuwen-theorem-brief-explanation">Bohr-Miss van Leeuwen Theorem (brief explanation):</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-i-want-to-ask-about-lecture-1">Questions I want to ask about lecture 1:</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l2-review-of-quantum-mechanics-and-operators">(MATRL204L2) Review of Quantum Mechanics and Operators</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-origin-of-magnetism">Quantum Origin of Magnetism</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-you-get-the-hamiltonian-that-we-work-with">How do you get the Hamiltonian that we work with?</a></li>
 </ul>
@@ -412,19 +390,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-angular-momentum-operators">What are angular momentum operators?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-the-eigenvalues-of-l-and-m">Correlating the eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>:</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l3-intro-to-dirac-s-equation-and-spin">(MATRL204L3) Intro to Dirac’s equation and spin</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-spherical-harmonics">Recap of Spherical Harmonics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation">Dirac’s equation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unrelated-mumbo-jumbo">Unrelated mumbo jumbo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-to-ask-about-this-lecture">Questions to ask about this lecture:</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -435,189 +400,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ucsb-matrl-204-intro-to-magnetism-and-magnetic-materials">
-<h1>(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials<a class="headerlink" href="#ucsb-matrl-204-intro-to-magnetism-and-magnetic-materials" title="Permalink to this heading">#</a></h1>
-<p>Books used for all these notes:</p>
-<ul class="simple">
-<li><p>Griffiths E&amp;M 4th Ed</p></li>
-<li><p>Griffiths QM 3rd Ed</p></li>
-<li><p>Magnetism In Condensed Matter by Stephen Blundell</p></li>
-</ul>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="matrl204l1-review-of-maxwell-s-equations">
-<h1>(MATRL204L1) Review of Maxwell’s equations<a class="headerlink" href="#matrl204l1-review-of-maxwell-s-equations" title="Permalink to this heading">#</a></h1>
-<p>This topic is aimed towards its applications in Condensed Matter. The physics involved includes Electromagnetism, Statistical Mechanics, and Quantum Mechanics. Limited Classical Mechanics is also included in terms of its formalism, such as gauge transformation, canonical momentum, and such.</p>
-<section id="brief-review-of-maxwell-s-equations">
-<h2>Brief Review of Maxwell’s equations<a class="headerlink" href="#brief-review-of-maxwell-s-equations" title="Permalink to this heading">#</a></h2>
-<section id="standard-maxwell-s-equations">
-<h3>Standard Maxwell’s equations<a class="headerlink" href="#standard-maxwell-s-equations" title="Permalink to this heading">#</a></h3>
-<p>We start off with the four Maxwell’s equations</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\nabla\cdot \vec{E} &amp;= \rho/\varepsilon _o           \\
-\nabla\cdot \vec{B} &amp;= 0 \text{ (no magnetic monopole)}\\
-\nabla\times\vec{E} &amp;= - \frac{\partial\vec{B}}{\partial t}\\
-\nabla\times\vec{B} &amp;= \mu _0 \vec{J} + \mu _0 \varepsilon _0 \frac{\partial\vec{E}}{\partial t} \\
-\end{split}\]</div>
-</section>
-<section id="no-magnetic-monopole-then-how-about-magnetic-dipole">
-<h3>No magnetic monopole, then how about magnetic dipole?<a class="headerlink" href="#no-magnetic-monopole-then-how-about-magnetic-dipole" title="Permalink to this heading">#</a></h3>
-</section>
-<section id="maxwell-s-equation-in-dielectric-materials">
-<h3>Maxwell’s equation in Dielectric Materials<a class="headerlink" href="#maxwell-s-equation-in-dielectric-materials" title="Permalink to this heading">#</a></h3>
-<p>And that inside materials, the Maxwell’s equation have similar forms</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\nabla\cdot \vec{D} &amp;= \rho _{\text{free}}           \\
-\nabla\cdot \vec{B} &amp;= 0                             
-\text{ with } \vec{B}= \mu_0(\vec{H}+\vec{M})\\
-\nabla\times\vec{E} &amp;= - \frac{\partial\vec{B}}{\partial t} \\
-\nabla\times\vec{H} &amp;= \vec{J}_{free} + \frac{\partial\vec{D}}{\partial t} \\
-\end{split}\]</div>
-</section>
-<section id="linear-response-of-dielectric-materials-griffiths-e-m-ch-5-6">
-<h3>Linear Response of Dielectric Materials (Griffiths E&amp;M Ch 5&amp;6)<a class="headerlink" href="#linear-response-of-dielectric-materials-griffiths-e-m-ch-5-6" title="Permalink to this heading">#</a></h3>
-<p>And for the linear response of dielectric materials, we have</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{P} &amp;=\varepsilon_0 \chi_e \vec{E}\\
-\vec{M} &amp;=\chi_m\vec{H}               \\
-\vec{D} &amp;=\varepsilon_0(1+\chi_e)\vec{E}=\varepsilon\vec{E}=\varepsilon_0\vec{E}+\vec{P}\\
-\vec{B} &amp;=\mu_0(1+\chi_m)\vec{H}=\mu\vec{H}= \mu_0(\vec{H}+\vec{M})
-\end{split}\]</div>
-<p>where</p>
-<p><span class="math notranslate nohighlight">\(\vec{P}\)</span> is the charge polarization;</p>
-<p><span class="math notranslate nohighlight">\(\vec{M}\)</span> is the magnetization of the material;</p>
-<p><span class="math notranslate nohighlight">\(\vec{D}\)</span> is the electric displacement field;</p>
-<p><span class="math notranslate nohighlight">\(\vec{H}\)</span> is the auxiliary magnetic field;</p>
-<p>with <span class="math notranslate nohighlight">\(\mu\)</span> denoting permeability of dielectric material and <span class="math notranslate nohighlight">\(\varepsilon\)</span> denoting permittivity of material.</p>
-</section>
-</section>
-<section id="brief-review-of-vector-potential-griffith-e-m-ch-5">
-<h2>Brief Review of Vector Potential: (Griffith E&amp;M Ch 5)<a class="headerlink" href="#brief-review-of-vector-potential-griffith-e-m-ch-5" title="Permalink to this heading">#</a></h2>
-<p>The vector potential <span class="math notranslate nohighlight">\(\vec{A}\)</span> is an analog of the potential in electrostatics. For magnetostatics, it has the form of</p>
-<div class="math notranslate nohighlight">
-\[
-\vec{A}_{\text{dipole}}(\vec{r})=\frac{\mu_0}{4\pi}\frac{\vec{m}\times\hat{r}}{r^2}
-\]</div>
-<p>To find the magnetic field due to the magnetic dipole moment, we can find the <span class="math notranslate nohighlight">\(\vec{m}\)</span> based on the diagram and substitute the <span class="math notranslate nohighlight">\(\vec{m}\)</span> in Cartesian/Cylindrical coordinate to Spherical Coordinate. Refer to the diagram from Griffiths’ Figure 5.54 and the spherical coordinate unit vectors.</p>
-<figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/GriffithsEM_Fig5_54.png"><img alt="../_images/GriffithsEM_Fig5_54.png" src="../_images/GriffithsEM_Fig5_54.png" style="width: 240px; height: 200px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">magnetic field due to a perfect dipole along z-direction.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/SphericalCoordinate.png"><img alt="../_images/SphericalCoordinate.png" src="../_images/SphericalCoordinate.png" style="height: 200px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Spherical Coordinate with unit vector at point (<span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>,<span class="math notranslate nohighlight">\(\phi\)</span>)</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>We can then find the dot product of <span class="math notranslate nohighlight">\(\vec{m}\)</span> and <span class="math notranslate nohighlight">\(\vec{r}\)</span> and recognize that along the position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span>, <span class="math notranslate nohighlight">\(\vec{m}\)</span> has both <span class="math notranslate nohighlight">\(\hat{r}\)</span> and <span class="math notranslate nohighlight">\(\hat{\theta}\)</span> components, and can be found graphically. (Insert diagram of the dot product here) For this, we get</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{m}&amp;=|m|\left(\hat{r}\left[\cos\theta\right]+ 
-                 \hat{\theta}\left[-\sin\theta\right] \right)\\
-       &amp;=\vec{m}_{\parallel} + \vec{m}_{\perp}
-\end{split}\]</div>
-<p>Adopting the expression that <span class="math notranslate nohighlight">\(\vec{B}=\frac{\mu_0}{4\pi r^3}(2m\cos\theta\hat{r}+m\sin\theta\hat{\theta})\)</span>, we can simply abuse the arithmetics for a bit and get</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{B}&amp;=\frac{\mu_0}{4\pi r^3}(2m\cos\theta\hat{r}+m\sin\theta\hat{\theta})\\
-&amp;=\frac{\mu_0}{4\pi r^3}\left(3m\cos\theta\hat{r}-m\cos\theta\hat{r}+m\sin\theta\hat{\theta}\right)\\
-&amp;=\frac{\mu_0}{4\pi r^3}\left(3\left[\vec{m}\cdot\hat{r}\right]\hat{r}-|m|\left(\hat{r}\left[\cos\theta\right]+ 
-                 \hat{\theta}\left[-\sin\theta\right] \right)\right)\\
-\end{split}\]</div>
-<p>which gives us the coordinate-free form of magnetic field expression due to a magnetic dipole moment.</p>
-<div class="math notranslate nohighlight">
-\[
-\boxed{\vec{B}
-=\frac{\mu_0}{4\pi r^3}\left[3\left[\vec{m}\cdot\hat{r}\right]\hat{r}-\vec{m}\right]}
-\]</div>
-<p>Notice also that the magnetic field is partially anti-parallel to the magnetic moment, and partially parallel to the position vector along the radial direction.</p>
-<section id="rabbit-hole-001">
-<h3>Rabbit hole #001<a class="headerlink" href="#rabbit-hole-001" title="Permalink to this heading">#</a></h3>
-<p>Alternatively, one can attempt to get lost in vector algebra, which I believe is not impossible and in fact more general, and can shed more insight into a truly coordinate-free derivation. which involves <span class="math notranslate nohighlight">\(\nabla\times\vec{A}=\nabla\times\left[\frac{\mu_0}{4\pi}\frac{\vec{m}\times\hat{r}}{r^2}\right]\)</span>. But since we are now on a time-constraint, let’s save ourselves the mental gymnastics and pursue ideas more worthwhile, not vector and differential geometry.</p>
-</section>
-</section>
-<section id="lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">
-<h2>Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]<a class="headerlink" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision" title="Permalink to this heading">#</a></h2>
-<p>To briefly cover the Lorentz force, it describes when charged particles are exposed to external magnetic and electric fields. In electrodynamics, <span class="math notranslate nohighlight">\(\nabla\times\vec{E}\)</span> gives us a time dependent term, and can contribute to the <span class="math notranslate nohighlight">\(\vec{A}(\vec{r}_i(t),t)\)</span> term, affecting the magnetic field.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{F} =\frac{d\vec{p}}{dt}&amp;= q\vec{E} + q\vec{v}\times \vec{B} \text{ giving cyclotron motion} \\
-= m\frac{d\vec{v}}{dt} 
-&amp;= q(-\nabla V - \partial_t \vec{A}) + q(\vec{v}\times\nabla\times\vec{A})\\
-&amp;= q(-\nabla V - \partial_t \vec{A} + 
-\nabla{(\vec{v}\cdot{\vec{A}})}-\vec{A}(\vec{v}\cdot\nabla)\\
-m\frac{d\vec{v}}{dt} + q(\partial _t\vec{A}+(\vec{v}\cdot\nabla)\vec{A})&amp;=-q\nabla V + q\nabla(\vec{v}\cdot\vec{A})) \\
-\end{split}\]</div>
-<p>Recall that the convective derivative is to expose the chain rule in the partial derivative, a math trick, where (be a little more careful and revisit again)</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{A} &amp;= \vec{A}(\vec{r}_i (t),t) \\
-\frac{d}{dt}\left[\vec{A}\right]
-&amp;= \sum _{i=1}^{3}\frac{\partial \vec{A}}{\partial \vec{r}_i}\frac{d\vec{r}_i(t)}{dt}
-+ \frac{\partial\vec{A}}{\partial t}\\
-&amp;= \left(\sum _{i=1}^{3}\frac{d\vec{r}_i(t)}{dt}\cdot\frac{\partial }{\partial \vec{r}_i}\right) \vec{A}
-+ \frac{\partial\vec{A}}{\partial t}\\
-\frac{d}{dt}\left[\vec{A}\right]&amp;=(\vec{v}\cdot\nabla)\vec{A} + \frac{\partial\vec{A}}{\partial t}\\
-\end{split}\]</div>
-<p>Combining the expressions, we then yield</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-m\frac{d\vec{v}}{dt} + q\frac{d\vec{A}}{dt }&amp;=\\
-\frac{d\vec{p}_{\text{can}}}{dt}=\frac{d}{dt}\left[ p+ q\vec{A}\right] &amp;= -q\nabla(V - \vec{v}\cdot\vec{A}) = -\nabla U_{\text{vel}}
-\end{split}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\vec{p}_{\text{can}}=\vec{p} + q\vec{A}\)</span> is the canonical momentum, and the <span class="math notranslate nohighlight">\(U_{\text{vel}} = q(V-\vec{v}\cdot\vec{A})\)</span> is the potential of velocity-dependent quantity.</p>
-</section>
-<section id="magnetization-from-vector-and-e-m-standpoint">
-<h2>Magnetization from vector and E&amp;M standpoint:<a class="headerlink" href="#magnetization-from-vector-and-e-m-standpoint" title="Permalink to this heading">#</a></h2>
-<p>We have discussed in the above section that vector potential and the magnetic field are generated due to the magnetic dipole moment. But what is a dipole moment? What is magnetization?</p>
-<p>When an electric current goes around an area <span class="math notranslate nohighlight">\(\vec{a} = |a|\hat{n}\)</span>, a magnetic dipole moment <span class="math notranslate nohighlight">\(\mu= Ia\hat{n}\)</span> is generated. This is similar to but not the same description as the fourth Maxwell’s equation <span class="math notranslate nohighlight">\(\nabla\times\vec{B}=\mu_0\vec{J}+\frac{1}{c^2}\partial_t\vec{E}\)</span>, this is different than the Amperian loop picture.</p>
-<p>The electric current goes around like a toroid, which forms the shape of a circle. The area enclosed by a circle of radius <span class="math notranslate nohighlight">\(r\)</span> gives <span class="math notranslate nohighlight">\(a=\pi r^2\)</span> and the magnetic dipole moment is formed. The magnetic field circles around the current like a smoke vortex ring, but the dipole points upward normal to the circle. The Ampere model of magnetic dipole moment is analogous to the magnetic field in a solenoid.</p>
-<section id="bohr-miss-van-leeuwen-theorem-brief-explanation">
-<h3>Bohr-Miss van Leeuwen Theorem (brief explanation):<a class="headerlink" href="#bohr-miss-van-leeuwen-theorem-brief-explanation" title="Permalink to this heading">#</a></h3>
-<p>Magnetization is considered a “magnetic dipole density”, or dipole moment per unit volume, induced by an external magnetic field. A brief explanation of Bohr-van Leeuwen Theorem is that a classical system does NOT have a thermal equilibruim magnetization. However, reality says you need quantum theory to address why there IS in fact a net magnetization, and so, this theorem breaks down on a quantum level.</p>
-<p>Mathematically, we know that</p>
-<div class="math notranslate nohighlight">
-\[
-M = - \left(\frac{\partial F}{\partial B}\right)_{T,V}
-\]</div>
-<p>So the partition function <span class="math notranslate nohighlight">\(Z\)</span> for N particles, and each with charge q, would take the form of</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}Z &amp;\propto \int\int\dots\int \exp 
-\left( 
-\frac{
-    -E(
-        \left\{
-            \vec{r}_i,\vec{p}_i 
-    \right\}
-    )
-    }
-    {k_B T}
-\right)
-d\vec{r}_1\dots d\vec{r}_N d\vec{p}_1\dots d\vec{p}_N
-\\
-&amp;\text{where}\\
-&amp;E\left(\left\{\vec{r}_i,\vec{p}_i\right\}\right)= 
-\sum _i ^N \frac{
-    \left( \vec{p}_{\text{can},i}-q\vec{A}_i\right)^2
-    }{2m_i} +V(\vec{r}_i)\end{split}\]</div>
-<p>All position and momentum integrals integrate from <span class="math notranslate nohighlight">\(-\infty\)</span> to <span class="math notranslate nohighlight">\(+\infty\)</span> and that the phase space (momentum (3N) with respect to position (3N)) is <span class="math notranslate nohighlight">\(3N + 3N = 6N\)</span> dimensional.</p>
-<p>Something to also keep in mind is that magnetic fields do no work because the velocity’s direction of the charged particle is perpendicular to the force produced by the <span class="math notranslate nohighlight">\(\vec{B}\)</span>-field. Since no work is done by the field, the energy of the system also does not explicitly depend on the external field applied. When the external <span class="math notranslate nohighlight">\(\vec{B}\)</span>-field is removed, then the momentum reverts, as in <span class="math notranslate nohighlight">\(\vec{p}_{\text{can}}-q\vec{A}_i \mapsto \vec{p}_{\text{can}}\)</span>.</p>
-</section>
-</section>
-<section id="questions-i-want-to-ask-about-lecture-1">
-<h2>Questions I want to ask about lecture 1:<a class="headerlink" href="#questions-i-want-to-ask-about-lecture-1" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Why is <span class="math notranslate nohighlight">\(\sum\mu_s = -\mu_l\)</span>?</p></li>
-<li><p>The diagram shown is that the mini current curls around, we are just summing the microscopic current due to the microscopic motion of electrons, but why is the diagram showing <span class="math notranslate nohighlight">\(\mu\)</span> when <span class="math notranslate nohighlight">\(\mu\)</span> is supposed to be pointing out of page?</p></li>
-<li><p>What exactly is this vector potential? are we taking into account that the magnetic field affects the vector potential, and not explicitly the external magnetic field, which alters the momentum of a charged particle?</p></li>
-</ul>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="matrl204l2-review-of-quantum-mechanics-and-operators">
+  <section class="tex2jax_ignore mathjax_ignore" id="matrl204l2-review-of-quantum-mechanics-and-operators">
 <h1>(MATRL204L2) Review of Quantum Mechanics and Operators<a class="headerlink" href="#matrl204l2-review-of-quantum-mechanics-and-operators" title="Permalink to this heading">#</a></h1>
 <p>Book used:</p>
 <ul class="simple">
@@ -950,145 +733,6 @@ It is important to note that since <span class="math notranslate nohighlight">\(
 <p>Let us look at the allowed quantum numbers a little more carefully.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="matrl204l3-intro-to-dirac-s-equation-and-spin">
-<h1>(MATRL204L3) Intro to Dirac’s equation and spin<a class="headerlink" href="#matrl204l3-intro-to-dirac-s-equation-and-spin" title="Permalink to this heading">#</a></h1>
-<section id="recap-of-spherical-harmonics">
-<h2>Recap of Spherical Harmonics<a class="headerlink" href="#recap-of-spherical-harmonics" title="Permalink to this heading">#</a></h2>
-<p>Recall that from previous lecture, we have derived in spherical coordinate that</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\hat{L}&amp;= \vec{r}\times\vec{p}=\vec{r}\times(i\hbar\nabla)=\left[\frac{\partial}{\partial\theta}\hat{\phi}+ \frac{-1}{\sin\theta}\frac{\partial}{\partial\phi}\hat{\theta}\right]\left(-i\hbar\right)\\
-\nabla&amp;=\frac{\partial}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial}{\partial\theta}\hat{\theta}+ \frac{1}{r\sin\theta}\frac{\partial}{\partial\phi}\hat{\phi}\\
-\hat{L}_z=-i\hbar\frac{\partial}{\partial\phi}; 
-\hat{L}^2 &amp;=-\hbar^2\left(\frac{1}{\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}\right)\\
-\hat{L}_z\ket{\psi}=\hbar m\ket{\psi};\hat{L}^2\ket{\psi}&amp;=\hbar^2 l\left(l+1\right)\ket{\psi} \longmapsto \ket{\psi}=Y^m_l(\theta,\phi)
-\end{split}\]</div>
-<p>Something to keep in mind is that half-integer spin rotates in <span class="math notranslate nohighlight">\(4\pi\)</span> rotation, and integer spin rotates in <span class="math notranslate nohighlight">\(2\pi\)</span> rotation.</p>
-<p>The mathematical intuition on half-integer spin rotation can be thought of as a mobius strip.</p>
-<p>The primary highlight is that Spherical Harmonics cannot capture half integers angular momentum because Spin rotates from up/down to down/up in <span class="math notranslate nohighlight">\(2\pi\)</span> rotation, and for spin to rotate from up to up again requires a <span class="math notranslate nohighlight">\(4\pi\)</span> rotation.</p>
-<p>This gives rise to the necessity of SU(2) for spin and SO(3) for angular momentum. For this reason, spin angular momentum and orbital angular momentum are of two different groups, requiring different treatments.</p>
-</section>
-<section id="dirac-s-equation">
-<h2>Dirac’s equation<a class="headerlink" href="#dirac-s-equation" title="Permalink to this heading">#</a></h2>
-<p>For non-relativistic energy, we have</p>
-<div class="math notranslate nohighlight">
-\[ 
-E = \frac{1}{2m}\left(p^2_x + p^2_y + p^2_z\right) \implies i\hbar\partial_t\psi=\frac{\hbar^2}{2m}\nabla^2\psi 
-\]</div>
-<p>In relativity,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-E               &amp;= mc^2 = \sqrt{\left(pc\right)^2+\left(m_0 c^2\right)^2}=\gamma _0 mc^2 + \sum^3_{i=1}\gamma _i p_i c\\
-E^2             &amp;= m_0^2c^4 + p_x^2c^2 + p_y^2c^2 + p_z^2c^2\\
-\frac{E^2}{c^2} &amp;= m_0^2c^2 + p_x^2    + p_y^2    + p_z^2 
-\end{split}\]</div>
-<p>Alternatively, you can also use <span class="math notranslate nohighlight">\(E = \gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\)</span> to derive <span class="math notranslate nohighlight">\(E^2/c^2\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-E&amp;=\gamma _0 mc^2 + \sum^3_{i=1}\gamma _i p_i c\\
-E^2 &amp;= \left[\gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\right]^2 \\
-&amp;=\left[\gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\right]\left[\gamma _0 m_0c^2 + \sum^3_{i=1}\gamma _i p_i c\right]
-\end{split}\]</div>
-<p>Recall that since <span class="math notranslate nohighlight">\(\gamma_i\)</span> anti-commute, having the property that <span class="math notranslate nohighlight">\(\left\{\gamma_i\gamma_j+\gamma_j\gamma_i\right\} =2\delta_{ij}\mathbb{I}\)</span>
-and that <span class="math notranslate nohighlight">\((a+b+c+d)^2=a^2+b^2+c^2+d^2 + 2ab+2ac+2ad+2bc++2bd+2cd\)</span> indicating the cross terms <span class="math notranslate nohighlight">\(ab, ac, ad,bc, bd,cd\)</span> all carry <span class="math notranslate nohighlight">\(2\delta_{ij}\mathbb{I}\)</span> and only the squared terms survive. Also <span class="math notranslate nohighlight">\(\gamma_i^2=\mathbb{I}\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-E^2 &amp;= \gamma _0^2 m_0^2(c^2)^2 + \gamma _1^2 p_1^2c^2 + \gamma _2 ^2 p_2^2c^2 + \gamma _3 ^2 p_3^2c^2\\
-\frac{E^2}{c^2}&amp;=m_0c^2 + p_1^2 + p_2^2 + p_3^2
-\end{split}\]</div>
-<p>Now, we ask:
-What form do the gamma matricies <span class="math notranslate nohighlight">\(\gamma _i\)</span> take?
-Generally speaking, the <a class="reference external" href="https://en.wikipedia.org/wiki/Gamma_matrices">4x4 gamma matricies</a> take the form of</p>
-<div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{split}
-\gamma _0 = \begin{bmatrix}
-\symbb{1}  &amp; 0        \\
-0          &amp; \symbb{1}\\
-\end{bmatrix}
-&amp;=\begin{bmatrix}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-\end{bmatrix}\end{split}\\\begin{split}\gamma _i = \begin{bmatrix}
-0 &amp; \sigma _i^{\dagger}\\
-\sigma _i &amp; 0          \\
-\end{bmatrix}
-&amp;= \begin{bmatrix}
-0 &amp; 0 &amp; * &amp; * \\ 
-0 &amp; 0 &amp; * &amp; * \\
-* &amp; * &amp; 0 &amp; 0 \\
-* &amp; * &amp; 0 &amp; 0 \\
-\end{bmatrix}
-\end{split}\end{aligned}\end{align} \]</div>
-<p>and the contravariant 4x4 gamma matricies are also hermitian <span class="math notranslate nohighlight">\(\gamma = \gamma^{\dagger}\)</span> indicating that these are real observables.
-The <span class="math notranslate nohighlight">\(\sigma_i\)</span> matricies are the spin 1/2 pauli spin matricies.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\symbb{1}= \sigma _0= \begin{bmatrix}
-1 &amp; 0\\
-0 &amp; 1\\
-\end{bmatrix},
-\sigma _1 = \begin{bmatrix}
-0  &amp; 1 \\ 
-1  &amp; 0 \\
-\end{bmatrix},
-\sigma _2 = \begin{bmatrix}
-0 &amp;-i \\
-i &amp; 0 \\ 
-\end{bmatrix},
-\sigma _3 = \begin{bmatrix}
-1 &amp; 0\\
-0 &amp;-1\\
-\end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[
-\symbb{1}=\sigma_i^{\dagger}\sigma_i=\sigma_i\sigma_i^{\dagger} 
-\]</div>
-<section id="unrelated-mumbo-jumbo">
-<h3>Unrelated mumbo jumbo<a class="headerlink" href="#unrelated-mumbo-jumbo" title="Permalink to this heading">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Fermions cannot occupy the same state, Boson can.
-No two Fermions can have the same spin up/down, but the two Fermions can have one spin up and one spin down.
-Bosons on the other hand can have two spin up and two spin down.</p>
-<p>Half-integer spins are Fermions.
-Integer spins are Bosons.
-Fermions cannot be captured by Spherical Harmonics.</p>
-<p>Spherical Harmonics are used for orbital angular momentum.
-Spinor fields are used for spin angular momentum.</p>
-<p>Electron is a type of fermion. Spehrical harmonics are also used to describe the electrons in an atom/crystal field.</p>
-</div>
-</section>
-<section id="questions-to-ask-about-this-lecture">
-<h3>Questions to ask about this lecture:<a class="headerlink" href="#questions-to-ask-about-this-lecture" title="Permalink to this heading">#</a></h3>
-<p>How about the spin? how does half-integer spin fail in a spherically symmetric potential? I know Spherical Harmonic fails to describe it because rotation in Spherical Harmonics follows the <span class="math notranslate nohighlight">\(2\pi\)</span> convention. What is the treatment to account for the <span class="math notranslate nohighlight">\(4\pi\)</span> rotation in half-integer spin?</p>
-</section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="matrl204l4-review-of-spin-supplemented-with-griffiths-qm">
-<h1>(MATRL204L4) Review of Spin (supplemented with Griffiths QM)<a class="headerlink" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm" title="Permalink to this heading">#</a></h1>
-<p>Books used for this section:</p>
-<ul class="simple">
-<li><p>Intro to Quantum Mechanics by Griffiths 3rd Ed.</p></li>
-</ul>
-<p>Recall that from our last lecture, we have derived the vector potential used for the magnetic field, a coordinate free expression of the magnetic field. The vivid physical reality of electrons in a Magnetic Field can be explained on a few different levels.</p>
-<ul class="simple">
-<li><p>Electron in a Magnetic Field</p>
-<ol class="arabic simple">
-<li><p>magnetic dipole moment <span class="math notranslate nohighlight">\(\vec{m}\)</span> or some books might use <span class="math notranslate nohighlight">\(\vec{\mu}\)</span></p></li>
-<li><p>Separate components to the spin,</p>
-<ol class="arabic simple">
-<li><p>Electron <strong>Spin</strong> Dipole moment</p></li>
-<li><p>Electron <strong>Orbital</strong> Dipole moment</p></li>
-</ol>
-</li>
-<li><p>Zeeman Effect, which uses perturbation to account for the dipole moment under a uniform external magnetic field <span class="math notranslate nohighlight">\(\vec{B}\)</span>.</p></li>
-</ol>
-</li>
-</ul>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1122,20 +766,20 @@ Spinor fields are used for spin angular momentum.</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../Review/linalg.html"
+       href="MATRL204L1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Linear Algebra in Physics</p>
+        <p class="prev-next-title">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</p>
       </div>
     </a>
     <a class="right-next"
-       href="../ForFun/Ideas.html"
+       href="MATRL204L3.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Random ideas?</p>
+        <p class="prev-next-title">(MATRL204L3) Intro to Dirac’s equation and spin</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1157,28 +801,6 @@ Spinor fields are used for spin angular momentum.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l1-review-of-maxwell-s-equations">(MATRL204L1) Review of Maxwell’s equations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-maxwell-s-equations">Brief Review of Maxwell’s equations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-maxwell-s-equations">Standard Maxwell’s equations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-magnetic-monopole-then-how-about-magnetic-dipole">No magnetic monopole, then how about magnetic dipole?</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maxwell-s-equation-in-dielectric-materials">Maxwell’s equation in Dielectric Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-response-of-dielectric-materials-griffiths-e-m-ch-5-6">Linear Response of Dielectric Materials (Griffiths E&amp;M Ch 5&amp;6)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-review-of-vector-potential-griffith-e-m-ch-5">Brief Review of Vector Potential: (Griffith E&amp;M Ch 5)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rabbit-hole-001">Rabbit hole #001</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lorentz-force-griffiths-e-m-ch-10-1-4-needs-revision">Lorentz Force (Griffiths E&amp;M Ch 10.1.4) [Needs revision]</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#magnetization-from-vector-and-e-m-standpoint">Magnetization from vector and E&amp;M standpoint:</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bohr-miss-van-leeuwen-theorem-brief-explanation">Bohr-Miss van Leeuwen Theorem (brief explanation):</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-i-want-to-ask-about-lecture-1">Questions I want to ask about lecture 1:</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l2-review-of-quantum-mechanics-and-operators">(MATRL204L2) Review of Quantum Mechanics and Operators</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-origin-of-magnetism">Quantum Origin of Magnetism</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-you-get-the-hamiltonian-that-we-work-with">How do you get the Hamiltonian that we work with?</a></li>
 </ul>
@@ -1194,19 +816,6 @@ Spinor fields are used for spin angular momentum.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-angular-momentum-operators">What are angular momentum operators?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlating-the-eigenvalues-of-l-and-m">Correlating the eigenvalues of <span class="math notranslate nohighlight">\(l\)</span> and <span class="math notranslate nohighlight">\(m\)</span>:</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l3-intro-to-dirac-s-equation-and-spin">(MATRL204L3) Intro to Dirac’s equation and spin</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-spherical-harmonics">Recap of Spherical Harmonics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation">Dirac’s equation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unrelated-mumbo-jumbo">Unrelated mumbo jumbo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-to-ask-about-this-lecture">Questions to ask about this lecture:</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrl204l4-review-of-spin-supplemented-with-griffiths-qm">(MATRL204L4) Review of Spin (supplemented with Griffiths QM)</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
