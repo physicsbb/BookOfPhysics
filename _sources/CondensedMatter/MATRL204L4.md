@@ -9,3 +9,9 @@ Recall that from our last lecture, we have derived the vector potential used for
         1. Electron **Spin** Dipole moment 
         2. Electron **Orbital** Dipole moment
     3. Zeeman Effect, which uses perturbation to account for the dipole moment under a uniform external magnetic field $\vec{B}$. 
+
+## Hamiltonian of the Spin
+Save it for later. Don't have time to focus on this
+
+## Clebsch Gordan Coefficients for wavefunctions
+Save it for later. Don't have time to document this yet. 
