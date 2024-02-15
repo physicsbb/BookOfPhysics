@@ -57,13 +57,13 @@ Generally speaking, the [4x4 gamma matricies](https://en.wikipedia.org/wiki/Gamm
 $$
 \gamma _0 = \begin{bmatrix}
 \symbb{1}  & 0        \\
-0          & \symbb{1}\\
+0          & -\symbb{1}\\
 \end{bmatrix}
 &=\begin{bmatrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
-0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 1 \\
+0 & 0 &-1 & 0 \\
+0 & 0 & 0 &-1 \\
 \end{bmatrix}
 
 \gamma _i = \begin{bmatrix}
@@ -112,15 +112,26 @@ Bosons on the other hand can have two spin up and two spin down.
 
 Half-integer spins are Fermions. 
 Integer spins are Bosons. 
-Fermions cannot be captured by Spherical Harmonics. 
+Spherical Harmonics is used for both Fermions and Bosons, but only for the orbital angular momentum portion of the wavefunction, which is the spatial component of the wavefunction.
+
+$$
+\psi = \phi_{\text{space}}\chi_{\text{spin}}
+$$
 
 Spherical Harmonics are used for orbital angular momentum. 
 Spinor fields are used for spin angular momentum. 
 
-Electron is a type of fermion. Spehrical harmonics are also used to describe the electrons in an atom/crystal field. 
+Electron is a type of fermion. Spehrical harmonics can also be used to describe the electrons in an atom/crystal field. 
+
+```{toggle}
+#### Confusion debugging:
+Q: How about the spin? how does half-integer spin fail in a spherically symmetric potential? I know Spherical Harmonic fails to describe it because rotation in Spherical Harmonics follows the $2\pi$ convention. What is the treatment to account for the $4\pi$ rotation in half-integer spin? 
+
+A: Spinor is a separate component of the wavefunction. 
+Spherical Harmonics is only used to describe the angular component of the wavefunction, which involves the orbital angular momentum. and its l(l+1) comes from using/borrowing the solution to the differential equation (Legendre Equation). Turns out the l(l+1) can be thought of as the "eigenvalue" to the legendre's differential equation. Also, due to the limitation of Spherical Harmonics only being able to capture integer angular momentum, the needs for half integer spin angular momentum give rise to the use of minkowski metric and pauli spin matrices. But the "eigenvalue" for the $S^2$ operator takes a similar form to the orbital angular momentum operator, taking the form of $s(s+1)$.
+
+
 ```
 
 
-### Questions to ask about this lecture:
-How about the spin? how does half-integer spin fail in a spherically symmetric potential? I know Spherical Harmonic fails to describe it because rotation in Spherical Harmonics follows the $2\pi$ convention. What is the treatment to account for the $4\pi$ rotation in half-integer spin? 
-
+Now let's talk about the spin component of the wavefunction. 

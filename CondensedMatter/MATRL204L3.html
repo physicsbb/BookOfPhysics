@@ -171,7 +171,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../Review/foreword.html">Foreword</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Review/linalg.html">Linear Algebra in Physics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Condensed Matter Magnetism &amp; Magnetic Materials</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Condensed Matter (Intro to Magnetism &amp; Magnetic Materials)</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="MATRL204L1.html">(UCSB MATRL 204) Intro to Magnetism and Magnetic Materials</a></li>
 
@@ -378,7 +378,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-spherical-harmonics">Recap of Spherical Harmonics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation">Dirac’s equation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unrelated-mumbo-jumbo">Unrelated mumbo jumbo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-to-ask-about-this-lecture">Questions to ask about this lecture:</a></li>
 </ul>
 </li>
 </ul>
@@ -445,13 +444,13 @@ Generally speaking, the <a class="reference external" href="https://en.wikipedia
 \[ \begin{align}\begin{aligned}\begin{split}
 \gamma _0 = \begin{bmatrix}
 \symbb{1}  &amp; 0        \\
-0          &amp; \symbb{1}\\
+0          &amp; -\symbb{1}\\
 \end{bmatrix}
 &amp;=\begin{bmatrix}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp;-1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp;-1 \\
 \end{bmatrix}\end{split}\\\begin{split}\gamma _i = \begin{bmatrix}
 0 &amp; \sigma _i^{\dagger}\\
 \sigma _i &amp; 0          \\
@@ -497,15 +496,22 @@ No two Fermions can have the same spin up/down, but the two Fermions can have on
 Bosons on the other hand can have two spin up and two spin down.</p>
 <p>Half-integer spins are Fermions.
 Integer spins are Bosons.
-Fermions cannot be captured by Spherical Harmonics.</p>
+Spherical Harmonics is used for both Fermions and Bosons, but only for the orbital angular momentum portion of the wavefunction, which is the spatial component of the wavefunction.</p>
+<div class="math notranslate nohighlight">
+\[
+\psi = \phi_{\text{space}}\chi_{\text{spin}}
+\]</div>
 <p>Spherical Harmonics are used for orbital angular momentum.
 Spinor fields are used for spin angular momentum.</p>
-<p>Electron is a type of fermion. Spehrical harmonics are also used to describe the electrons in an atom/crystal field.</p>
+<p>Electron is a type of fermion. Spehrical harmonics can also be used to describe the electrons in an atom/crystal field.</p>
+<div class="toggle docutils container">
+<p class="rubric">Confusion debugging:</p>
+<p>Q: How about the spin? how does half-integer spin fail in a spherically symmetric potential? I know Spherical Harmonic fails to describe it because rotation in Spherical Harmonics follows the <span class="math notranslate nohighlight">\(2\pi\)</span> convention. What is the treatment to account for the <span class="math notranslate nohighlight">\(4\pi\)</span> rotation in half-integer spin?</p>
+<p>A: Spinor is a separate component of the wavefunction.
+Spherical Harmonics is only used to describe the angular component of the wavefunction, which involves the orbital angular momentum. and its l(l+1) comes from using/borrowing the solution to the differential equation (Legendre Equation). Turns out the l(l+1) can be thought of as the “eigenvalue” to the legendre’s differential equation. Also, due to the limitation of Spherical Harmonics only being able to capture integer angular momentum, the needs for half integer spin angular momentum give rise to the use of minkowski metric and pauli spin matrices. But the “eigenvalue” for the <span class="math notranslate nohighlight">\(S^2\)</span> operator takes a similar form to the orbital angular momentum operator, taking the form of <span class="math notranslate nohighlight">\(s(s+1)\)</span>.</p>
 </div>
-</section>
-<section id="questions-to-ask-about-this-lecture">
-<h3>Questions to ask about this lecture:<a class="headerlink" href="#questions-to-ask-about-this-lecture" title="Permalink to this heading">#</a></h3>
-<p>How about the spin? how does half-integer spin fail in a spherically symmetric potential? I know Spherical Harmonic fails to describe it because rotation in Spherical Harmonics follows the <span class="math notranslate nohighlight">\(2\pi\)</span> convention. What is the treatment to account for the <span class="math notranslate nohighlight">\(4\pi\)</span> rotation in half-integer spin?</p>
+</div>
+<p>Now let’s talk about the spin component of the wavefunction.</p>
 </section>
 </section>
 </section>
@@ -580,7 +586,6 @@ Spinor fields are used for spin angular momentum.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-spherical-harmonics">Recap of Spherical Harmonics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation">Dirac’s equation</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unrelated-mumbo-jumbo">Unrelated mumbo jumbo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#questions-to-ask-about-this-lecture">Questions to ask about this lecture:</a></li>
 </ul>
 </li>
 </ul>
