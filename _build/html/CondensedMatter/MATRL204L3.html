@@ -376,7 +376,11 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-spherical-harmonics">Recap of Spherical Harmonics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation">Dirac’s equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation-needs-review-and-correction">Dirac’s equation (Needs review and correction)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minkowski-metric-and-pauli-spin-matrices-for-experimentalists-handwavy-intuition">Minkowski Metric and Pauli Spin Matrices (For experimentalists’ handwavy intuition)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spin-matrices-treatment">Spin matrices treatment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-and-semiclassical-picture-of-spin">Classical and Semiclassical picture of spin?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-picture">Classical picture:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unrelated-mumbo-jumbo">Unrelated mumbo jumbo</a></li>
 </ul>
 </li>
@@ -409,8 +413,8 @@ document.write(`
 <p>The primary highlight is that Spherical Harmonics cannot capture half integers angular momentum because Spin rotates from up/down to down/up in <span class="math notranslate nohighlight">\(2\pi\)</span> rotation, and for spin to rotate from up to up again requires a <span class="math notranslate nohighlight">\(4\pi\)</span> rotation.</p>
 <p>This gives rise to the necessity of SU(2) for spin and SO(3) for angular momentum. For this reason, spin angular momentum and orbital angular momentum are of two different groups, requiring different treatments.</p>
 </section>
-<section id="dirac-s-equation">
-<h2>Dirac’s equation<a class="headerlink" href="#dirac-s-equation" title="Permalink to this heading">#</a></h2>
+<section id="dirac-s-equation-needs-review-and-correction">
+<h2>Dirac’s equation (Needs review and correction)<a class="headerlink" href="#dirac-s-equation-needs-review-and-correction" title="Permalink to this heading">#</a></h2>
 <p>For non-relativistic energy, we have</p>
 <div class="math notranslate nohighlight">
 \[ 
@@ -437,13 +441,109 @@ and that <span class="math notranslate nohighlight">\((a+b+c+d)^2=a^2+b^2+c^2+d^
 E^2 &amp;= \gamma _0^2 m_0^2(c^2)^2 + \gamma _1^2 p_1^2c^2 + \gamma _2 ^2 p_2^2c^2 + \gamma _3 ^2 p_3^2c^2\\
 \frac{E^2}{c^2}&amp;=m_0c^2 + p_1^2 + p_2^2 + p_3^2
 \end{split}\]</div>
+</section>
+<section id="minkowski-metric-and-pauli-spin-matrices-for-experimentalists-handwavy-intuition">
+<h2>Minkowski Metric and Pauli Spin Matrices (For experimentalists’ handwavy intuition)<a class="headerlink" href="#minkowski-metric-and-pauli-spin-matrices-for-experimentalists-handwavy-intuition" title="Permalink to this heading">#</a></h2>
+<p>The Dirac’s postulate to expand the square root term in the relativistic energy term is only valid if <span class="math notranslate nohighlight">\(\gamma_i\)</span> are matrix coefficients. So we need to describe these matrices using <span class="math notranslate nohighlight">\(\gamma_0\)</span>.</p>
+<p>We know the condition</p>
+<div class="math notranslate nohighlight" id="equation-gammamatricescond1">
+<span class="eqno">(3)<a class="headerlink" href="#equation-gammamatricescond1" title="Permalink to this equation">#</a></span>\[
+\gamma_i^2=\mathbb{I}
+\]</div>
+<p>and that</p>
+<div class="math notranslate nohighlight" id="equation-gammamatricescond2">
+<span class="eqno">(4)<a class="headerlink" href="#equation-gammamatricescond2" title="Permalink to this equation">#</a></span>\[
+\left\{\gamma_i,\gamma_j\right\}=2\delta_{ij}\mathbb{I}
+\]</div>
+<p>we need to construct a basis that satisfies the two conditions above.</p>
+<div class="math notranslate nohighlight" id="equation-gammanot">
+<span class="eqno">(5)<a class="headerlink" href="#equation-gammanot" title="Permalink to this equation">#</a></span>\[\begin{split}
+\gamma _0 = \begin{bmatrix}
+\symbb{1}  &amp; 0         \\
+0          &amp; -\symbb{1}\\
+\end{bmatrix}
+=\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp;-1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp;-1 \\
+\end{bmatrix}
+\end{split}\]</div>
+<p>This is our given vector of the basis, we need to find the other 3 components to form an orthogonal basis.</p>
+<div class="math notranslate nohighlight" id="equation-gammai">
+<span class="eqno">(6)<a class="headerlink" href="#equation-gammai" title="Permalink to this equation">#</a></span>\[\begin{split}
+\gamma _i = \begin{bmatrix}
+0 &amp; \sigma _i^{\dagger}\\
+\sigma _i &amp; 0          \\
+\end{bmatrix}
+= \begin{bmatrix}
+0 &amp; 0 &amp; * &amp; * \\ 
+0 &amp; 0 &amp; * &amp; * \\
+* &amp; * &amp; 0 &amp; 0 \\
+* &amp; * &amp; 0 &amp; 0 \\
+\end{bmatrix}
+\end{split}\]</div>
+<p>We have assumed that all the <span class="math notranslate nohighlight">\(\gamma\)</span> matrices are Hermitian, but we need  to know what <span class="math notranslate nohighlight">\(\sigma\)</span>’s are, and they cannot simply be complex numbers but matrices to satisfy the condition of equation <a class="reference internal" href="#equation-gammamatricescond1">(3)</a>.</p>
+<p>As an example,</p>
+<div class="math notranslate nohighlight" id="equation-sigmamatricesunitarycond1">
+<span class="eqno">(7)<a class="headerlink" href="#equation-sigmamatricesunitarycond1" title="Permalink to this equation">#</a></span>\[
+\gamma_1\gamma_1 =\mathbb{1}=\sigma_1^{\dagger}\sigma_1=\sigma_1\sigma_1^{\dagger}=\mathbb{1}
+\]</div>
+<p>and more generally,</p>
+<div class="math notranslate nohighlight" id="equation-sigmamatricesunitarycond2">
+<span class="eqno">(8)<a class="headerlink" href="#equation-sigmamatricesunitarycond2" title="Permalink to this equation">#</a></span>\[
+\sigma_i\sigma_i^{\dagger}=\sigma_i^{\dagger}\sigma_i=\mathbb{1}
+\]</div>
+<p>so, this way you can substitute <span class="math notranslate nohighlight">\(\sigma_i=e^{i\phi_i}\)</span> to satisfy the condition.</p>
+<p>Now, along with the condition from equation <a class="reference internal" href="#equation-gammamatricescond2">(4)</a>, it implies that</p>
+<div class="math notranslate nohighlight" id="equation-sigmaunitarycond1">
+<span class="eqno">(9)<a class="headerlink" href="#equation-sigmaunitarycond1" title="Permalink to this equation">#</a></span>\[\begin{split}
+\left\{\gamma_i,\gamma_j\right\}=2\delta_{ij}\mathbb{1}\implies\sigma_i^{\dagger}\sigma_j+ \sigma_j^{\dagger}\sigma_i&amp;=0=2\delta_{ij}\mathbb{1}=\sigma_i\sigma_j^{\dagger}+\sigma_j^{\dagger}\sigma_i \\
+e^{i(\phi_i-\phi_j)}+e^{-i(\phi_i-\phi_j)}&amp;= \\
+\cancel{2}\cos(\phi_i-\phi_j)&amp;=0 =\cancel{2}\delta_{ij}\mathbb{1}
+\end{split}\]</div>
+<p>and we know that <span class="math notranslate nohighlight">\(\phi_i - \phi_j= \pi/2\)</span> due to orthogonality. This is true only if we have <span class="math notranslate nohighlight">\(\sigma_1\)</span> and <span class="math notranslate nohighlight">\(\sigma_2\)</span>, but we have 3 <span class="math notranslate nohighlight">\(\gamma_i\)</span> matrices. If we don’t do anything about this, then <span class="math notranslate nohighlight">\(\phi_i\perp\phi_j\)</span> but one of them will be 180˚ away from another one of the <span class="math notranslate nohighlight">\(\sigma_i\)</span>. This means that <span class="math notranslate nohighlight">\(\sigma_i\)</span> cannot just be any complex numbers but also matrices and have their own “basis”.</p>
+<p>To find the basis for <span class="math notranslate nohighlight">\(\sigma\)</span>, we now repeat the exercise done for <span class="math notranslate nohighlight">\(\gamma\)</span> matrices and denote that</p>
+<div class="math notranslate nohighlight" id="equation-sigmamatrix3">
+<span class="eqno">(10)<a class="headerlink" href="#equation-sigmamatrix3" title="Permalink to this equation">#</a></span>\[\begin{split}
+\sigma _3=\begin{bmatrix}
+1 &amp;  0 \\
+0 &amp; -1 \\
+\end{bmatrix}
+\end{split}\]</div>
+<p>as a basis to find <span class="math notranslate nohighlight">\(\sigma_1\)</span> and <span class="math notranslate nohighlight">\(\sigma_2\)</span>. Quick note, we already have the condition that <span class="math notranslate nohighlight">\(\sigma\)</span> matrices are unitary from equation <a class="reference internal" href="#equation-sigmamatricesunitarycond2">(8)</a>, so if we have one of the pauli spin matrices as one of the basis vectors from equation <a class="reference internal" href="#equation-sigmamatrix3">(10)</a>, then we can say that</p>
+<div class="math notranslate nohighlight" id="equation-sigmamatricesi">
+<span class="eqno">(11)<a class="headerlink" href="#equation-sigmamatricesi" title="Permalink to this equation">#</a></span>\[\begin{split}
+\sigma_i=
+\begin{bmatrix} 
+0        &amp; \alpha_i^{\dagger}\\ 
+\alpha_i &amp; 0                 \\ 
+\end{bmatrix}
+\end{split}\]</div>
+<p>for <span class="math notranslate nohighlight">\(i = 1, 2\)</span>.</p>
+<p>What <span class="math notranslate nohighlight">\(\alpha\)</span>’s are at the moment can be put on hold. It is more important to relabel and relate <span class="math notranslate nohighlight">\(\sigma_1\)</span>, <span class="math notranslate nohighlight">\(\sigma_2\)</span> and <span class="math notranslate nohighlight">\(\sigma_3\)</span> to be <span class="math notranslate nohighlight">\(\sigma_x\)</span>, <span class="math notranslate nohighlight">\(\sigma_y\)</span>, and <span class="math notranslate nohighlight">\(\sigma_z\)</span> respectively. So we need to satisfy a condition similar to equation <a class="reference internal" href="#equation-gammamatricescond1">(3)</a> and <a class="reference internal" href="#equation-gammamatricescond2">(4)</a> but for <span class="math notranslate nohighlight">\(\sigma\)</span> matrices. Note also you can also hold the <span class="math notranslate nohighlight">\(\sigma\)</span> matrices to be Hermitian.</p>
+<p>so we have</p>
+<div class="math notranslate nohighlight" id="equation-sigmamatricescond1">
+<span class="eqno">(12)<a class="headerlink" href="#equation-sigmamatricescond1" title="Permalink to this equation">#</a></span>\[\begin{split}
+\sigma_i &amp;= \sigma_i^{\dagger}\\
+\left\{\sigma_i,\sigma_j\right\}&amp;=0\implies\left[\sigma_i,\sigma_j\right]=2\sigma_x\sigma_y=(const)\sigma_z\\
+\end{split}\]</div>
+<p>Which is similar to <span class="math notranslate nohighlight">\(\left[\hat{L}_x,\hat{L}_y\right]=i\hbar\hat{L}_z\)</span></p>
+<p>Some of the more formal treatment which is only meant to be saved for later, you can do it and find that</p>
+<div class="math notranslate nohighlight" id="equation-paulispinmatrices">
+<span class="eqno">(13)<a class="headerlink" href="#equation-paulispinmatrices" title="Permalink to this equation">#</a></span>\[\begin{split}
+\sigma_1 = \sigma_x = \begin{bmatrix} 0 &amp; 1 \\ 1&amp; 0 \\ \end{bmatrix}; \sigma_2 = \sigma_y = \begin{bmatrix} 0 &amp;-i \\ i&amp; 0 \\ \end{bmatrix}; \sigma_3 = \sigma_z = \begin{bmatrix} 1 &amp; 0 \\ 0&amp;-1 \\ \end{bmatrix};
+\end{split}\]</div>
+<p>that they’re just the Pauli Spin Matrices that we have been working with.</p>
+<div class="toggle docutils container">
+<p class="rubric">Old one</p>
 <p>Now, we ask:
 What form do the gamma matricies <span class="math notranslate nohighlight">\(\gamma _i\)</span> take?
 Generally speaking, the <a class="reference external" href="https://en.wikipedia.org/wiki/Gamma_matrices">4x4 gamma matricies</a> take the form of</p>
 <div class="math notranslate nohighlight">
 \[ \begin{align}\begin{aligned}\begin{split}
 \gamma _0 = \begin{bmatrix}
-\symbb{1}  &amp; 0        \\
+\symbb{1}  &amp; 0         \\
 0          &amp; -\symbb{1}\\
 \end{bmatrix}
 &amp;=\begin{bmatrix}
@@ -487,13 +587,30 @@ i &amp; 0 \\
 \[
 \symbb{1}=\sigma_i^{\dagger}\sigma_i=\sigma_i\sigma_i^{\dagger} 
 \]</div>
+</div>
+</section>
+<section id="spin-matrices-treatment">
+<h2>Spin matrices treatment<a class="headerlink" href="#spin-matrices-treatment" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="classical-and-semiclassical-picture-of-spin">
+<h2>Classical and Semiclassical picture of spin?<a class="headerlink" href="#classical-and-semiclassical-picture-of-spin" title="Permalink to this heading">#</a></h2>
+<p>So now we have formally established two types of angular momentum.</p>
+<ul class="simple">
+<li><p>Orbital Angular Momentum</p></li>
+<li><p>Spin Angular Momentum</p></li>
+</ul>
+<p>How do we think about the gyromagnetic ratio classically?</p>
+<section id="classical-picture">
+<h3>Classical picture:<a class="headerlink" href="#classical-picture" title="Permalink to this heading">#</a></h3>
+<p>Imagine an electron orbiting about z-axis at a position vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> away. The time for one revolution is <span class="math notranslate nohighlight">\(t = \frac{2\pi r}{|v|}\)</span>. We know also classically that the magnetic moment <span class="math notranslate nohighlight">\(\mu = IA = I(\pi r^2)\)</span>. By substituting the variables in <span class="math notranslate nohighlight">\(I = -e|v|/2\pi r\)</span>. Substituting in <span class="math notranslate nohighlight">\(L = mvr\)</span>, we have <span class="math notranslate nohighlight">\( I = \frac{-eL}{2\pi r^2 m_e}\)</span>. Next, extract the classical orbital magnetic moment, we have <span class="math notranslate nohighlight">\(\vec{\mu}_l = \frac{-e}{2m_e}\vec{L} = \gamma_l\vec{L}\)</span>.</p>
+<p>This is the explicit relationship and a classical picture of the gyromagnetic ratio –– a charge to mass ratio for protons and electrons.</p>
+</section>
 <section id="unrelated-mumbo-jumbo">
 <h3>Unrelated mumbo jumbo<a class="headerlink" href="#unrelated-mumbo-jumbo" title="Permalink to this heading">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Fermions cannot occupy the same state, Boson can.
-No two Fermions can have the same spin up/down, but the two Fermions can have one spin up and one spin down.
-Bosons on the other hand can have two spin up and two spin down.</p>
+Bosons can have antiparallel and parallel spins, Fermions can only have antiparallel spins.</p>
 <p>Half-integer spins are Fermions.
 Integer spins are Bosons.
 Spherical Harmonics is used for both Fermions and Bosons, but only for the orbital angular momentum portion of the wavefunction, which is the spatial component of the wavefunction.</p>
@@ -584,7 +701,11 @@ Spherical Harmonics is only used to describe the angular component of the wavefu
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recap-of-spherical-harmonics">Recap of Spherical Harmonics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation">Dirac’s equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dirac-s-equation-needs-review-and-correction">Dirac’s equation (Needs review and correction)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minkowski-metric-and-pauli-spin-matrices-for-experimentalists-handwavy-intuition">Minkowski Metric and Pauli Spin Matrices (For experimentalists’ handwavy intuition)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spin-matrices-treatment">Spin matrices treatment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-and-semiclassical-picture-of-spin">Classical and Semiclassical picture of spin?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-picture">Classical picture:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unrelated-mumbo-jumbo">Unrelated mumbo jumbo</a></li>
 </ul>
 </li>

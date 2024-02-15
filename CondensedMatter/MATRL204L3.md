@@ -18,7 +18,7 @@ The primary highlight is that Spherical Harmonics cannot capture half integers a
 
 This gives rise to the necessity of SU(2) for spin and SO(3) for angular momentum. For this reason, spin angular momentum and orbital angular momentum are of two different groups, requiring different treatments. 
 
-## Dirac's equation
+## Dirac's equation (Needs review and correction)
 
 For non-relativistic energy, we have 
 
@@ -50,13 +50,126 @@ E^2 &= \gamma _0^2 m_0^2(c^2)^2 + \gamma _1^2 p_1^2c^2 + \gamma _2 ^2 p_2^2c^2 +
 \frac{E^2}{c^2}&=m_0c^2 + p_1^2 + p_2^2 + p_3^2
 $$
 
+## Minkowski Metric and Pauli Spin Matrices (For experimentalists' handwavy intuition)
+The Dirac's postulate to expand the square root term in the relativistic energy term is only valid if $\gamma_i$ are matrix coefficients. So we need to describe these matrices using $\gamma_0$. 
+
+We know the condition 
+
+$$
+\gamma_i^2=\mathbb{I}
+$$ (GammaMatricesCond1)
+
+and that 
+
+$$
+\left\{\gamma_i,\gamma_j\right\}=2\delta_{ij}\mathbb{I}
+$$(GammaMatricesCond2)
+
+we need to construct a basis that satisfies the two conditions above. 
+
+$$
+\gamma _0 = \begin{bmatrix}
+\symbb{1}  & 0         \\
+0          & -\symbb{1}\\
+\end{bmatrix}
+=\begin{bmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 &-1 & 0 \\
+0 & 0 & 0 &-1 \\
+\end{bmatrix}
+$$(GammaNot)
+
+This is our given vector of the basis, we need to find the other 3 components to form an orthogonal basis.
+
+$$
+\gamma _i = \begin{bmatrix}
+0 & \sigma _i^{\dagger}\\
+\sigma _i & 0          \\
+\end{bmatrix}
+= \begin{bmatrix}
+0 & 0 & * & * \\ 
+0 & 0 & * & * \\
+* & * & 0 & 0 \\
+* & * & 0 & 0 \\
+\end{bmatrix}
+$$(GammaI)
+
+We have assumed that all the $\gamma$ matrices are Hermitian, but we need  to know what $\sigma$'s are, and they cannot simply be complex numbers but matrices to satisfy the condition of equation {eq}`GammaMatricesCond1`.
+
+As an example, 
+
+$$
+\gamma_1\gamma_1 =\mathbb{1}=\sigma_1^{\dagger}\sigma_1=\sigma_1\sigma_1^{\dagger}=\mathbb{1}
+$$(SigmaMatricesUnitaryCond1)
+
+and more generally,
+
+$$
+\sigma_i\sigma_i^{\dagger}=\sigma_i^{\dagger}\sigma_i=\mathbb{1}
+$$(SigmaMatricesUnitaryCond2)
+
+so, this way you can substitute $\sigma_i=e^{i\phi_i}$ to satisfy the condition. 
+
+Now, along with the condition from equation {eq}`GammaMatricesCond2`, it implies that 
+
+$$
+\left\{\gamma_i,\gamma_j\right\}=2\delta_{ij}\mathbb{1}\implies\sigma_i^{\dagger}\sigma_j+ \sigma_j^{\dagger}\sigma_i&=0=2\delta_{ij}\mathbb{1}=\sigma_i\sigma_j^{\dagger}+\sigma_j^{\dagger}\sigma_i \\
+e^{i(\phi_i-\phi_j)}+e^{-i(\phi_i-\phi_j)}&= \\
+\cancel{2}\cos(\phi_i-\phi_j)&=0 =\cancel{2}\delta_{ij}\mathbb{1}
+$$(SigmaUnitaryCond1)
+
+and we know that $\phi_i - \phi_j= \pi/2$ due to orthogonality. This is true only if we have $\sigma_1$ and $\sigma_2$, but we have 3 $\gamma_i$ matrices. If we don't do anything about this, then $\phi_i\perp\phi_j$ but one of them will be 180˚ away from another one of the $\sigma_i$. This means that $\sigma_i$ cannot just be any complex numbers but also matrices and have their own "basis".
+
+To find the basis for $\sigma$, we now repeat the exercise done for $\gamma$ matrices and denote that 
+
+$$
+\sigma _3=\begin{bmatrix}
+1 &  0 \\
+0 & -1 \\
+\end{bmatrix}
+$$(SigmaMatrix3)
+
+as a basis to find $\sigma_1$ and $\sigma_2$. Quick note, we already have the condition that $\sigma$ matrices are unitary from equation {eq}`SigmaMatricesUnitaryCond2`, so if we have one of the pauli spin matrices as one of the basis vectors from equation {eq}`SigmaMatrix3`, then we can say that 
+
+$$
+\sigma_i=
+\begin{bmatrix} 
+0        & \alpha_i^{\dagger}\\ 
+\alpha_i & 0                 \\ 
+\end{bmatrix}
+$$(SigmaMatricesI)
+
+for $i = 1, 2$.
+
+What $\alpha$'s are at the moment can be put on hold. It is more important to relabel and relate $\sigma_1$, $\sigma_2$ and $\sigma_3$ to be $\sigma_x$, $\sigma_y$, and $\sigma_z$ respectively. So we need to satisfy a condition similar to equation {eq}`GammaMatricesCond1` and {eq}`GammaMatricesCond2` but for $\sigma$ matrices. Note also you can also hold the $\sigma$ matrices to be Hermitian. 
+
+so we have
+
+$$
+\sigma_i &= \sigma_i^{\dagger}\\
+\left\{\sigma_i,\sigma_j\right\}&=0\implies\left[\sigma_i,\sigma_j\right]=2\sigma_x\sigma_y=(const)\sigma_z\\
+$$(SigmaMatricesCond1)
+
+Which is similar to $\left[\hat{L}_x,\hat{L}_y\right]=i\hbar\hat{L}_z$
+
+Some of the more formal treatment which is only meant to be saved for later, you can do it and find that 
+
+$$
+\sigma_1 = \sigma_x = \begin{bmatrix} 0 & 1 \\ 1& 0 \\ \end{bmatrix}; \sigma_2 = \sigma_y = \begin{bmatrix} 0 &-i \\ i& 0 \\ \end{bmatrix}; \sigma_3 = \sigma_z = \begin{bmatrix} 1 & 0 \\ 0&-1 \\ \end{bmatrix};
+$$(PauliSpinMatrices)
+
+that they're just the Pauli Spin Matrices that we have been working with. 
+
+```{toggle}
+## Old one
 Now, we ask:
 What form do the gamma matricies $\gamma _i$ take? 
 Generally speaking, the [4x4 gamma matricies](https://en.wikipedia.org/wiki/Gamma_matrices) take the form of 
 
 $$
 \gamma _0 = \begin{bmatrix}
-\symbb{1}  & 0        \\
+\symbb{1}  & 0         \\
 0          & -\symbb{1}\\
 \end{bmatrix}
 &=\begin{bmatrix}
@@ -103,12 +216,26 @@ $$
 $$
 \symbb{1}=\sigma_i^{\dagger}\sigma_i=\sigma_i\sigma_i^{\dagger} 
 $$
+```
+
+## Spin matrices treatment
+
+## Classical and Semiclassical picture of spin?
+So now we have formally established two types of angular momentum. 
+* Orbital Angular Momentum
+* Spin Angular Momentum 
+
+How do we think about the gyromagnetic ratio classically?
+
+### Classical picture: 
+Imagine an electron orbiting about z-axis at a position vector $\vec{r}$ away. The time for one revolution is $t = \frac{2\pi r}{|v|}$. We know also classically that the magnetic moment $\mu = IA = I(\pi r^2)$. By substituting the variables in $I = -e|v|/2\pi r$. Substituting in $L = mvr$, we have $ I = \frac{-eL}{2\pi r^2 m_e}$. Next, extract the classical orbital magnetic moment, we have $\vec{\mu}_l = \frac{-e}{2m_e}\vec{L} = \gamma_l\vec{L}$.
+
+This is the explicit relationship and a classical picture of the gyromagnetic ratio –– a charge to mass ratio for protons and electrons. 
 
 ### Unrelated mumbo jumbo
 ```{note}
 Fermions cannot occupy the same state, Boson can. 
-No two Fermions can have the same spin up/down, but the two Fermions can have one spin up and one spin down. 
-Bosons on the other hand can have two spin up and two spin down. 
+Bosons can have antiparallel and parallel spins, Fermions can only have antiparallel spins. 
 
 Half-integer spins are Fermions. 
 Integer spins are Bosons. 
