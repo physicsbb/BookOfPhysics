@@ -4,7 +4,7 @@
 [Here's the link to my resume!](https://drive.google.com/file/d/1RsUJHFE5haeqTYd1qlcp8zZBbDN9Yb7w/view?usp=sharing)
 
 ## Latest Career Update: 
-I have begun working at GaNify, LLC since mid February 2024. My current role at GaNify is to assist the company in solidifying a process that can be standardized for the manufacturing of a HEMT based High Voltage Super-heterojunction FET device with high voltage switching applications. Our projects are currently [ARPA-E](https://arpa-e.energy.gov/news-and-media/press-releases/us-department-energy-announces-42-million-strengthen-reliability) funded. 
+I have begun working at GaNify, LLC (a very exciting startup commercializing technically novel ideas for GaN in the industry) since mid February 2024. My current role at GaNify is to assist the company in solidifying a process that can be standardized for the manufacturing of a HEMT based High Voltage Super-heterojunction FET device with high voltage switching applications. Our projects are currently [ARPA-E](https://arpa-e.energy.gov/news-and-media/press-releases/us-department-energy-announces-42-million-strengthen-reliability) funded. 
 
 I would like to take a moment and express my gratitude for Dr. Shuji Nakamura's kind offering to me for an undergraduate internship, giving me the necessary experience as someone with a physics background to learn about GaN-based semiconductor technology, which ultimately led to me landing this career opportunity that is as close to a PhD as one can get. 
 
