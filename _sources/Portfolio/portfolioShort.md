@@ -3,6 +3,12 @@
 ## Link to my resume:
 [Here's the link to my resume!](https://drive.google.com/file/d/1RsUJHFE5haeqTYd1qlcp8zZBbDN9Yb7w/view?usp=sharing)
 
+## Latest Career Update: 
+I have begun working at GaNify, LLC since mid February 2024. My current role at GaNify is to assist the company in solidifying a process that can be standardized for the manufacturing of a HEMT based High Voltage Super-heterojunction FET device with high voltage switching applications. Our projects are currently [ARPA-E](https://arpa-e.energy.gov/news-and-media/press-releases/us-department-energy-announces-42-million-strengthen-reliability) funded. 
+
+I would like to take a moment and express my gratitude for Dr. Shuji Nakamura's kind offering to me for an undergraduate internship, giving me the necessary experience as someone with a physics background to learn about GaN-based semiconductor technology, which ultimately led to me landing this career opportunity that is as close to a PhD as one can get. 
+
+
 ## My background:
 I am a recent [Physics](https://www.physics.ucsb.edu/) graduate from [UCSB](https://www.ucsb.edu/). If I were to come up with a name for the focus of courses that I have taken, I would say Condensed Matter and Optics Applications. In my opinion, my two quarters of Condensed Matter, one quarter of Optics and one quarter of Quantum Photonics Experiment gave me a really unique perspective to pursue physical applications, with a motivation aimed towards translating scientific investigation into commercialization. I have seen this translation in the field of photonics in two separate applications, the currently-pretty-Novel Quantum Photonics Integrated Circuits (QPIC), and a Novel-30-Years-Ago Optoelectronics. 
 
